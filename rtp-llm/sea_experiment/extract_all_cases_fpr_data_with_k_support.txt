@@ -1,0 +1,154 @@
+============================================================================================================================================
+所有案例的FPR数据详情 (支持K后缀的Token Size)
+============================================================================================================================================
+总案例数: 85
+FPR计算公式: FPR = (F_peak × U_GPU × N_GPU) / QPS
+Token Size: 从execute_token_size_timeseries中提取的最大值，支持K后缀（K=1000）
+============================================================================================================================================
+
+序号   Pod名称                                                        模型                   GPU类型           GPU数   QPS      利用率      F_peak   FPR          Token Size
+--------------------------------------------------------------------------------------------------------------------------------------------
+1    ai-data-video-llm-offline-north-custom accelerator-spot.ference-part0-e98979e9-a-e665 video_logics-13B     custom accelerator      1      27.0     0.98     118.0    4.282963     18        
+2    aigr-user-gsid-rec-model-online-na61-l20.ference-part0-8cac7a63-b-c560 qwen3-0.6B           L20             1      25.0     0.218    119.5    1.04204      103       
+3    aisan-recall-llm-sft-v2-qwen3-4b-v2-offline-ea119-custom accelerator-2tp.ference-part0-2f2cc79c-a-e1ea qwen3-4B             custom accelerator      2      6.0      0.86     118.0    33.826667    246       
+4    bc-offline-recognize-all-industry-dxm-qwq32b-clone-na61-h20.inference-part0-70f34ebc-b-d478 QwQ-32B              H20             1      3.0      0.99     148.0    48.84        485       
+5    bc-offline-recognize-fushi-industry-dxm-v1-na61-h20.ference-part0-29699645-b-3fbc Qwen-7B-Chat-Pro-HF  H20             1      16.0     0.98     148.0    9.065        1230      
+6    bc-offline-recognize-fushi-industry-dxm-v1-na61-h20.ference-part0-44703f7a-a-2053 Qwen-7B-Chat-Pro-HF  H20             1      17.0     0.98     148.0    8.531765     1070      
+7    bc-offline-recognize-fushi-industry-dxm-v1-na61-h20.ference-part0-b3ff7549-b-e8bd Qwen-7B-Chat-Pro-HF  H20             1      18.0     0.97     148.0    7.975556     1030      
+8    bc-online-appeal-recognize-20250819-na61-h20.inference-part0-6d38cef5-b-4e34 qwen2.5-1.5B-instruct H20             1      17.0     0.193    148.0    1.680235     57        
+9    bc-online-appeal-recognize-20250819-na61-h20.inference-part0-b4554bfb-b-67fc qwen2.5-1.5B-instruct H20             1      14.0     0.15     148.0    1.585714     71        
+10   bc-online-question-appeal-recognize-na61-h20.inference-part0-2853f765-a-3f16 Qwen-1.8B-Chat       H20             1      24.0     0.27     148.0    1.665        132       
+11   bc-online-question-appeal-recognize-na61-h20.inference-part0-2cfbeb62-a-8216 Qwen-1.8B-Chat       H20             1      24.9     0.28     148.0    1.664257     200       
+12   bc-online-question-appeal-recognize-na61-h20.inference-part0-2ec08185-a-dc0c Qwen-1.8B-Chat       H20             1      19.0     0.16     148.0    1.246316     142       
+13   bc-online-question-recognize-20250819-na61-h20.inference-part0-06899f11-b-4877 qwen2.5-1.5B-instruct H20             1      14.0     0.22     148.0    2.325714     80        
+14   bc-online-question-recognize-20250819-na61-h20.inference-part0-1308e74c-b-e338 qwen2.5-1.5B-instruct H20             1      17.0     0.24     148.0    2.089412     88        
+15   bc-online-question-recognize-20250819-na61-h20.inference-part0-deaa5dd1-a-fc4a qwen2.5-1.5B-instruct H20             1      32.0     0.196    148.0    0.9065       39        
+16   bc-test-attitude-for-real-time-intercept-na61-h20.ference-part0-42e40b65-a-68d0 qwen2.5-1.5B-instruct H20             1      29.7     0.73     148.0    3.63771      40        
+17   bc-test-attitude-for-real-time-intercept-na61-h20.ference-part0-64ee499c-a-a11e qwen2.5-1.5B-instruct H20             1      22.0     0.66     148.0    4.44         42        
+18   bc-test-attitude-for-real-time-intercept-na61-h20.ference-part0-c23c8a05-b-c183 qwen2.5-1.5B-instruct H20             1      19.9     0.64     148.0    4.759799     33        
+19   bc-test-attitude-for-real-time-intercept-na61-h20.ference-part0-e4074335-b-d367 qwen2.5-1.5B-instruct H20             1      24.7     0.43     148.0    2.576518     49        
+20   bc-test-attitude-for-real-time-intercept-na61-l20.ference-part0-babc14f4-b-cad7 qwen2.5-1.5B-instruct L20             1      27.8     0.729    119.5    3.133651     44        
+21   bc-tmp-all-na61-h20.inference-part0-431da79c-a-1686          Qwen-7B-Chat-Pro-HF  H20             1      9.0      0.98     148.0    16.115556    564       
+22   bc-tmp-all-na61-h20.inference-part0-574a96e3-a-6d2c          Qwen-7B-Chat-Pro-HF  H20             1      8.0      0.98     148.0    18.13        618       
+23   bc-tmp-all-na61-h20.inference-part0-8a7082d1-a-748f          Qwen-7B-Chat-Pro-HF  H20             1      174.0    0.98     148.0    0.833563     647       
+24   bc-tmp-all-na61-h20.inference-part0-a8ddac36-a-7a14          Qwen-7B-Chat-Pro-HF  H20             1      154.0    0.97     148.0    0.932208     483       
+25   bc-tmp-all-na61-h20.inference-part0-c97547ab-a-3710          Qwen-7B-Chat-Pro-HF  H20             1      8.0      0.98     148.0    18.13        653       
+26   bc-tmp-all-na61-h20.inference-part0-fa17aa40-b-89eb          Qwen-7B-Chat-Pro-HF  H20             1      8.0      0.98     148.0    18.13        469       
+27   diwen-aigq-noncot-bts1-ea119-custom accelerator.inference-part0-20b2f1de-a-74c1 Qwen3-30B-A3B        custom accelerator      1      13.0     1.0      118.0    9.076923     313       
+28   diwen-aigq-noncot-bts1-na175-custom accelerator.inference-part0-ad7867f8-a-bc79 Qwen3-30B-A3B        custom accelerator      1      14.0     1.0      118.0    8.428571     656       
+29   diwen-aigq-noncot-bts2-na175-custom accelerator.inference-part0-e2e22aab-b-09b9 Qwen3-30B-A3B        custom accelerator      1      17.0     1.0      118.0    6.941176     643       
+30   diwen-aigq-noncot-bts3-na175-custom accelerator.inference-part0-08b62458-a-4234 Qwen3-30B-A3B        custom accelerator      1      17.0     0.98     118.0    6.802353     1640      
+31   diwen-llmrec-qwen3-30-a3b-na175-custom accelerator.inference-part0-b107f84f-b-2d82 Qwen3-30B-A3B        custom accelerator      1      13.0     1.0      118.0    9.076923     271       
+32   diwen-llmrec-qwen3-30-a3b-ea119-custom accelerator.inference-part0-2a17f7c4-a-a0d7 Qwen3-30B-A3B        custom accelerator      1      26.0     0.98     118.0    4.447692     804       
+33   diwen-llmrec-qwen3-30-a3b-ea119-custom accelerator.inference-part0-b3966368-a-8771 Qwen3-30B-A3B        custom accelerator      1      19.0     1.0      118.0    6.210526     829       
+34   hotline-qwq-na61-h20-2tp.ference-part0-8165a0df-b-5783       QwQ-32B              H20             2      16.0     0.965    148.0    17.8525      5150      
+35   hotline-qwq-na61-h20-2tp.ference-part0-ed094f94-b-5672       QwQ-32B              H20             2      42.0     0.96     148.0    6.765714     62        
+36   icbu-aa-qwen2-7b-ea119-custom accelerator.inference-part0-24badc99-a-b54f qwen2.5-7B           custom accelerator      1      14.0     0.58     118.0    4.888571     170       
+37   lanshi-qwen3-new-item-reason-model-ea119-custom accelerator.inference-part0-7602934d-a-4492 qwen3-14b            custom accelerator      1      24.0     1.0      118.0    4.916667     12100     
+38   lanshi-qwen3-new-item-reason-model-ea119-custom accelerator.inference-part0-af9dd2ad-a-83ce qwen3-14B            custom accelerator      1      21.0     1.0      118.0    5.619048     10900     
+39   mkt-qwen3-30b-a3b-back-ea119-custom accelerator.inference-part0-46b2ae20-a-fca4 qwen3-30B-A3B        custom accelerator      1      4.0      0.94     118.0    27.73        372       
+40   mkt-qwen3-30b-a3b-feeds-na175-custom accelerator.inference-part0-3cc70f0e-a-d735 qwen3-30B-A3B        custom accelerator      1      2.0      0.75     118.0    44.25        3450      
+41   omega-llm-92920-1682403-qwenv3-cn-h800-spot.inference-part0-7fdbfcb4-a-c2cd qwen3-4B             H800            1      11.0     0.49     989.0    44.055455    172       
+42   online-dxm-dm-wait-clarify-na61-l20.inference-part0-fa225ff2-b-ede8 qwen2.5-7B           L20             1      7.99     0.259    119.5    3.873655     15        
+43   page-indicator-search-query-analysis-online-na61-h20-2tp.ference-part0-9d62c496-b-a6fe Qwen3-4B             H20             2      25.0     0.89     148.0    10.5376      250       
+44   presale-scene-predict-7b-v3-na61-l20.inference-part0-049c824a-a-2d05 qwen2.5-7B-instruct  L20             1      4.0      0.272    119.5    8.126        63        
+45   queryrec-session2bigmodel-tbstars-1-5b-na61-custom accelerator.inference-part0-9c884ccf-b-7caa tbstars2_0-moe-15A1_5 custom accelerator      1      3.96     0.99     118.0    29.5         141       
+46   queryrec-session2bigmodel-tbstars-1-5b-v2-na175-custom accelerator.inference-part0-5bd41479-a-181e tbstars2_0-moe-15A1_5 custom accelerator      1      12.0     0.98     118.0    9.636667     456       
+47   queryrec-session2bigmodel-tbstars-nothink-na61-custom accelerator.ference-part0-2aeaffc7-a-c52c tbstars2_0-moe-15A1_5 custom accelerator      1      22.0     0.88     118.0    4.72         496       
+48   queryrec-session2bigmodel-tbstars-rl-na175-custom accelerator-2tp.inference-part0-5a3b28c5-b-17ba tbstars2_0-moe-42A3_5-instruct custom accelerator       2      12.0     0.895    419.4    62.5605      133       
+49   qwen2-5-3b-instruct-na61-a10.inference-part0-0ef50278-a-6551 qwen3-8B             A10             1      5.0      0.983    125.0    24.575       145       
+50   qwen2-ast-sft-modelv2-kto-na61-a800.inference-part0-1f6ff837-a-f0dd qwen2-7B             A800            1      2.0      0.51     312.0    79.56        463       
+51   qwen2p5-3b-servicetrace-front-v250630-na61-l20.inference-part0-558a345e-b-1561 qwen2.5-3B-instruct  L20             1      4.0      0.55     119.5    16.43125     142       
+52   qwen2p5-3b-servicetrace-front-v250630-na61-l20.inference-part0-6c11fea3-b-136d qwen2.5-3B-instruct  L20             1      2.0      0.45     119.5    26.8875      422       
+53   qwen2p5-3b-servicetrace-front-v250630-na61-l20.inference-part0-75061cb7-b-dc9b qwen2.5-3B-instruct  L20             1      6.0      0.535    119.5    10.655417    169       
+54   qwen2p5-3b-servicetrace-front-v250630-na61-l20.inference-part0-75061cb7-b-dc9b qwen2.5-3B-instruct  L20             1      3.0      0.7      119.0    27.766667    203       
+55   qwen3-14b-yizhang-test-ea119-custom accelerator.inference-part0-29ea89e8-a-a9ef Qwen3-14B            custom accelerator      1      6.0      0.72     118.0    14.16        27        
+56   qwen3-14b-yizhang-test-ea119-custom accelerator.inference-part0-3be38692-a-32fe Qwen3-14B            custom accelerator      1      5.0      0.96     118.0    22.656       28        
+57   qwen3-32b-for-omega-na175-h20-2tp-gspot.inference-part0-c89f5475-a-f8ec qwen3-32b            H20             2      3.0      0.99     148.0    97.68        3730      
+58   qwen3-32b-for-omega-na61-h20-2tp-spot.inference-part0-a9ca7487-a-acf8 Qwen3-32B            H20             2      2.0      0.99     148.0    146.52       128       
+59   qwen3-32b-for-omega-na61-h20-2tp-spot.inference-part0-bc9a835b-a-6726 Qwen3-32B            H20             2      3.0      0.985    148.0    97.186667    2340      
+60   qwen3-item-grained-reason-v32-ea119-custom accelerator.inference-part0-4df159da-a-5df8 qwen3-32B            custom accelerator      1      12.0     1.0      118.0    9.833333     5970      
+61   qwen3-item-grained-reason-v32-ea119-custom accelerator.inference-part0-5fb11240-a-6c48 qwen3-32B            custom accelerator      1      17.0     1.0      118.0    6.941176     6190      
+62   qwen3-item-grained-reason-v32-na61-a100.inference-part0-03fd868f-a-5305 qwen3-32B            A100            1      5.0      0.97     312.0    60.528       294       
+63   qwen3-item-grained-reason-v32-na61-a100.inference-part0-a65ed475-a-8f88 qwen3-32B            A100            1      5.0      0.98     312.0    61.152       363       
+64   qwen3-item-grained-reason-v32-na61-a100.inference-part0-fa075f75-a-3814 qwen3-32B            A100            1      5.0      0.97     312.0    60.528       295       
+65   qwen3-item-grained-reason-v32-na61-h20.inference-part0-55d391c2-a-dcac qwen3-32B            H20             1      13.0     0.992    148.0    11.293538    6540      
+66   qwen3-item-grained-reason-v32-na61-h20.inference-part0-9d8668c6-a-8722 qwen3-32B            H20             1      13.0     0.993    148.0    11.304923    6110      
+67   qwen3-item-grained-reason-v32-na61-h20.inference-part0-e23faf32-b-aee2 qwen3-32B            H20             1      4.99     0.992    148.0    29.422044    6030      
+68   qwen3-item-grained-reason-v32-na61-h20.inference-part0-ed7253de-b-4c11 qwen3-32B            H20             1      16.0     1.0      148.0    9.25         6290      
+69   qwen3-item-grained-reason-v32-na61-h20.inference-part0-f6bce89c-a-cd77 qwen3-32B            H20             1      11.0     1.0      148.0    13.454545    6970      
+70   qwen3-test2-na175-custom accelerator-2tp.inference-part0-a11ed737-a-4c1a qwen3-30B-A3B        custom accelerator      2      3.0      0.66     118.0    51.92        369       
+71   qwq-32b-for-omega-gspot-na61-custom accelerator-2tp-spot.inference-part0-fdc3b0e6-a-4b31 QwQ-32B              custom accelerator      2      1.0      0.99     118.0    233.873874   45        
+72   recommend-intent-qwen3-4b-na61-h20.inference-part0-111907aa-a-bd11 qwen3-4B             H20             1      13.0     0.38     148.0    4.326154     411       
+73   recommend-intent-qwen3-4b-na61-h20.inference-part0-928ea825-a-9825 qwen3-4B             H20             1      21.0     0.406    148.0    2.861333     2080      
+74   recommend-intent-qwen3-4b-na61-h20.inference-part0-c9985554-a-0bd4 qwen3-4B             H20             1      16.0     0.37     148.0    3.4225       479       
+75   safe-guard-ea119-custom accelerator-2tp.inference-part0-3f258c38-b-9029 qwen3-0.6B           custom accelerator      2      12.0     0.56     118.0    11.013333    182       
+76   semantic-id-qwen2-5-0-5b-fast-na175-custom accelerator.inference-part0-e357aaf6-a-3260 qwen2.5-0.5B         custom accelerator      1      16.2     0.72     118.0    5.244444     2400      
+77   sku-spec-na175-custom accelerator.inference-part0-25585740-a-3422    tbstars-008-3B-base  custom accelerator      1      8.0      0.347    118.0    5.11825      21        
+78   taolive-comment-intent-qwen2-14b-sft-na61-custom accelerator.inference-part0-68f3dc20-a-ac50 qwen2-14B            custom accelerator       1      12.0     0.88     419.0    30.726667    122       
+79   tbstars-gul-tag2cmd-v5-ea119-custom accelerator.inference-part0-38a8fef2-a-afa9 tbstars-008-3B-base  custom accelerator      1      490.0    0.78     118.0    0.187837     170       
+80   text2sid-inference-ea119-custom accelerator.part0-7780d6b4-a-ee02    qwen2-0.5B           custom accelerator      1      8.6      0.86     118.0    11.8         5880      
+81   tgc-serv-agent-v2-new-na61-custom accelerator.inference-part0-68e55a8b-a-f0cb tbstars-7B-base      custom accelerator       1      62.5     0.542    419.4    3.637037     66        
+82   tgc-serv-agent-v2-new-na61-custom accelerator.inference-part0-88ad43e3-a-2f88 tbstars-7B-base      custom accelerator       1      5.99     0.72     419.4    50.41202     60        
+83   tgc-serv-agent-v2-new-na61-custom accelerator.inference-part0-68e55a8b-a-f0cb tbstars-7B-base      custom accelerator       1      7.98     0.72     419.4    37.840602    62        
+84   yumeng-qwen-7b-sft-v1-ea119-custom accelerator-2tp.inference-part0-082554e1-a-8167 qwen2.5-7B           custom accelerator      2      16.0     0.97     118.0    14.3075      79        
+85   zzy-relativity-qwen3-1-7b-na61-a100.inference-part0-7e163f9b-b-1813 qwen3-1.7B           A100            1      11.0     0.3      312.0    8.509091     209       
+
+============================================================================================================================================
+统计信息:
+============================================================================================================================================
+有效FPR计算数量: 85
+FPR最小值: 0.187837
+FPR最大值: 233.873874
+FPR平均值: 21.959405
+FPR中位数: 9.076923
+FPR效率差异倍数: 1245.1×
+
+Token Size统计:
+有效Token Size数量: 85
+Token Size最小值: 15
+Token Size最大值: 12100
+Token Size平均值: 1331.8
+Token Size中位数: 294.0
+
+GPU类型和F_peak分布:
+  custom accelerator: 27个服务, 共31张GPU, F_peak=118.0 TFLOPs
+  L20: 8个服务, 共8张GPU, F_peak=119.5 TFLOPs
+  H20: 36个服务, 共42张GPU, F_peak=148.0 TFLOPs
+  H800: 1个服务, 共1张GPU, F_peak=989.0 TFLOPs
+  custom accelerator: 5个服务, 共6张GPU, F_peak=419.4 TFLOPs
+  A10: 1个服务, 共1张GPU, F_peak=125.0 TFLOPs
+  A800: 1个服务, 共1张GPU, F_peak=312.0 TFLOPs
+  A100: 4个服务, 共4张GPU, F_peak=312.0 TFLOPs
+  custom accelerator: 2个服务, 共3张GPU, F_peak=118.0 TFLOPs
+
+模型分布:
+  qwen2.5-1.5B-instruct: 10个服务
+  qwen3-32B: 10个服务
+  Qwen-7B-Chat-Pro-HF: 9个服务
+  Qwen3-30B-A3B: 7个服务
+  qwen3-4B: 5个服务
+  QwQ-32B: 4个服务
+  qwen2.5-3B-instruct: 4个服务
+  Qwen-1.8B-Chat: 3个服务
+  qwen2.5-7B: 3个服务
+  qwen3-30B-A3B: 3个服务
+  tbstars2_0-moe-15A1_5: 3个服务
+  tbstars-7B-base: 3个服务
+  qwen3-0.6B: 2个服务
+  Qwen3-14B: 2个服务
+  Qwen3-32B: 2个服务
+  tbstars-008-3B-base: 2个服务
+  video_logics-13B: 1个服务
+  qwen3-14b: 1个服务
+  qwen3-14B: 1个服务
+  Qwen3-4B: 1个服务
+  qwen2.5-7B-instruct: 1个服务
+  tbstars2_0-moe-42A3_5-instruct: 1个服务
+  qwen3-8B: 1个服务
+  qwen2-7B: 1个服务
+  qwen3-32b: 1个服务
+  qwen2.5-0.5B: 1个服务
+  qwen2-14B: 1个服务
+  qwen2-0.5B: 1个服务
+  qwen3-1.7B: 1个服务

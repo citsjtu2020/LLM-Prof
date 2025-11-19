@@ -1,0 +1,5 @@
+Case,Total_Distinct_Kernels,Total_Executions,Total_Duration_ms
+qwen2-7b-query,46,83856,6267.027696000559
+qwen2-ast-sft,25,2216,453.9545629999992
+qwen3-32b-omega,52,118472,9663.616662001095
+recommend-intent,84,76918,3678.8747989998105

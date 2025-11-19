@@ -1,0 +1,208 @@
+Case,Kernel_Name,Execution_Count
+qwen2-7b-query,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_f16_256x64_32x4_nn_align2>(cutlass_80_tensorop_f16_s16816gemm_f16_256x64_32x4_nn_align2::Params),13466
+qwen2-7b-query,ampere_fp16_s16816gemm_fp16_128x64_ldg8_f2f_stages_64x3_nn,12766
+qwen2-7b-query,"void fastertransformer::generalRmsNorm<__half2, false, false, true, false>(__half2*, __half2*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, float, int, int, float const*, float*, signed char*)",6902
+qwen2-7b-query,"fastertransformer::getCuSeqLensKernel(int*, int const*, int const*, int)",6902
+qwen2-7b-query,"void fastertransformer::masked_multihead_attention_kernel<unsigned short, unsigned short, fastertransformer::KVBlockArray, (unsigned int)128, (unsigned int)256, false, false, false, (unsigned int)16, (unsigned int)16, (unsigned int)4, (unsigned int)8>(fastertransformer::Multihead_attention_params<unsigned short, false>, fastertransformer::KVBlockArray)",6902
+qwen2-7b-query,"void fastertransformer::generalRmsNorm<__half2, true, false, true, false>(__half2*, __half2*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, float, int, int, float const*, float*, signed char*)",6901
+qwen2-7b-query,"void fastertransformer::generic_activation<fastertransformer::SiluActivation, __half2, __half2>(__half2*, __half2 const*, __half2 const*, __half2 const*, int const*, __half2 const*, int, float const*, float const*, __half2 const*, int const*, int, int, int, int)",6901
+qwen2-7b-query,"void fastertransformer::addBiasResidual<__half, 1, __half>(__half*, __half const*, __half const*, __half const*, __half const*, float const*, float const*, int, int)",6901
+qwen2-7b-query,ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x6_nn,6622
+qwen2-7b-query,"void cub::CUB_200301_700_750_800_860_890_900_NS::DeviceSegmentedRadixSortKernel<cub::CUB_200301_700_750_800_860_890_900_NS::DeviceRadixSortPolicy<float, int, int>::Policy900, true, true, float, int, int*, int*, int, cub::CUB_200301_700_750_800_860_890_900_NS::detail::identity_decomposer_t>(float const*, float*, int const*, int*, int*, int*, int, int, int, cub::CUB_200301_700_750_800_860_890_900_NS::detail::identity_decomposer_t)",988
+qwen2-7b-query,void cutlass::Kernel2<cutlass_80_tensorop_s16816gemm_f16_64x64_32x6_nn_align8>(cutlass_80_tensorop_s16816gemm_f16_64x64_32x6_nn_align8::Params),700
+qwen2-7b-query,"void cublasLt::splitKreduce_kernel<32, 16, int, float, __half, float, __half, true, false, false>(cublasLt::cublasSplitKParams<float>, float const*, __half const*, __half*, float const*, float const*, __half const*, float const*, __half*, void*, long, float*, int*)",700
+qwen2-7b-query,"void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<float>, at::detail::Array<char*, 1> >(int, at::native::FillFunctor<float>, at::detail::Array<char*, 1>)",494
+qwen2-7b-query,"void cub::CUB_200301_700_750_800_860_890_900_NS::DeviceSegmentedRadixSortKernel<cub::CUB_200301_700_750_800_860_890_900_NS::DeviceRadixSortPolicy<float, int, int>::Policy900, false, true, float, int, int*, int*, int, cub::CUB_200301_700_750_800_860_890_900_NS::detail::identity_decomposer_t>(float const*, float*, int const*, int*, int*, int*, int, int, int, cub::CUB_200301_700_750_800_860_890_900_NS::detail::identity_decomposer_t)",494
+qwen2-7b-query,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_256x128_32x3_nn_align8>(cutlass_80_tensorop_f16_s16816gemm_relu_f16_256x128_32x3_nn_align8::Params),336
+qwen2-7b-query,ampere_fp16_s1688gemm_fp16_256x64_ldg8_f2f_stages_32x1_nn,280
+qwen2-7b-query,"void at::native::vectorized_elementwise_kernel<4, at::native::AUnaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::MulFunctor<float> >, at::detail::Array<char*, 2> >(int, at::native::AUnaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::MulFunctor<float> >, at::detail::Array<char*, 2>)",247
+qwen2-7b-query,"void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<c10::Half>, at::detail::Array<char*, 2> >(int, at::native::CUDAFunctorOnSelf_add<c10::Half>, at::detail::Array<char*, 2>)",247
+qwen2-7b-query,"void at::native::elementwise_kernel<128, 4, void at::native::gpu_kernel_impl<at::native::BinaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::DivFunctor<c10::Half> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::DivFunctor<c10::Half> > const&)::{lambda(int)#1}>(int, void at::native::gpu_kernel_impl<at::native::BinaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::DivFunctor<c10::Half> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::DivFunctor<c10::Half> > const&)::{lambda(int)#1})",247
+qwen2-7b-query,"void at::native::elementwise_kernel<128, 4, void at::native::gpu_kernel_impl<at::native::BinaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, void at::native::gpu_kernel_impl<at::native::BinaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<c10::Half, c10::Half, c10::Half, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",247
+qwen2-7b-query,"void at::native::elementwise_kernel<128, 4, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<c10::Half> >(at::TensorIteratorBase&, at::native::CUDAFunctor_add<c10::Half> const&)::{lambda(int)#1}>(int, void at::native::gpu_kernel_impl<at::native::CUDAFunctor_add<c10::Half> >(at::TensorIteratorBase&, at::native::CUDAFunctor_add<c10::Half> const&)::{lambda(int)#1})",247
+qwen2-7b-query,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_128x2_tn_align8>(cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_128x2_tn_align8::Params),247
+qwen2-7b-query,"void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, at::detail::Array<char*, 2>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, at::detail::Array<char*, 2>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)",247
+qwen2-7b-query,"void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#11}::operator()() const::{lambda(bool)#1}, at::detail::Array<char*, 2>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#11}::operator()() const::{lambda(bool)#1}, at::detail::Array<char*, 2>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)",247
+qwen2-7b-query,"void fastertransformer::batchApplyTemperaturePenalty<float>(float*, float const*, float const*, int, int, int)",247
+qwen2-7b-query,"fastertransformer::topPInitialize(int*, int*, int*, int, int)",247
+qwen2-7b-query,"void fastertransformer::addBiasSoftMax<float>(float*, float const*, int const*, bool const*, int, int)",247
+qwen2-7b-query,"void fastertransformer::topp_beam_topk_kernel<float, 1, 256>(float const*, int*, float*, int, int*, int*, float, float const*, bool const*)",247
+qwen2-7b-query,"void fastertransformer::topp_sampling<float, 256>(float*, int*, int*, int*, bool*, float*, float*, int const*, int const*, int, curandStateXORWOW*, float, float const*, int const*, int, bool const*)",247
+qwen2-7b-query,"fastertransformer::computeToppDecay(float*, float const*, int const*, float const*, float const*, int const*, int)",247
+qwen2-7b-query,"void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<c10::Half>, at::detail::Array<char*, 1> >(int, at::native::FillFunctor<c10::Half>, at::detail::Array<char*, 1>)",247
+qwen2-7b-query,"fastertransformer::ConvertOffsetToAddr(unsigned long*, unsigned long const*, unsigned long const*, int const*, int, int, int, int)",247
+qwen2-7b-query,"void at::native::(anonymous namespace)::indexSelectSmallIndex<c10::Half, long, unsigned int, 2, 2, -2>(at::cuda::detail::TensorInfo<c10::Half, unsigned int>, at::cuda::detail::TensorInfo<c10::Half, unsigned int>, at::cuda::detail::TensorInfo<long, unsigned int>, int, int, unsigned int, long)",246
+qwen2-7b-query,"void at::native::reduce_kernel<512, 1, at::native::ReduceOp<c10::Half, at::native::NormTwoOps<c10::Half, float, c10::Half>, unsigned int, c10::Half, 4> >(at::native::ReduceOp<c10::Half, at::native::NormTwoOps<c10::Half, float, c10::Half>, unsigned int, c10::Half, 4>)",246
+qwen2-7b-query,"void at::native::(anonymous namespace)::indexSelectSmallIndex<c10::Half, int, unsigned int, 2, 2, -2>(at::cuda::detail::TensorInfo<c10::Half, unsigned int>, at::cuda::detail::TensorInfo<c10::Half, unsigned int>, at::cuda::detail::TensorInfo<int, unsigned int>, int, int, unsigned int, long)",241
+qwen2-7b-query,ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn,168
+qwen2-7b-query,"void fastertransformer::add_fusedQKV_bias_transpose_kernel<__half, __half, false, false>(__half*, __half*, __half*, fastertransformer::PrefixPromptBatchWeightsParam, __half*, int const*, __half const*, int const*, int const*, int, int, int, int, int, fastertransformer::RopeConfig, bool)",168
+qwen2-7b-query,"void fastertransformer::transpose4dBatchMajorKVCache<__half, __half, fastertransformer::KVBlockArray>(__half const*, __half const*, fastertransformer::KVBlockArray, int, int, int, float const*, int const*, int const*)",168
+qwen2-7b-query,fmha_v2_flash_attention_fp16_64_32_S_128_causal_sm89_kernel_nl,168
+qwen2-7b-query,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_f16_128x64_32x6_nn_align2>(cutlass_80_tensorop_f16_s16816gemm_f16_128x64_32x6_nn_align2::Params),112
+qwen2-7b-query,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_256x64_32x4_nn_align8>(cutlass_80_tensorop_f16_s16816gemm_relu_f16_256x64_32x4_nn_align8::Params),56
+qwen2-7b-query,"fastertransformer::curandBatchInitialize(curandStateXORWOW*, int, unsigned long long const*)",32
+qwen2-7b-query,"void fastertransformer::setup_topk_runtime_args<(unsigned int)1024>(int, unsigned int, unsigned int*, int, float, float*, int, bool*)",16
+qwen2-7b-query,"fastertransformer::set_topp_runtime_args(int, unsigned int, unsigned int*, int, float, float*, int, bool*, float*, float*, float const*, float*, float const*, int*, unsigned int const*)",16
+qwen2-7b-query,"void at::native::(anonymous namespace)::indexSelectLargeIndex<c10::Half, int, unsigned int, 2, 2, -2, true>(at::cuda::detail::TensorInfo<c10::Half, unsigned int>, at::cuda::detail::TensorInfo<c10::Half, unsigned int>, at::cuda::detail::TensorInfo<int, unsigned int>, int, int, unsigned int, unsigned int, long)",6
+qwen2-7b-query,"fastertransformer::getPaddingOffsetAndCuSeqLensKernel(int*, int*, int const*, int, int)",6
+qwen2-ast-sft,ampere_fp16_s16816gemm_fp16_128x64_ldg8_f2f_stages_32x6_nn,640
+qwen2-ast-sft,"void fastertransformer::generalRmsNorm<__half2, false, false, true, false>(__half2*, __half2*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, float, int, int, float const*, float*, signed char*)",192
+qwen2-ast-sft,"fastertransformer::ConvertOffsetToBlockArrayData(int*, int const*, int, int, int)",192
+qwen2-ast-sft,"void fastertransformer::generalRmsNorm<__half2, true, false, true, false>(__half2*, __half2*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, float, int, int, float const*, float*, signed char*)",192
+qwen2-ast-sft,"void fastertransformer::generic_activation<fastertransformer::SiluActivation, __half2, __half2>(__half2*, __half2 const*, __half2 const*, __half2 const*, int const*, __half2 const*, int, float const*, float const*, __half2 const*, int const*, int, int, int, int)",192
+qwen2-ast-sft,"void fastertransformer::addBiasResidual<__half, 1, __half>(__half*, __half const*, __half const*, __half const*, __half const*, float const*, float const*, int, int)",192
+qwen2-ast-sft,"void fastertransformer::masked_multihead_attention_kernel<unsigned short, unsigned short, fastertransformer::KVBlockArray, (unsigned int)128, (unsigned int)512, false, false, true, (fastertransformer::RopeStyle)1, (unsigned int)16, (unsigned int)16, (unsigned int)4, (unsigned int)8>(fastertransformer::Multihead_attention_params<unsigned short, false>, fastertransformer::KVBlockArray)",160
+qwen2-ast-sft,ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_nn,160
+qwen2-ast-sft,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_128x128_32x5_nn_align8>(cutlass_80_tensorop_f16_s16816gemm_relu_f16_128x128_32x5_nn_align8::Params),64
+qwen2-ast-sft,ampere_fp16_s16816gemm_fp16_128x256_ldg8_f2f_stages_64x3_nn,64
+qwen2-ast-sft,"void fastertransformer::add_fusedQKV_bias_transpose_kernel<__half, __half, false, false, (fastertransformer::RopeStyle)1>(__half*, __half*, __half*, fastertransformer::PrefixPromptBatchWeightsParam, __half*, int const*, __half const*, int const*, int const*, int, int, int, int, int, fastertransformer::RopeConfig, bool, bool, bool, bool, bool)",32
+qwen2-ast-sft,fmha_v2_flash_attention_fp16_64_128_S_128_causal_sm80_kernel_nl_tiled,32
+qwen2-ast-sft,ampere_fp16_s16816gemm_fp16_256x128_ldg8_f2f_stages_32x3_nn,32
+qwen2-ast-sft,"void fastertransformer::transposeAxis01<int>(int*, int*, int const*, int, int)",12
+qwen2-ast-sft,"void fastertransformer::embedding_lookup_kernel<__half, false, false, false>(__half*, __half const*, double, __half const*, __half const*, int const*, int const*, int const*, int const*, int, long)",6
+qwen2-ast-sft,"void fastertransformer::generalRmsNorm<__half2, false, false, true, true>(__half2*, __half2*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, float, int, int, float const*, float*, signed char*)",6
+qwen2-ast-sft,ampere_s16816gemm_fp16_64x64_sliced1x2_ldg8_stages_64x5_tn,6
+qwen2-ast-sft,"fastertransformer::curandInitialize(curandStateXORWOW*, int, unsigned long long)",6
+qwen2-ast-sft,"void fastertransformer::batchApplyTemperaturePenalty<float>(float*, float const*, float const*, int, int, int)",6
+qwen2-ast-sft,"void fastertransformer::setup_topk_runtime_args<(unsigned int)1024>(int, unsigned int, unsigned int*, int, float, float*, int, bool*)",6
+qwen2-ast-sft,"void fastertransformer::topk_stage1<float, 128, 8>(float const*, float*, int*, float*, bool const*, int, int const*, int, int const*, bool const*)",6
+qwen2-ast-sft,"void fastertransformer::topk_stage2_sampling<float, 128, 8, false>(int const*, float*, int*, int*, bool*, float*, float*, float*, int, int const*, float, float const*, curandStateXORWOW*, int const*, int, bool const*)",6
+qwen2-ast-sft,"fastertransformer::set_topp_runtime_args(int, unsigned int, unsigned int*, int, float, float*, int, bool*, float*, float*, float const*, float*, float const*, int*, unsigned int const*)",6
+qwen2-ast-sft,"void fastertransformer::batchApplyMinLengthPenaltyNew<float>(float*, int const*, int const*, int const*, int const*, int)",5
+qwen2-ast-sft,"void fastertransformer::lookupHiddenStateOfLastToken<__half>(__half*, __half const*, int const*, int, int, int)",1
+qwen3-32b-omega,"void cublasLt::splitKreduce_kernel<32, 16, int, float, __nv_bfloat16, float, false, float, __nv_bfloat16, __nv_bfloat16, true, false, false>(cublasLt::cublasSplitKParams<float>, float const*, __nv_bfloat16 const*, float*, __nv_bfloat16*, float const*, float const*, __nv_bfloat16 const*, float const*, __nv_bfloat16*, void*, long, float*, int*, float*, float const*, float const*, float const*, float const*)",18048
+qwen3-32b-omega,"ncclDevKernel_AllReduce_Sum_bf16_RING_LL(ncclDevComm*, unsigned long, ncclWork*)",13824
+qwen3-32b-omega,nvjet_tst_256x72_64x5_4x1_v_bz_splitK_NNT,11904
+qwen3-32b-omega,nvjet_tst_192x72_64x6_2x1_v_bz_NNT,11904
+qwen3-32b-omega,"void rtp_llm::generalRmsNorm<__nv_bfloat162, false, false, true, false, signed char>(__nv_bfloat162*, __nv_bfloat162*, __nv_bfloat162 const*, __nv_bfloat162 const*, __nv_bfloat162 const*, __nv_bfloat162 const*, __nv_bfloat162 const*, __nv_bfloat162 const*, float, int, int, float const*, float*, signed char*)",6912
+qwen3-32b-omega,"void rtp_llm::fusedQkRmsNorm<__nv_bfloat162, false>(__nv_bfloat162*, __nv_bfloat162 const*, __nv_bfloat162 const*, __nv_bfloat162 const*, __nv_bfloat162 const*, int, int, float, int, int)",6912
+qwen3-32b-omega,"void rtp_llm::decode_add_fusedQKV_bias_transpose_non_int8_with_rope_cache_kernel<__nv_bfloat16, __nv_bfloat16, (rtp_llm::RopeStyle)1, 4, 4, 4>(__nv_bfloat16*, __nv_bfloat16*, __nv_bfloat16*, rtp_llm::KVBlockArray, __nv_bfloat16*, int const*, __nv_bfloat16 const*, float const*, int, int, int, int, rtp_llm::RopeConfig, bool, bool, bool, bool)",6912
+qwen3-32b-omega,"void flashinfer::BatchPrefillWithPagedKVCacheKernel<flashinfer::KernelTraits<(flashinfer::MaskMode)1, (unsigned int)16, (unsigned int)1, (unsigned int)2, (unsigned int)8, (unsigned int)8, (unsigned int)1, (unsigned int)4, (flashinfer::PosEncodingMode)0, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, float, int, flashinfer::DefaultAttention<false, false, false, false> >, flashinfer::BatchPrefillPagedParams<__nv_bfloat16, __nv_bfloat16, __nv_bfloat16, int> >(flashinfer::BatchPrefillPagedParams<__nv_bfloat16, __nv_bfloat16, __nv_bfloat16, int>)",6912
+qwen3-32b-omega,"void rtp_llm::generalRmsNorm<__nv_bfloat162, true, false, true, false, signed char>(__nv_bfloat162*, __nv_bfloat162*, __nv_bfloat162 const*, __nv_bfloat162 const*, __nv_bfloat162 const*, __nv_bfloat162 const*, __nv_bfloat162 const*, __nv_bfloat162 const*, float, int, int, float const*, float*, signed char*)",6912
+qwen3-32b-omega,"void rtp_llm::generic_activation<rtp_llm::SiluActivation, __nv_bfloat162, __nv_bfloat162>(__nv_bfloat162*, __nv_bfloat162 const*, __nv_bfloat162 const*, __nv_bfloat162 const*, int const*, __nv_bfloat162 const*, int, float const*, float const*, __nv_bfloat162 const*, int const*, int, int, int, int)",6912
+qwen3-32b-omega,"void rtp_llm::addBiasResidual<__nv_bfloat16, 1, __nv_bfloat16>(__nv_bfloat16*, __nv_bfloat16 const*, __nv_bfloat16 const*, __nv_bfloat16 const*, __nv_bfloat16 const*, float const*, float const*, int, int)",6912
+qwen3-32b-omega,nvjet_tst_512x72_64x2_2x1_v_bz_coopA_splitK_NNT,5952
+qwen3-32b-omega,"void rtp_llm::add_fusedQKV_bias_transpose_kernel<__nv_bfloat16, __nv_bfloat16, false, false, (rtp_llm::RopeStyle)1>(__nv_bfloat16*, __nv_bfloat16*, __nv_bfloat16*, __nv_bfloat16*, rtp_llm::PrefixPromptBatchWeightsParam, __nv_bfloat16*, void*, int const*, __nv_bfloat16 const*, int const*, int const*, int, int, int, int, int, rtp_llm::RopeConfig, bool, bool, bool, bool, bool, bool)",704
+qwen3-32b-omega,fmha_v2_flash_attention_bf16_64_128_S_128_causal_tma_ws_sm90_kernel,704
+qwen3-32b-omega,nvjet_tst_96x128_64x6_2x1_v_bz_NNN,576
+qwen3-32b-omega,nvjet_tst_256x104_64x4_2x1_v_bz_coopA_NNT,448
+qwen3-32b-omega,nvjet_tst_256x160_64x4_1x2_h_bz_coopA_NNT,448
+qwen3-32b-omega,nvjet_tst_512x72_64x2_2x1_v_bz_coopA_NNT,384
+qwen3-32b-omega,nvjet_tst_384x88_64x3_2x1_v_bz_coopA_NNT,384
+qwen3-32b-omega,nvjet_tst_256x112_64x4_2x1_v_bz_coopA_NNT,384
+qwen3-32b-omega,nvjet_tst_384x64_64x3_2x1_v_bz_coopB_NNN,256
+qwen3-32b-omega,"ncclDevKernel_Broadcast_RING_LL(ncclDevComm*, unsigned long, ncclWork*)",216
+qwen3-32b-omega,"ncclDevKernel_AllGather_RING_LL(ncclDevComm*, unsigned long, ncclWork*)",216
+qwen3-32b-omega,"void rtp_llm::transposeAxis01<int>(int*, int*, int const*, int, int)",216
+qwen3-32b-omega,"void rtp_llm::add_fusedQKV_bias_transpose_kernel<__nv_bfloat16, __nv_bfloat16, true, true, (rtp_llm::RopeStyle)1>(__nv_bfloat16*, __nv_bfloat16*, __nv_bfloat16*, __nv_bfloat16*, rtp_llm::PrefixPromptBatchWeightsParam, __nv_bfloat16*, void*, int const*, __nv_bfloat16 const*, int const*, int const*, int, int, int, int, int, rtp_llm::RopeConfig, bool, bool, bool, bool, bool, bool)",192
+qwen3-32b-omega,fmha_v2_flash_attention_bf16_64_128_S_pagedKV_128_causal_tma_ws_sm90_kernel,192
+qwen3-32b-omega,nvjet_tst_256x160_64x4_2x1_v_bz_coopA_NNT,192
+qwen3-32b-omega,nvjet_tst_256x120_64x4_2x1_v_bz_coopA_NNT,192
+qwen3-32b-omega,nvjet_tst_384x80_64x3_2x1_v_bz_coopA_NNT,192
+qwen3-32b-omega,nvjet_tst_256x144_64x4_2x1_v_bz_coopA_NNT,192
+qwen3-32b-omega,nvjet_tst_256x136_64x4_2x1_v_bz_coopA_NNT,192
+qwen3-32b-omega,nvjet_tst_96x64_64x8_4x1_v_bz_NNN,128
+qwen3-32b-omega,nvjet_tst_192x64_64x6_2x1_v_bz_NNT,128
+qwen3-32b-omega,nvjet_tst_128x248_64x4_2x1_v_bz_coopA_NNT,128
+qwen3-32b-omega,nvjet_tst_256x104_64x4_2x1_v_bz_coopA_splitK_NNT,128
+qwen3-32b-omega,nvjet_tst_128x288_64x4_2x1_v_bz_coopA_NNT,128
+qwen3-32b-omega,nvjet_tst_128x304_64x3_2x1_v_bz_coopA_NNT,128
+qwen3-32b-omega,nvjet_tst_128x240_64x4_2x1_v_bz_coopA_NNT,128
+qwen3-32b-omega,"rtp_llm::ConvertOffsetToBlockArrayData(int*, int const*, int, int, int)",122
+qwen3-32b-omega,"void rtp_llm::embedding_lookup_kernel<__nv_bfloat16, false, false, false>(__nv_bfloat16*, __nv_bfloat16 const*, double, __nv_bfloat16 const*, __nv_bfloat16 const*, int const*, int const*, int const*, int const*, int, long)",108
+qwen3-32b-omega,"void rtp_llm::transposeAxis01<__nv_bfloat16>(__nv_bfloat16*, __nv_bfloat16*, int, int, int)",108
+qwen3-32b-omega,"void rtp_llm::generalRmsNorm<__nv_bfloat162, false, false, true, true, signed char>(__nv_bfloat162*, __nv_bfloat162*, __nv_bfloat162 const*, __nv_bfloat162 const*, __nv_bfloat162 const*, __nv_bfloat162 const*, __nv_bfloat162 const*, __nv_bfloat162 const*, float, int, int, float const*, float*, signed char*)",108
+qwen3-32b-omega,"void rtp_llm::transposeAxis01<float>(float*, float*, int, int, int)",108
+qwen3-32b-omega,"void rtp_llm::batchApplyTemperaturePenalty<float>(float*, float const*, float const*, int, int, int)",108
+qwen3-32b-omega,"void rtp_llm::batchApplyMinLengthPenaltyNew<float>(float*, int const*, int const*, int const*, int const*, int, int)",108
+qwen3-32b-omega,"void rtp_llm::addBiasSoftMax<float>(float*, float const*, int const*, bool const*, int, int)",108
+qwen3-32b-omega,"void at::native::(anonymous namespace)::distribution_elementwise_grid_stride_kernel<float, 4, void at::native::templates::cuda::uniform_and_transform<float, float, at::CUDAGeneratorImpl*, void at::native::templates::cuda::uniform_kernel<at::CUDAGeneratorImpl*>(at::TensorIteratorBase&, double, double, at::CUDAGeneratorImpl*)::{lambda()#1}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1}>(at::TensorIteratorBase&, at::CUDAGeneratorImpl*, void at::native::templates::cuda::uniform_kernel<at::CUDAGeneratorImpl*>(at::TensorIteratorBase&, double, double, at::CUDAGeneratorImpl*)::{lambda()#1}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1})::{lambda(curandStatePhilox4_32_10*)#2}, void at::native::(anonymous namespace)::distribution_nullary_kernel<float, float, float4, at::CUDAGeneratorImpl*, void at::native::templates::cuda::uniform_and_transform<float, float, at::CUDAGeneratorImpl*, void at::native::templates::cuda::uniform_kernel<at::CUDAGeneratorImpl*>(at::TensorIteratorBase&, double, double, at::CUDAGeneratorImpl*)::{lambda()#1}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1}>(at::TensorIteratorBase&, at::CUDAGeneratorImpl*, void at::native::templates::cuda::uniform_kernel<at::CUDAGeneratorImpl*>(at::TensorIteratorBase&, double, double, at::CUDAGeneratorImpl*)::{lambda()#1}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1})::{lambda(curandStatePhilox4_32_10*)#2}, void at::native::templates::cuda::uniform_kernel<at::CUDAGeneratorImpl*>(at::TensorIteratorBase&, double, double, at::CUDAGeneratorImpl*)::{lambda()#1}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1}>(at::TensorIteratorBase&, at::CUDAGeneratorImpl*, void at::native::templates::cuda::uniform_and_transform<float, float, at::CUDAGeneratorImpl*, void at::native::templates::cuda::uniform_kernel<at::CUDAGeneratorImpl*>(at::TensorIteratorBase&, double, double, at::CUDAGeneratorImpl*)::{lambda()#1}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1}>(at::TensorIteratorBase&, at::CUDAGeneratorImpl*, void at::native::templates::cuda::uniform_kernel<at::CUDAGeneratorImpl*>(at::TensorIteratorBase&, double, double, at::CUDAGeneratorImpl*)::{lambda()#1}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1})::{lambda(curandStatePhilox4_32_10*)#2} const&, void at::native::templates::cuda::uniform_kernel<at::CUDAGeneratorImpl*>(at::TensorIteratorBase&, double, double, at::CUDAGeneratorImpl*)::{lambda()#1}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1})::{lambda(int, float)#1}>(long, at::PhiloxCudaState, void at::native::templates::cuda::uniform_and_transform<float, float, at::CUDAGeneratorImpl*, void at::native::templates::cuda::uniform_kernel<at::CUDAGeneratorImpl*>(at::TensorIteratorBase&, double, double, at::CUDAGeneratorImpl*)::{lambda()#1}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1}>(at::TensorIteratorBase&, at::CUDAGeneratorImpl*, void at::native::templates::cuda::uniform_kernel<at::CUDAGeneratorImpl*>(at::TensorIteratorBase&, double, double, at::CUDAGeneratorImpl*)::{lambda()#1}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1})::{lambda(curandStatePhilox4_32_10*)#2}, void at::native::(anonymous namespace)::distribution_nullary_kernel<float, float, float4, at::CUDAGeneratorImpl*, void at::native::templates::cuda::uniform_and_transform<float, float, at::CUDAGeneratorImpl*, void at::native::templates::cuda::uniform_kernel<at::CUDAGeneratorImpl*>(at::TensorIteratorBase&, double, double, at::CUDAGeneratorImpl*)::{lambda()#1}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1}>(at::TensorIteratorBase&, at::CUDAGeneratorImpl*, void at::native::templates::cuda::uniform_kernel<at::CUDAGeneratorImpl*>(at::TensorIteratorBase&, double, double, at::CUDAGeneratorImpl*)::{lambda()#1}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1})::{lambda(curandStatePhilox4_32_10*)#2}, void at::native::templates::cuda::uniform_kernel<at::CUDAGeneratorImpl*>(at::TensorIteratorBase&, double, double, at::CUDAGeneratorImpl*)::{lambda()#1}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1}>(at::TensorIteratorBase&, at::CUDAGeneratorImpl*, void at::native::templates::cuda::uniform_and_transform<float, float, at::CUDAGeneratorImpl*, void at::native::templates::cuda::uniform_kernel<at::CUDAGeneratorImpl*>(at::TensorIteratorBase&, double, double, at::CUDAGeneratorImpl*)::{lambda()#1}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1}>(at::TensorIteratorBase&, at::CUDAGeneratorImpl*, void at::native::templates::cuda::uniform_kernel<at::CUDAGeneratorImpl*>(at::TensorIteratorBase&, double, double, at::CUDAGeneratorImpl*)::{lambda()#1}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1})::{lambda(curandStatePhilox4_32_10*)#2} const&, void at::native::templates::cuda::uniform_kernel<at::CUDAGeneratorImpl*>(at::TensorIteratorBase&, double, double, at::CUDAGeneratorImpl*)::{lambda()#1}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1})::{lambda(int, float)#1})",108
+qwen3-32b-omega,"void flashinfer::sampling::TopKTopPSamplingFromProbKernel<(unsigned int)1024, (cub::CUB_200500_700_750_800_860_890_900_NS::BlockScanAlgorithm)2, (cub::CUB_200500_700_750_800_860_890_900_NS::BlockReduceAlgorithm)2, (unsigned int)4, false, float, int>(float*, float*, int*, float*, int*, bool*, int, float, unsigned int, unsigned int)",108
+qwen3-32b-omega,nvjet_tss_512x72_64x2_2x1_v_bz_coopA_TNT,107
+qwen3-32b-omega,nvjet_tst_96x64_64x8_2x1_v_bz_splitK_NNN,64
+qwen3-32b-omega,"void rtp_llm::lookupHiddenStateOfLastToken<__nv_bfloat16>(__nv_bfloat16*, __nv_bfloat16 const*, int const*, int, int, int)",14
+qwen3-32b-omega,nvjet_tss_512x64_64x2_2x1_v_bz_coopB_TNN,1
+recommend-intent,"void cublasLt::splitKreduce_kernel<32, 16, int, float, __half, float, false, float, __half, __half, true, false, false>(cublasLt::cublasSplitKParams<float>, float const*, __half const*, float*, __half*, float const*, float const*, __half const*, float const*, __half*, void*, long, float*, int*, float*, float const*, float const*, float const*, float const*)",6988
+recommend-intent,"rtp_llm::ConvertOffsetToBlockArrayData(int*, int const*, int, int, int)",6482
+recommend-intent,"void rtp_llm::generalRmsNorm<__half2, true, false, true, false, signed char>(__half2*, __half2*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, float, int, int, float const*, float*, signed char*)",5798
+recommend-intent,"void flashinfer::activation::act_and_mul_kernel<__half, &silu(float const&)>(__half*, __half const*, int)",5798
+recommend-intent,"void rtp_llm::addBiasResidual<__half, 1, __half>(__half*, __half const*, __half const*, __half const*, __half const*, float const*, float const*, int, int)",5798
+recommend-intent,"void rtp_llm::generalRmsNorm<__half2, false, false, true, false, signed char>(__half2*, __half2*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, float, int, int, float const*, float*, signed char*)",5797
+recommend-intent,"void rtp_llm::fusedQkRmsNorm<__half2, false>(__half2*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, int, int, float, int, int)",5797
+recommend-intent,"void rtp_llm::masked_multihead_attention_kernel<unsigned short, unsigned short, rtp_llm::KVBlockArray, (unsigned int)128, (unsigned int)512, false, false, true, (rtp_llm::RopeStyle)1, (unsigned int)16, (unsigned int)16, (unsigned int)4, (unsigned int)8>(rtp_llm::Multihead_attention_params<unsigned short, false>, rtp_llm::KVBlockArray)",3242
+recommend-intent,"void rtp_llm::add_fusedQKV_bias_transpose_kernel<__half, __half, false, false, (rtp_llm::RopeStyle)1>(__half*, __half*, __half*, rtp_llm::PrefixPromptBatchWeightsParam, __half*, void*, int const*, __half const*, int const*, int const*, int, int, int, int, int, rtp_llm::RopeConfig, bool, bool, bool, bool, bool)",3240
+recommend-intent,fmha_v2_flash_attention_fp16_64_128_S_128_causal_tma_ws_sm90_kernel,3240
+recommend-intent,nvjet_hsh_128x8_64x12_4x1_v_bz_splitK_NNT,2558
+recommend-intent,nvjet_hsh_256x8_64x6_2x1_v_bz_NNT,2558
+recommend-intent,nvjet_hsh_256x8_64x6_2x1_v_bz_splitK_NNT,2558
+recommend-intent,nvjet_hsh_128x8_64x12_4x1_v_bz_NNT,2557
+recommend-intent,nvjet_hsh_256x64_64x5_2x1_v_bz_NNT,792
+recommend-intent,nvjet_hsh_256x72_64x5_2x1_v_bz_NNT,792
+recommend-intent,nvjet_hsh_256x144_64x4_2x1_v_bz_coopA_NNT,648
+recommend-intent,nvjet_hsh_256x152_64x4_2x1_v_bz_coopA_NNT,540
+recommend-intent,nvjet_hsh_256x160_64x4_2x1_v_bz_coopA_NNT,504
+recommend-intent,nvjet_hsh_256x136_64x4_2x1_v_bz_coopA_NNT,468
+recommend-intent,nvjet_hsh_128x224_64x4_2x1_v_bz_coopA_NNT,468
+recommend-intent,nvjet_hsh_128x256_64x4_2x1_v_bz_coopA_NNN,432
+recommend-intent,nvjet_hsh_128x168_64x5_2x1_v_bz_NNT,396
+recommend-intent,"void rtp_llm::transposeAxis01<int>(int*, int*, int const*, int, int)",324
+recommend-intent,nvjet_hsh_256x144_64x4_2x1_v_bz_coopA_splitK_NNT,288
+recommend-intent,nvjet_hsh_128x184_64x5_2x1_v_bz_coopA_NNT,288
+recommend-intent,nvjet_hsh_256x80_64x5_2x1_v_bz_NNT,288
+recommend-intent,nvjet_hsh_256x112_64x4_2x1_v_bz_coopA_splitK_NNT,288
+recommend-intent,nvjet_hsh_192x128_64x5_2x1_v_bz_coopB_NNT,288
+recommend-intent,nvjet_hsh_128x176_64x5_2x1_v_bz_NNT,288
+recommend-intent,nvjet_hsh_384x64_64x3_1x1_h_bz_coopB_NNN,288
+recommend-intent,nvjet_hsh_256x104_64x4_2x1_v_bz_coopA_NNT,288
+recommend-intent,nvjet_hsh_256x88_64x4_2x1_v_bz_NNT,252
+recommend-intent,nvjet_hsh_256x128_64x4_2x1_v_bz_coopA_splitK_NNT,252
+recommend-intent,nvjet_hsh_128x272_64x4_2x1_v_bz_coopA_NNT,252
+recommend-intent,nvjet_hsh_192x96_64x5_2x1_v_bz_NNT,252
+recommend-intent,nvjet_hsh_256x96_64x4_2x1_v_bz_coopA_splitK_NNT,252
+recommend-intent,nvjet_hsh_256x136_64x4_2x1_v_bz_coopA_splitK_NNT,252
+recommend-intent,nvjet_hsh_128x232_64x4_2x1_v_bz_coopA_NNT,252
+recommend-intent,nvjet_hsh_128x208_64x5_2x1_v_bz_coopA_NNT,216
+recommend-intent,nvjet_hsh_128x248_64x4_2x1_v_bz_coopA_NNT,216
+recommend-intent,nvjet_hsh_320x64_64x4_2x1_v_bz_NNT,216
+recommend-intent,nvjet_hsh_192x192_64x3_2x1_v_bz_coopB_NNN,180
+recommend-intent,nvjet_hsh_192x176_64x4_2x1_v_bz_coopB_NNT,180
+recommend-intent,nvjet_hsh_128x136_64x6_4x1_v_bz_NNT,180
+recommend-intent,nvjet_hsh_128x240_64x4_2x1_v_bz_coopA_NNT,180
+recommend-intent,"void rtp_llm::generalRmsNorm<__half2, false, false, true, true, signed char>(__half2*, __half2*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, __half2 const*, float, int, int, float const*, float*, signed char*)",162
+recommend-intent,nvjet_hss_512x8_64x3_2x1_v_bz_TNT,162
+recommend-intent,"void rtp_llm::batchApplyRepetitionPenalty<float, (rtp_llm::RepetitionPenaltyType)1>(float*, float const*, int const*, int, int, int const*, int, int)",162
+recommend-intent,"void rtp_llm::batchApplyMinLengthPenaltyNew<float>(float*, int const*, int const*, int const*, int const*, int, int)",162
+recommend-intent,"void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::ArgMaxOps<float>, unsigned int, long, 4> >(at::native::ReduceOp<float, at::native::ArgMaxOps<float>, unsigned int, long, 4>)",162
+recommend-intent,"void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#3}::operator()() const::{lambda(int)#1}, std::array<char*, (unsigned long)2>, 4, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#3}::operator()() const::{lambda(int)#1}, std::array<char*, (unsigned long)2>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)",162
+recommend-intent,"void rtp_llm::embedding_lookup_kernel<__half, false, false, false>(__half*, __half const*, double, __half const*, __half const*, int const*, int const*, int const*, int const*, int, long)",161
+recommend-intent,nvjet_hsh_128x200_64x5_2x1_v_bz_coopA_NNT,144
+recommend-intent,nvjet_hsh_128x192_64x5_2x1_v_bz_coopB_NNN,144
+recommend-intent,nvjet_hsh_128x216_64x4_2x1_v_bz_coopA_NNT,144
+recommend-intent,nvjet_hsh_256x160_64x4_1x2_h_bz_coopA_NNT,144
+recommend-intent,nvjet_hsh_192x104_64x5_2x1_v_bz_NNT,144
+recommend-intent,nvjet_hsh_256x104_64x4_2x1_v_bz_coopA_splitK_NNT,144
+recommend-intent,nvjet_hsh_384x48_64x3_1x1_h_bz_NNT,144
+recommend-intent,nvjet_hsh_256x152_64x4_2x1_v_bz_coopA_splitK_NNT,144
+recommend-intent,nvjet_hsh_256x96_64x4_2x1_v_bz_coopA_NNT,144
+recommend-intent,nvjet_hsh_128x304_64x3_2x1_v_bz_coopA_NNT,108
+recommend-intent,nvjet_hsh_256x120_64x4_2x1_v_bz_coopA_splitK_NNT,108
+recommend-intent,nvjet_hsh_192x208_64x4_2x1_v_bz_coopB_NNT,108
+recommend-intent,nvjet_hsh_128x152_64x6_4x1_v_bz_NNT,108
+recommend-intent,"void rtp_llm::lookupHiddenStateOfLastToken<__half>(__half*, __half const*, int const*, int, int, int)",90
+recommend-intent,nvjet_hsh_192x88_64x6_2x1_v_bz_NNT,72
+recommend-intent,nvjet_hsh_256x88_64x4_2x1_v_bz_splitK_NNT,72
+recommend-intent,nvjet_hsh_384x80_64x3_1x1_h_bz_coopA_NNT,72
+recommend-intent,nvjet_hsh_384x96_64x3_1x1_h_bz_coopA_NNT,72
+recommend-intent,nvjet_hsh_128x80_64x8_1x2_h_bz_NNT,36
+recommend-intent,nvjet_hsh_320x128_64x3_2x1_v_bz_coopB_NNT,36
+recommend-intent,nvjet_hsh_256x56_64x5_2x1_v_bz_NNT,36
+recommend-intent,nvjet_hsh_512x80_64x2_1x1_v_bz_coopA_splitK_NNT,36
+recommend-intent,nvjet_hsh_256x120_64x4_2x1_v_bz_coopA_NNT,36
+recommend-intent,nvjet_hsh_192x160_64x4_2x1_v_bz_coopB_NNT,36
+recommend-intent,nvjet_hsh_64x128_64x8_2x1_v_bz_NNN,36
+recommend-intent,nvjet_hsh_96x64_64x8_1x2_h_bz_NNN,36
+recommend-intent,nvjet_hsh_96x128_64x6_2x1_v_bz_splitK_NNN,36
+recommend-intent,nvjet_hsh_256x128_64x4_2x1_v_bz_coopA_NNT,36
+recommend-intent,nvjet_hsh_192x208_64x4_1x2_h_bz_coopB_NNT,36
+recommend-intent,nvjet_hsh_128x128_64x6_1x2_h_bz_NNT,36
+recommend-intent,nvjet_hsh_256x112_64x4_2x1_v_bz_coopA_NNT,36

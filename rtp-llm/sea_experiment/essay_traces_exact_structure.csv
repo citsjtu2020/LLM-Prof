@@ -1,0 +1,5639 @@
+pod_name,app_name,model_name,app_pod_num,app_qps,model_architecture_json,gpu_type,f_peak,memory_bandwidth,memory_size,n_gpu_hardware,tensor_parallelism,qps_timeseries,execute_token_size_timeseries,u_gpu,n_gpu_runtime,inference_engine,task_function
+ai-data-video-llm-offline-north-custom accelerator-spot.ference-part0-e98979e9-a-e665,ai_data_video_llm_offline,video_logics-13B,50,1106,"{
+  ""_name_or_path"": ""/data/oss_bucket_0/lifeng/videoLLM/checkpoint/Logics_cu_mamavcg_v1_hf/"",
+  ""architectures"": [
+    ""VideoChatGPTLlamaForCausalLM""
+  ],
+  ""bos_token_id"": 1,
+  ""eos_token_id"": 2,
+  ""freeze_mm_mlp_adapter"": false,
+  ""freeze_mm_vision_resampler"": false,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""image_aspect_ratio"": ""pad"",
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 13824,
+  ""max_length"": 4096,
+  ""max_position_embeddings"": 4096,
+  ""mm_hidden_size"": 1024,
+  ""mm_projector_type"": ""mlp2x_gelu"",
+  ""mm_resampler_type"": null,
+  ""mm_use_im_patch_token"": false,
+  ""mm_use_im_start_end"": false,
+  ""mm_use_vid_start_end"": true,
+  ""mm_vision_select_feature"": ""patch"",
+  ""mm_vision_select_layer"": -2,
+  ""mm_vision_tower"": ""CLIPVisionModel_336_logics-0.6"",
+  ""model_type"": ""VideoChatGPT"",
+  ""num_attention_heads"": 40,
+  ""num_hidden_layers"": 40,
+  ""num_key_value_heads"": 40,
+  ""pad_token_id"": 0,
+  ""pretraining_tp"": 1,
+  ""rms_norm_eps"": 1e-05,
+  ""rope_scaling"": null,
+  ""rope_theta"": 10000.0,
+  ""sep_video_conv_front"": false,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""float16"",
+  ""transformers_version"": ""4.33.3"",
+  ""tune_mm_mlp_adapter"": true,
+  ""tune_mm_vision_resampler"": false,
+  ""unfreeze_mm_vision_tower"": false,
+  ""use_cache"": false,
+  ""use_chat_univi"": true,
+  ""use_mm_proj"": true,
+  ""vocab_size"": 32003
+}",custom accelerator,118.0,2765.0,96.0,1,"1
+","2025-10-11 13:40:09.000
+        19.9
+        2025-10-11 13:40:10.000
+        25.0
+        2025-10-11 13:40:11.000
+        12.0
+        2025-10-11 13:40:12.000
+        17.0
+        2025-10-11 13:40:13.000
+        13.0
+        2025-10-11 13:40:14.000
+        19.0
+        2025-10-11 13:40:15.000
+        19.9
+        2025-10-11 13:40:16.000
+        19.0
+        2025-10-11 13:40:17.000
+        18.0
+        2025-10-11 13:40:18.000
+        14.0
+        2025-10-11 13:40:19.000
+        27.0","2025-10-11 13:40:10
+        18.1",0.980,1,MagaEngine (Ant Group) / Custom FT-based,"A 13B-parameter Video-Logics VLM model specialized for offline batch inference on custom accelerator hardware, processing video data with FP16 precision and optimized for high memory bandwidth usage up to 100GiB, deployed in a spot instance cluster for cost-efficient large-scale video understanding tasks."
+aigr-user-gsid-rec-model-online-na61-l20.ference-part0-8cac7a63-b-c560,aigr-user-gsid-rec-model-online,qwen3-0.6B,4,99,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0.0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 1024,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 3072,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 28,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 16,
+  ""num_hidden_layers"": 28,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 1e-06,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.0"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",L20,119.5,864.0,48.0,1,"1
+","2025-10-09 19:51:21.000
+    24.0
+    2025-10-09 19:51:22.000
+    16.9
+    2025-10-09 19:51:23.000
+    21.9
+    2025-10-09 19:51:24.000
+    18.0
+    2025-10-09 19:51:25.000
+    25.0
+    2025-10-09 19:51:26.000
+    21.9
+    2025-10-09 19:51:27.000
+    19.0
+    2025-10-09 19:51:28.000
+    21.0
+    2025-10-09 19:51:29.000
+    19.0
+    2025-10-09 19:51:30.000
+    22.9
+    2025-10-09 19:51:31.000
+    19.9","2025-10-09 19:51:21.000
+    69.5
+    2025-10-09 19:51:22.000
+    57.3
+    2025-10-09 19:51:23.000
+    49.5
+    2025-10-09 19:51:24.000
+    49.8
+    2025-10-09 19:51:25.000
+    85.8
+    2025-10-09 19:51:26.000
+    103
+    2025-10-09 19:51:27.000
+    82.8
+    2025-10-09 19:51:28.000
+    64.2
+    2025-10-09 19:51:29.000
+    36.3
+    2025-10-09 19:51:30.000
+    59.5
+    2025-10-09 19:51:31.000
+    76.2",0.218,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen3-0.6bbased LLM inference service for user-GSID recommendation modeling, running on L20 GPU with INT8 quantization, optimized for high-concurrency real-time inference using MagaEngine and paged TRT FMHA, with model checkpoint and tokenizer loaded from OSS."
+aisan-recall-llm-sft-v2-qwen3-4b-v2-offline-ea119-custom accelerator-2tp.ference-part0-2f2cc79c-a-e1ea,aisan_recall_llm_sft_v2_Qwen3_4B_v2_offline,qwen3-4B,10,49,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0.0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2560,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 9728,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 36,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 32,
+  ""num_hidden_layers"": 36,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 1e-06,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.0"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",custom accelerator,118.0,2765.0,96.0,2,"2
+","2025-10-11 20:13:50.000
+    5
+    2025-10-11 20:13:51.000
+    0
+    2025-10-11 20:13:52.000
+    6
+    2025-10-11 20:13:53.000
+    2
+    2025-10-11 20:13:54.000
+    3
+    2025-10-11 20:13:55.000
+    6
+    2025-10-11 20:13:56.000
+    0
+    2025-10-11 20:13:57.000
+    2
+    2025-10-11 20:13:58.000
+    3
+    2025-10-11 20:13:59.000
+    2
+    2025-10-11 20:14:00.000
+    3","2025-10-11 20:13:50.000
+    36.2
+    2025-10-11 20:13:51.000
+    246
+    2025-10-11 20:13:52.000
+    29.6
+    2025-10-11 20:13:53.000
+    13.9
+    2025-10-11 20:13:54.000
+    88.1
+    2025-10-11 20:13:55.000
+    24.4
+    2025-10-11 20:13:57.000
+    37.0
+    2025-10-11 20:13:58.000
+    31.2
+    2025-10-11 20:13:59.000
+    6.75
+    2025-10-11 20:14:00.000
+    31.9",0.86,2,MagaEngine (Ant Group) / Custom FT-based,"An SFT fine-tuned Qwen3-4B model serving as an agent for the 'Aisan' query recall system. It is deployed for offline batch processing, running with 2-way Tensor Parallelism on two custom accelerator GPUs and utilizing the MagaEngine inference framework."
+bc-offline-recognize-all-industry-dxm-qwq32b-clone-na61-h20.inference-part0-70f34ebc-b-d478,bc_offline_recognize_all_industry_dxm_qwq32b_clone,QwQ-32B,70,89,"{
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0.0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 27648,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 40,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 1e-05,
+  ""rope_theta"": 1000000.0,
+  ""sliding_window"": 32768,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.1"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 152064
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-07 12:00:08.000
+    1
+    2025-10-07 12:00:09.000
+    2
+    2025-10-07 12:00:10.000
+    2
+    2025-10-07 12:00:11.000
+    0
+    2025-10-07 12:00:12.000
+    2
+    2025-10-07 12:00:13.000
+    2
+    2025-10-07 12:00:14.000
+    1
+    2025-10-07 12:00:15.000
+    0
+    2025-10-07 12:00:16.000
+    1
+    2025-10-07 12:00:17.000
+    0
+    2025-10-07 12:00:18.000
+    3","2025-10-07 12:00:08.000
+    156
+    2025-10-07 12:00:09.000
+    185
+    2025-10-07 12:00:10.000
+    99.5
+    2025-10-07 12:00:11.000
+    441
+    2025-10-07 12:00:12.000
+    170
+    2025-10-07 12:00:13.000
+    145
+    2025-10-07 12:00:14.000
+    485
+    2025-10-07 12:00:15.000
+    161
+    2025-10-07 12:00:16.000
+    65
+    2025-10-07 12:00:17.000
+    64
+    2025-10-07 12:00:18.000
+    183",0.990,1,MagaEngine (Ant Group) / Custom FT-based,"An offline multi-industry business content understanding service based on QwQ-32B, enhanced with Chain-of-Thought reasoning (Think Mode). Deployed on H20 GPU via MagaEngine, it performs long-context analysis (up to 10K tokens) for knowledge extraction and intelligent decision support in enterprise scenarios."
+bc-offline-recognize-fushi-industry-dxm-v1-na61-h20.ference-part0-29699645-b-3fbc,bc_offline_recognize_fushi_industry_dxm_v1,Qwen-7B-Chat-Pro-HF,10,147,"{
+  ""_name_or_path"": ""./local_openlm/Qwen-7B-Chat-Pro-HF"",
+  ""architectures"": [
+    ""QWenLMHeadModel""
+  ],
+  ""attn_dropout_prob"": 0,
+  ""auto_map"": {
+    ""AutoConfig"": ""configuration_qwen.QWenConfig"",
+    ""AutoModelForCausalLM"": ""modeling_qwen.QWenLMHeadModel""
+  },
+  ""bf16"": true,
+  ""emb_dropout_prob"": 0,
+  ""fp16"": false,
+  ""fp32"": false,
+  ""hidden_size"": 4096,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 22016,
+  ""kv_channels"": 128,
+  ""layer_norm_epsilon"": 0.000001,
+  ""max_position_embeddings"": 32768,
+  ""model_type"": ""qwen"",
+  ""no_bias"": true,
+  ""num_attention_heads"": 32,
+  ""num_hidden_layers"": 32,
+  ""onnx_safe"": null,
+  ""rope_theta"": 1000000,
+  ""rotary_emb_base"": 1000000,
+  ""rotary_pct"": 1,
+  ""scale_attn_weights"": true,
+  ""seq_length"": 32768,
+  ""softmax_in_fp32"": false,
+  ""tie_word_embeddings"": false,
+  ""tokenizer_class"": ""QWenTokenizer"",
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.0"",
+  ""use_cache"": true,
+  ""use_cache_kernel"": false,
+  ""use_cache_quantization"": false,
+  ""use_dynamic_ntk"": false,
+  ""use_flash_attn"": false,
+  ""use_logn_attn"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-10 19:03:35.000
+        14.0
+        2025-10-10 19:03:36.000
+        13.0
+        2025-10-10 19:03:37.000
+        12.0
+        2025-10-10 19:03:38.000
+        13.0
+        2025-10-10 19:03:39.000
+        14.0
+        2025-10-10 19:03:40.000
+        12.0
+        2025-10-10 19:03:41.000
+        14.0
+        2025-10-10 19:03:42.000
+        15.0
+        2025-10-10 19:03:43.000
+        16.0
+        2025-10-10 19:03:44.000
+        14.0
+        2025-10-10 19:03:45.000
+        14.0","2025-10-10 19:03:35.000
+        566
+        2025-10-10 19:03:36.000
+        1.23 K
+        2025-10-10 19:03:37.000
+        585
+        2025-10-10 19:03:38.000
+        1.03 K
+        2025-10-10 19:03:39.000
+        492
+        2025-10-10 19:03:40.000
+        878
+        2025-10-10 19:03:41.000
+        532
+        2025-10-10 19:03:42.000
+        697
+        2025-10-10 19:03:43.000
+        770
+        2025-10-10 19:03:44.000
+        682
+        2025-10-10 19:03:45.000
+        685",0.980,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen-7B large language model service optimized for enterprise-level document fusion and content recognition, deployed on H20 GPU with real-time inference capabilities, designed for processing sensitive business data and ensuring compliance in dynamic cloud environments."
+bc-offline-recognize-fushi-industry-dxm-v1-na61-h20.ference-part0-44703f7a-a-2053,bc_offline_recognize_fushi_industry_dxm_v1,Qwen-7B-Chat-Pro-HF,10,142,"{
+  ""NVIDIA_H20_SXM5_96GB"": {""mem_bandwidth"": 4022 * (1024**3), ""FP16"": 148e12, ""INT8"": 296e12, ""memsize"": 96 * (1024**3), ""onchip_buffer"": 0, ""interconnect_bandwidth"": 900 * (1024**3)},
+  ""gpu_type"": ""H20"",
+  ""f_peak"": 148.0,  #""FP16的值""
+  ""memory_bandwidth"": 4022.0,
+  ""memory_size"": 96.0,
+  ""n_gpu"": 1,
+  ""tensor_parallelism"": 1
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-12 15:18:03.000
+    13
+    2025-10-12 15:18:04.000
+    12
+    2025-10-12 15:18:05.000
+    11
+    2025-10-12 15:18:06.000
+    16
+    2025-10-12 15:18:07.000
+    13
+    2025-10-12 15:18:08.000
+    14
+    2025-10-12 15:18:09.000
+    13
+    2025-10-12 15:18:10.000
+    17
+    2025-10-12 15:18:11.000
+    17
+    2025-10-12 15:18:12.000
+    15
+    2025-10-12 15:18:13.000
+    10","2025-10-12 15:18:03.000
+    1.07 K
+    2025-10-12 15:18:04.000
+    435
+    2025-10-12 15:18:05.000
+    454
+    2025-10-12 15:18:06.000
+    802
+    2025-10-12 15:18:07.000
+    633
+    2025-10-12 15:18:08.000
+    480
+    2025-10-12 15:18:09.000
+    884
+    2025-10-12 15:18:10.000
+    784
+    2025-10-12 15:18:11.000
+    811
+    2025-10-12 15:18:12.000
+    462
+    2025-10-12 15:18:13.000
+    805",0.980,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen-7B 7B-parameter model specialized for offline industry classification and recognition tasks in e-commerce scenarios. It utilizes supervised fine-tuning (SFT) to process batch data for industry-specific categorization, optimized for deployment on H20 GPUs with MagaEngine acceleration for efficient inference."
+bc-offline-recognize-fushi-industry-dxm-v1-na61-h20.ference-part0-b3ff7549-b-e8bd,bc_offline_recognize_fushi_industry_dxm_v1,Qwen-7B-Chat-Pro-HF,10,148,"{
+  ""_name_or_path"": ""./local_openlm/Qwen-7B-Chat-Pro-HF"",
+  ""architectures"": [
+    ""QWenLMHeadModel""
+  ],
+  ""attn_dropout_prob"": 0,
+  ""auto_map"": {
+    ""AutoConfig"": ""configuration_qwen.QWenConfig"",
+    ""AutoModelForCausalLM"": ""modeling_qwen.QWenLMHeadModel""
+  },
+  ""bf16"": true,
+  ""emb_dropout_prob"": 0,
+  ""fp16"": false,
+  ""fp32"": false,
+  ""hidden_size"": 4096,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 22016,
+  ""kv_channels"": 128,
+  ""layer_norm_epsilon"": 0.000001,
+  ""max_position_embeddings"": 32768,
+  ""model_type"": ""qwen"",
+  ""no_bias"": true,
+  ""num_attention_heads"": 32,
+  ""num_hidden_layers"": 32,
+  ""onnx_safe"": null,
+  ""rope_theta"": 1000000,
+  ""rotary_emb_base"": 1000000,
+  ""rotary_pct"": 1,
+  ""scale_attn_weights"": true,
+  ""seq_length"": 32768,
+  ""softmax_in_fp32"": false,
+  ""tie_word_embeddings"": false,
+  ""tokenizer_class"": ""QWenTokenizer"",
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.0"",
+  ""use_cache"": true,
+  ""use_cache_kernel"": false,
+  ""use_cache_quantization"": false,
+  ""use_dynamic_ntk"": false,
+  ""use_flash_attn"": false,
+  ""use_logn_attn"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-12 12:38:57.000
+    16
+    2025-10-12 12:38:58.000
+    6
+    2025-10-12 12:38:59.000
+    13
+    2025-10-12 12:39:00.000
+    10
+    2025-10-12 12:39:01.000
+    10
+    2025-10-12 12:39:02.000
+    15
+    2025-10-12 12:39:03.000
+    14
+    2025-10-12 12:39:04.000
+    10
+    2025-10-12 12:39:05.000
+    13
+    2025-10-12 12:39:06.000
+    13
+    2025-10-12 12:39:07.000
+    18","2025-10-12 12:38:57.000
+    615
+    2025-10-12 12:38:58.000
+    327
+    2025-10-12 12:38:59.000
+    604
+    2025-10-12 12:39:00.000
+    475
+    2025-10-12 12:39:01.000
+    648
+    2025-10-12 12:39:02.000
+    458
+    2025-10-12 12:39:03.000
+    324
+    2025-10-12 12:39:04.000
+    614
+    2025-10-12 12:39:05.000
+    507
+    2025-10-12 12:39:06.000
+    659
+    2025-10-12 12:39:07.000
+    1.03 K",0.97,1,MagaEngine (Ant Group) / Custom FT-based,"An SFT fine-tuned Qwen-7B model designed for offline recognition and classification of business content within the fashion (fushi) industry. It supports an intelligent decision-making system, running on a single H20 GPU and leveraging MagaEngine for efficient large-scale batch processing."
+bc-online-appeal-recognize-20250819-na61-h20.inference-part0-6d38cef5-b-4e34,bc_online_appeal_recognize_20250819,qwen2.5-1.5B-instruct,19,224,"{
+  ""_name_or_path"": ""./local_aop_pytorch_hub_qwen2_5v_1_5b_instruct"",
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 1536,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 8960,
+  ""max_position_embeddings"": 32768,
+  ""max_window_layers"": 21,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 12,
+  ""num_hidden_layers"": 28,
+  ""num_key_value_heads"": 2,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.3"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1 
+","2025-10-12 19:25:28.000
+  17
+  2025-10-12 19:25:29.000
+  10
+  2025-10-12 19:25:30.000
+  10
+  2025-10-12 19:25:31.000
+  8
+  2025-10-12 19:25:32.000
+  10
+  2025-10-12 19:25:33.000
+  13
+  2025-10-12 19:25:34.000
+  16
+  2025-10-12 19:25:35.000
+  10
+  2025-10-12 19:25:36.000
+  14
+  2025-10-12 19:25:37.000
+  11
+  2025-10-12 19:25:38.000
+  13","2025-10-12 19:25:28.000
+  24.5
+  2025-10-12 19:25:29.000
+  42
+  2025-10-12 19:25:30.000
+  42.9
+  2025-10-12 19:25:31.000
+  57.4
+  2025-10-12 19:25:32.000
+  54.1
+  2025-10-12 19:25:33.000
+  36.7
+  2025-10-12 19:25:34.000
+  37.3
+  2025-10-12 19:25:35.000
+  38.1
+  2025-10-12 19:25:36.000
+  50.4
+  2025-10-12 19:25:37.000
+  51.2
+  2025-10-12 19:25:38.000
+  42.2",0.193,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen2-1B model specialized for online appeal recognition in document processing (PDFUSION), performing text generation and inference tasks with INT8/FP16 precision on a single H20 GPU, optimized for low-latency real-time processing in an SFT-finetuned deployment."
+bc-online-appeal-recognize-20250819-na61-h20.inference-part0-b4554bfb-b-67fc,bc_online_appeal_recognize_20250819,qwen2.5-1.5B-instruct,20,166,"{
+  ""_name_or_path"": ""./local_aop_pytorch_hub_qwen2_5v_1_5b_instruct"",
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 1536,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 8960,
+  ""max_position_embeddings"": 32768,
+  ""max_window_layers"": 21,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 12,
+  ""num_hidden_layers"": 28,
+  ""num_key_value_heads"": 2,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.3"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1 
+","2025-10-10 12:10:43.000
+    7.99
+    2025-10-10 12:10:44.000
+    11.0
+    2025-10-10 12:10:45.000
+    8.99
+    2025-10-10 12:10:46.000
+    6.99
+    2025-10-10 12:10:47.000
+    14.0
+    2025-10-10 12:10:48.000
+    9.99
+    2025-10-10 12:10:49.000
+    2.00
+    2025-10-10 12:10:50.000
+    8.99
+    2025-10-10 12:10:51.000
+    6.99
+    2025-10-10 12:10:52.000
+    5.00
+    2025-10-10 12:10:53.000
+    4.00","2025-10-10 12:10:43.000
+    41.1
+    2025-10-10 12:10:44.000
+    45.6
+    2025-10-10 12:10:45.000
+    37.3
+    2025-10-10 12:10:46.000
+    14.2
+    2025-10-10 12:10:47.000
+    57.3
+    2025-10-10 12:10:48.000
+    42.3
+    2025-10-10 12:10:49.000
+    22.5
+    2025-10-10 12:10:50.000
+    70.4
+    2025-10-10 12:10:51.000
+    41.6
+    2025-10-10 12:10:52.000
+    71.4
+    2025-10-10 12:10:53.000
+    28.1",0.150,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen2-1B inference service deployed on H20 GPUs with 1-GPU tensor parallelism (TP=1) for document understanding and enterprise-level PDFUSION tasks, optimized for low-latency batch inference with FP16/INT8 quantization, PagedAttention, and FUSE-based remote model loading in a Kubernetes environment with GPU resource isolation and backup pod redundancy."
+bc-online-question-appeal-recognize-na61-h20.inference-part0-2853f765-a-3f16,bc_online_question_appeal_recognize,Qwen-1.8B-Chat,9,191,"{
+  ""NVIDIA_H20_SXM5_96GB"": {""mem_bandwidth"": 4022 * (1024**3), ""FP16"": 148e12, ""INT8"": 296e12, ""memsize"": 96 * (1024**3), ""onchip_buffer"": 0, ""interconnect_bandwidth"": 900 * (1024**3)},
+  ""gpu_type"": ""H20"",
+  ""f_peak"": 148.0,  #""FP16的值""
+  ""memory_bandwidth"": 4022.0,
+  ""memory_size"": 96.0,
+  ""n_gpu"": 1,
+  ""tensor_parallelism"": 1
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-12 15:52:53.000
+    24
+    2025-10-12 15:52:54.000
+    20
+    2025-10-12 15:52:55.000
+    16
+    2025-10-12 15:52:56.000
+    15
+    2025-10-12 15:52:57.000
+    17
+    2025-10-12 15:52:58.000
+    22
+    2025-10-12 15:52:59.000
+    22
+    2025-10-12 15:53:00.000
+    18
+    2025-10-12 15:53:01.000
+    19
+    2025-10-12 15:53:02.000
+    18
+    2025-10-12 15:53:03.000
+    17","2025-10-12 15:52:53.000
+    102
+    2025-10-12 15:52:54.000
+    89.3
+    2025-10-12 15:52:55.000
+    132
+    2025-10-12 15:52:56.000
+    112
+    2025-10-12 15:52:57.000
+    125
+    2025-10-12 15:52:58.000
+    93.3
+    2025-10-12 15:52:59.000
+    76.3
+    2025-10-12 15:53:00.000
+    113
+    2025-10-12 15:53:01.000
+    71.5
+    2025-10-12 15:53:02.000
+    74.1
+    2025-10-12 15:53:03.000
+    52.3",0.270,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen-based 1B-parameter model specialized for real-time online question appeal recognition in e-commerce platforms. It employs supervised fine-tuning (SFT) to identify and categorize user appeals with natural language justifications, optimized for deployment on H20 GPUs with MagaEngine acceleration for low-latency inference."
+bc-online-question-appeal-recognize-na61-h20.inference-part0-2cfbeb62-a-8216,bc_online_question_appeal_recognize,Qwen-1.8B-Chat,9,200,"{
+  ""_name_or_path"": ""./local_openlm/Qwen-1_8B-Chat-HF"",
+  ""architectures"": [
+    ""QWenLMHeadModel""
+  ],
+  ""attn_dropout_prob"": 0,
+  ""auto_map"": {
+    ""AutoConfig"": ""configuration_qwen.QWenConfig"",
+    ""AutoModelForCausalLM"": ""modeling_qwen.QWenLMHeadModel""
+  },
+  ""bf16"": false,
+  ""emb_dropout_prob"": 0,
+  ""fp16"": false,
+  ""fp32"": true,
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 11008,
+  ""kv_channels"": 128,
+  ""layer_norm_epsilon"": 0.00001,
+  ""max_position_embeddings"": 8192,
+  ""model_type"": ""qwen"",
+  ""no_bias"": true,
+  ""num_attention_heads"": 16,
+  ""num_hidden_layers"": 24,
+  ""onnx_safe"": null,
+  ""rotary_emb_base"": 10000,
+  ""rotary_pct"": 1,
+  ""scale_attn_weights"": true,
+  ""seq_length"": 2048,
+  ""tie_word_embeddings"": false,
+  ""tokenizer_class"": ""QWenTokenizer"",
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.0"",
+  ""use_cache"": true,
+  ""use_dynamic_ntk"": true,
+  ""use_flash_attn"": false,
+  ""use_logn_attn"": true,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-10 13:59:33.000
+    14.0
+    2025-10-10 13:59:34.000
+    12.0
+    2025-10-10 13:59:35.000
+    20.9
+    2025-10-10 13:59:36.000
+    16.9
+    2025-10-10 13:59:37.000
+    18.9
+    2025-10-10 13:59:38.000
+    24.9
+    2025-10-10 13:59:39.000
+    14.9
+    2025-10-10 13:59:40.000
+    16.9
+    2025-10-10 13:59:41.000
+    7.98
+    2025-10-10 13:59:42.000
+    22.0
+    2025-10-10 13:59:43.000
+    22.9","2025-10-10 13:59:33.000
+    83.7
+    2025-10-10 13:59:34.000
+    62.0
+    2025-10-10 13:59:35.000
+    82.1
+    2025-10-10 13:59:36.000
+    115
+    2025-10-10 13:59:37.000
+    104
+    2025-10-10 13:59:38.000
+    120
+    2025-10-10 13:59:39.000
+    118
+    2025-10-10 13:59:40.000
+    76.5
+    2025-10-10 13:59:41.000
+    95.9
+    2025-10-10 13:59:42.000
+    200
+    2025-10-10 13:59:43.000
+    98.6",0.280,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen-based large language model service deployed for document fusion (e.g., PDFUSION) and high-throughput inference on NVIDIA H20 GPUs, utilizing 4 CPU cores, 30GiB memory, and 1 GPU with FP16 precision, running in a Kubernetes environment with FUSE-based remote model loading and vLLM optimization for enterprise-level question-answering and text generation tasks."
+bc-online-question-appeal-recognize-na61-h20.inference-part0-2ec08185-a-dc0c,bc_online_question_appeal_recognize,Qwen-1.8B-Chat,9,111,"{
+  ""_name_or_path"": ""./local_openlm/Qwen-1_8B-Chat-HF"",
+  ""architectures"": [
+    ""QWenLMHeadModel""
+  ],
+  ""attn_dropout_prob"": 0,
+  ""auto_map"": {
+    ""AutoConfig"": ""configuration_qwen.QWenConfig"",
+    ""AutoModelForCausalLM"": ""modeling_qwen.QWenLMHeadModel""
+  },
+  ""bf16"": false,
+  ""emb_dropout_prob"": 0,
+  ""fp16"": false,
+  ""fp32"": true,
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 11008,
+  ""kv_channels"": 128,
+  ""layer_norm_epsilon"": 0.00001,
+  ""max_position_embeddings"": 8192,
+  ""model_type"": ""qwen"",
+  ""no_bias"": true,
+  ""num_attention_heads"": 16,
+  ""num_hidden_layers"": 24,
+  ""onnx_safe"": null,
+  ""rotary_emb_base"": 10000,
+  ""rotary_pct"": 1,
+  ""scale_attn_weights"": true,
+  ""seq_length"": 2048,
+  ""tie_word_embeddings"": false,
+  ""tokenizer_class"": ""QWenTokenizer"",
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.0"",
+  ""use_cache"": true,
+  ""use_dynamic_ntk"": true,
+  ""use_flash_attn"": false,
+  ""use_logn_attn"": true,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-11 19:59:19.000
+        11.0
+        2025-10-11 19:59:20.000
+        9.98
+        2025-10-11 19:59:21.000
+        18.0
+        2025-10-11 19:59:22.000
+        8.97
+        2025-10-11 19:59:23.000
+        13.0
+        2025-10-11 19:59:24.000
+        2.99
+        2025-10-11 19:59:25.000
+        12.0
+        2025-10-11 19:59:26.000
+        19.0
+        2025-10-11 19:59:27.000
+        7.97
+        2025-10-11 19:59:28.000
+        12.0
+        2025-10-11 19:59:29.000
+        7.98","2025-10-11 19:59:19.000
+        81.6
+        2025-10-11 19:59:20.000
+        114
+        2025-10-11 19:59:21.000
+        86.6
+        2025-10-11 19:59:22.000
+        69.8
+        2025-10-11 19:59:23.000
+        57.5
+        2025-10-11 19:59:24.000
+        40.2
+        2025-10-11 19:59:25.000
+        54.6
+        2025-10-11 19:59:26.000
+        89.5
+        2025-10-11 19:59:27.000
+        142
+        2025-10-11 19:59:28.000
+        71.1
+        2025-10-11 19:59:29.000
+        59.7",0.160,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen-based large language model service deployed for document fusion (e.g., PDFUSION) and high-throughput inference on NVIDIA H20 GPUs, utilizing 4 CPU cores, 30GiB memory, and 1 GPU with FP16 precision, running in a Kubernetes environment with FUSE-based remote model loading and vLLM optimization for enterprise-level question-answering and text generation tasks."
+bc-online-question-recognize-20250819-na61-h20.inference-part0-06899f11-b-4877,bc_online_question_recognize_20250819,qwen2.5-1.5B-instruct,19,239,"{
+  ""NVIDIA_H20_SXM5_96GB"": {""mem_bandwidth"": 4022 * (1024**3), ""FP16"": 148e12, ""INT8"": 296e12, ""memsize"": 96 * (1024**3), ""onchip_buffer"": 0, ""interconnect_bandwidth"": 900 * (1024**3)},
+  ""gpu_type"": ""H20"",
+  ""f_peak"": 148.0,  #""FP16的值""
+  ""memory_bandwidth"": 4022.0,
+  ""memory_size"": 96.0,
+  ""n_gpu"": 1,
+  ""tensor_parallelism"": 1
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-11 16:19:31.000
+    11
+    2025-10-11 16:19:32.000
+    11
+    2025-10-11 16:19:33.000
+    9
+    2025-10-11 16:19:34.000
+    13
+    2025-10-11 16:19:35.000
+    8
+    2025-10-11 16:19:36.000
+    7
+    2025-10-11 16:19:37.000
+    13
+    2025-10-11 16:19:38.000
+    14
+    2025-10-11 16:19:39.000
+    9
+    2025-10-11 16:19:40.000
+    13
+    2025-10-11 16:19:41.000
+    14","2025-10-11 16:19:31.000
+    54.5
+    2025-10-11 16:19:32.000
+    80.4
+    2025-10-11 16:19:33.000
+    39.6
+    2025-10-11 16:19:34.000
+    41.7
+    2025-10-11 16:19:35.000
+    47.5
+    2025-10-11 16:19:36.000
+    46.5
+    2025-10-11 16:19:37.000
+    45.8
+    2025-10-11 16:19:38.000
+    39.2
+    2025-10-11 16:19:39.000
+    61.2
+    2025-10-11 16:19:40.000
+    60.4
+    2025-10-11 16:19:41.000
+    39.7",0.220,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen2-1B model specialized for online question recognition in e-commerce customer service scenarios. It employs fine-tuned natural language processing (SFT) to identify and categorize user inquiries in real-time, running on a single H20 GPU with MagaEngine for low-latency inference."
+bc-online-question-recognize-20250819-na61-h20.inference-part0-1308e74c-b-e338,bc_online_question_recognize_20250819,qwen2.5-1.5B-instruct,19,251,"{
+  ""NVIDIA_H20_SXM5_96GB"": {""mem_bandwidth"": 4022 * (1024**3), ""FP16"": 148e12, ""INT8"": 296e12, ""memsize"": 96 * (1024**3), ""onchip_buffer"": 0, ""interconnect_bandwidth"": 900 * (1024**3)},
+  ""gpu_type"": ""H20"",
+  ""f_peak"": 148.0,  #""FP16的值""
+  ""memory_bandwidth"": 4022.0,
+  ""memory_size"": 96.0,
+  ""n_gpu"": 1,
+  ""tensor_parallelism"": 1
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-11 16:30:09.000
+    12
+    2025-10-11 16:30:10.000
+    9
+    2025-10-11 16:30:11.000
+    17
+    2025-10-11 16:30:12.000
+    10
+    2025-10-11 16:30:13.000
+    14
+    2025-10-11 16:30:14.000
+    12
+    2025-10-11 16:30:15.000
+    11
+    2025-10-11 16:30:16.000
+    16
+    2025-10-11 16:30:17.000
+    12
+    2025-10-11 16:30:18.000
+    9
+    2025-10-11 16:30:19.000
+    13","2025-10-11 16:30:09.000
+    39.1
+    2025-10-11 16:30:10.000
+    32.8
+    2025-10-11 16:30:11.000
+    42.7
+    2025-10-11 16:30:12.000
+    31.1
+    2025-10-11 16:30:13.000
+    51.0
+    2025-10-11 16:30:14.000
+    54.7
+    2025-10-11 16:30:15.000
+    88.5
+    2025-10-11 16:30:16.000
+    73.6
+    2025-10-11 16:30:17.000
+    46.5
+    2025-10-11 16:30:18.000
+    50.7
+    2025-10-11 16:30:19.000
+    38.9",0.240,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen2-1B model specialized for online question recognition tasks in intelligent decision-making scenarios. It processes user queries to identify relevant information using fine-tuned natural language understanding, running on a single H20 GPU with MagaEngine for efficient real-time inference."
+bc-online-question-recognize-20250819-na61-h20.inference-part0-deaa5dd1-a-fc4a,bc_online_question_recognize_20250819,qwen2.5-1.5B-instruct,26,621,"{
+  ""_name_or_path"": ""./local_aop_pytorch_hub_qwen2_5v_1_5b_instruct"",
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 1536,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 8960,
+  ""max_position_embeddings"": 32768,
+  ""max_window_layers"": 21,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 12,
+  ""num_hidden_layers"": 28,
+  ""num_key_value_heads"": 2,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.3"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-09 11:34:16.000
+    24.0
+    2025-10-09 11:34:17.000
+    18.0
+    2025-10-09 11:34:18.000
+    24.0
+    2025-10-09 11:34:19.000
+    16.0
+    2025-10-09 11:34:20.000
+    32.0
+    2025-10-09 11:34:21.000
+    28.9
+    2025-10-09 11:34:22.000
+    21.0
+    2025-10-09 11:34:23.000
+    19.0
+    2025-10-09 11:34:24.000
+    22.0
+    2025-10-09 11:34:25.000
+    25.0
+    2025-10-09 11:34:26.000
+    16.0","2025-10-09 11:34:16.000
+    22.5
+    2025-10-09 11:34:17.000
+    15.8
+    2025-10-09 11:34:18.000
+    39.0
+    2025-10-09 11:34:19.000
+    24.3
+    2025-10-09 11:34:20.000
+    18.0
+    2025-10-09 11:34:21.000
+    22.2
+    2025-10-09 11:34:22.000
+    30.1
+    2025-10-09 11:34:23.000
+    15.6
+    2025-10-09 11:34:24.000
+    20.9
+    2025-10-09 11:34:25.000
+    37.4
+    2025-10-09 11:34:26.000
+    39",0.196,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen-2 1B model specialized for real-time online question recognition in e-commerce customer service, running on a single H20 GPU with MagaEngine to identify and classify user questions for immediate response handling."
+bc-test-attitude-for-real-time-intercept-na61-h20.ference-part0-42e40b65-a-68d0,bc_test_attitude_for_real_time_intercept,qwen2.5-1.5B-instruct,15,360,"{
+  ""NVIDIA_H20_SXM5_96GB"": {""mem_bandwidth"": 4022 * (1024**3), ""FP16"": 148e12, ""INT8"": 296e12, ""memsize"": 96 * (1024**3), ""onchip_buffer"": 0, ""interconnect_bandwidth"": 900 * (1024**3)},
+  ""gpu_type"": ""H20"",
+  ""f_peak"": 148.0,  #""FP16的值""
+  ""memory_bandwidth"": 4022.0,
+  ""memory_size"": 96.0,
+  ""n_gpu"": 1,
+  ""tensor_parallelism"": 1
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-10 14:02:19.000
+    20.8
+    2025-10-10 14:02:20.000
+    24.7
+    2025-10-10 14:02:21.000
+    24.8
+    2025-10-10 14:02:22.000
+    19.8
+    2025-10-10 14:02:23.000
+    18.8
+    2025-10-10 14:02:24.000
+    29.7
+    2025-10-10 14:02:25.000
+    20.6
+    2025-10-10 14:02:26.000
+    12.8
+    2025-10-10 14:02:27.000
+    21.8
+    2025-10-10 14:02:28.000
+    19.8
+    2025-10-10 14:02:29.000
+    29.6","2025-10-10 14:02:20
+    40.6",0.730,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen2-based model for real-time attitude interception in e-commerce scenarios, optimized with INT8 quantization and running on a single H20 GPU via MagaEngine. It handles recommendation logic with fine-grained reasoning and natural language justification generation, supporting 1B parameter scale with FP16/INT8 mixed precision."
+bc-test-attitude-for-real-time-intercept-na61-h20.ference-part0-64ee499c-a-a11e,bc_test_attitude_for_real_time_intercept,qwen2.5-1.5B-instruct,15,310,"{
+  ""_name_or_path"": ""./local_aop_pytorch_hub_qwen2_5v_1_5b_instruct"",
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 1536,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 8960,
+  ""max_position_embeddings"": 32768,
+  ""max_window_layers"": 21,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 12,
+  ""num_hidden_layers"": 28,
+  ""num_key_value_heads"": 2,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.0"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1 
+","2025-10-12 21:34:50
+    22","2025-10-12 21:34:50
+    42.6",0.66,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen2-1B model specialized for real-time attitude detection and interception in business content, performing inference tasks with INT8/FP16 precision on a single H20 GPU, optimized for low-latency decision-making in an SFT-finetuned deployment."
+bc-test-attitude-for-real-time-intercept-na61-h20.ference-part0-c23c8a05-b-c183,bc_test_attitude_for_real_time_intercept,qwen2.5-1.5B-instruct,18,261,"{
+  ""_name_or_path"": ""./local_aop_pytorch_hub_qwen2_5v_1_5b_instruct"",
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 1536,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 8960,
+  ""max_position_embeddings"": 32768,
+  ""max_window_layers"": 21,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 12,
+  ""num_hidden_layers"": 28,
+  ""num_key_value_heads"": 2,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.0"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-07 13:04:25.000
+    18.9
+    2025-10-07 13:04:26.000
+    15.7
+    2025-10-07 13:04:27.000
+    19.9
+    2025-10-07 13:04:29.000
+    11.8
+    2025-10-07 13:04:30.000
+    16.8
+    2025-10-07 13:04:31.000
+    11.9
+    2025-10-07 13:04:32.000
+    13.9
+    2025-10-07 13:04:33.000
+    18.9
+    2025-10-07 13:04:34.000
+    17.9
+    2025-10-07 13:04:35.000
+    13.9",33.9,0.640,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen-1.5B based LLM service fine-tuned for real-time attitude and sentiment detection in business content, designed to intercept inappropriate or sensitive content in dynamic enterprise scenarios."
+bc-test-attitude-for-real-time-intercept-na61-h20.ference-part0-e4074335-b-d367,bc_test_attitude_for_real_time_intercept,qwen2.5-1.5B-instruct,15,356,"{
+  ""_name_or_path"": ""./local_aop_pytorch_hub_qwen2_5v_1_5b_instruct"",
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 1536,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 8960,
+  ""max_position_embeddings"": 32768,
+  ""max_window_layers"": 21,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 12,
+  ""num_hidden_layers"": 28,
+  ""num_key_value_heads"": 2,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.0"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-10 16:46:50.000
+    24.7
+    2025-10-10 16:47:00.000
+    24.5","2025-10-10 16:46:50.000
+    41.0
+    2025-10-10 16:47:00.000
+    49.1",0.430,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen2-based model for real-time attitude interception in e-commerce scenarios, optimized with INT8 quantization and running on a single H20 GPU via MagaEngine. It handles recommendation logic with fine-grained reasoning and natural language justification generation, supporting 1B parameter scale with FP16/INT8 mixed precision."
+bc-test-attitude-for-real-time-intercept-na61-l20.ference-part0-babc14f4-b-cad7,bc_test_attitude_for_real_time_intercept,qwen2.5-1.5B-instruct,3,70,"{
+  ""_name_or_path"": ""./local_aop_pytorch_hub_qwen2_5v_1_5b_instruct"",
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 1536,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 8960,
+  ""max_position_embeddings"": 32768,
+  ""max_window_layers"": 21,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 12,
+  ""num_hidden_layers"": 28,
+  ""num_key_value_heads"": 2,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.0"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",L20,119.5,864.0,48.0,1,"1
+","2025-10-07 14:07:07.000
+    24.7
+    2025-10-07 14:07:08.000
+    23.6
+    2025-10-07 14:07:09.000
+    22.8
+    2025-10-07 14:07:10.000
+    21.5
+    2025-10-07 14:07:11.000
+    18.8
+    2025-10-07 14:07:12.000
+    18.8
+    2025-10-07 14:07:13.000
+    19.8
+    2025-10-07 14:07:14.000
+    19.8
+    2025-10-07 14:07:15.000
+    15.8
+    2025-10-07 14:07:16.000
+    7.93
+    2025-10-07 14:07:17.000
+    27.8",44.8,0.729,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen-1.5B based LLM service fine-tuned for real-time attitude and sentiment detection in business content, designed to intercept inappropriate or sensitive content in dynamic enterprise scenarios."
+bc-tmp-all-na61-h20.inference-part0-431da79c-a-1686,bc_tmp_all,Qwen-7B-Chat-Pro-HF,50,280,"{
+  ""_name_or_path"": ""./local_openlm/Qwen-7B-Chat-Pro-HF"",
+  ""architectures"": [
+    ""QWenLMHeadModel""
+  ],
+  ""attn_dropout_prob"": 0,
+  ""auto_map"": {
+    ""AutoConfig"": ""configuration_qwen.QWenConfig"",
+    ""AutoModelForCausalLM"": ""modeling_qwen.QWenLMHeadModel""
+  },
+  ""bf16"": true,
+  ""emb_dropout_prob"": 0,
+  ""fp16"": false,
+  ""fp32"": false,
+  ""hidden_size"": 4096,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 22016,
+  ""kv_channels"": 128,
+  ""layer_norm_epsilon"": 0.000001,
+  ""max_position_embeddings"": 32768,
+  ""model_type"": ""qwen"",
+  ""no_bias"": true,
+  ""num_attention_heads"": 32,
+  ""num_hidden_layers"": 32,
+  ""onnx_safe"": null,
+  ""rope_theta"": 1000000,
+  ""rotary_emb_base"": 1000000,
+  ""rotary_pct"": 1,
+  ""scale_attn_weights"": true,
+  ""seq_length"": 32768,
+  ""softmax_in_fp32"": false,
+  ""tie_word_embeddings"": false,
+  ""tokenizer_class"": ""QWenTokenizer"",
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.0"",
+  ""use_cache"": true,
+  ""use_cache_kernel"": false,
+  ""use_cache_quantization"": false,
+  ""use_dynamic_ntk"": false,
+  ""use_flash_attn"": false,
+  ""use_logn_attn"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1 
+","2025-10-12 14:59:00.000
+    9
+    2025-10-12 14:59:01.000
+    5
+    2025-10-12 14:59:02.000
+    7
+    2025-10-12 14:59:03.000
+    5
+    2025-10-12 14:59:04.000
+    7
+    2025-10-12 14:59:05.000
+    5
+    2025-10-12 14:59:06.000
+    3
+    2025-10-12 14:59:07.000
+    5
+    2025-10-12 14:59:08.000
+    5
+    2025-10-12 14:59:09.000
+    6
+    2025-10-12 14:59:10.000
+    4","2025-10-12 14:59:00.000
+    476
+    2025-10-12 14:59:01.000
+    318
+    2025-10-12 14:59:02.000
+    523
+    2025-10-12 14:59:03.000
+    325
+    2025-10-12 14:59:04.000
+    521
+    2025-10-12 14:59:05.000
+    304
+    2025-10-12 14:59:06.000
+    277
+    2025-10-12 14:59:07.000
+    262
+    2025-10-12 14:59:08.000
+    469
+    2025-10-12 14:59:09.000
+    564
+    2025-10-12 14:59:10.000
+    260",0.98,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen-7B inference service deployed on H20 GPUs with 1-GPU tensor parallelism (TP=1) for logistics service and emotion analysis tasks, optimized for low-latency batch inference with FP16/INT8 quantization, PagedAttention, and FUSE-based remote model loading in a Kubernetes environment with GPU resource isolation and production-grade deployment policies."
+bc-tmp-all-na61-h20.inference-part0-574a96e3-a-6d2c,bc_tmp_all,Qwen-7B-Chat-Pro-HF,50,301,"{
+  ""NVIDIA_H20_SXM5_96GB"": {""mem_bandwidth"": 4022 * (1024**3), ""FP16"": 148e12, ""INT8"": 296e12, ""memsize"": 96 * (1024**3), ""onchip_buffer"": 0, ""interconnect_bandwidth"": 900 * (1024**3)},
+  ""gpu_type"": ""H20"",
+  ""f_peak"": 148.0,  #""FP16的值""
+  ""memory_bandwidth"": 4022.0,
+  ""memory_size"": 96.0,
+  ""n_gpu"": 1,
+  ""tensor_parallelism"": 1
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-12 13:48:19.000
+    5
+    2025-10-12 13:48:20.000
+    6
+    2025-10-12 13:48:21.000
+    8
+    2025-10-12 13:48:22.000
+    8
+    2025-10-12 13:48:23.000
+    5
+    2025-10-12 13:48:24.000
+    4
+    2025-10-12 13:48:25.000
+    7
+    2025-10-12 13:48:26.000
+    4
+    2025-10-12 13:48:27.000
+    4
+    2025-10-12 13:48:28.000
+    6
+    2025-10-12 13:48:29.000
+    6","2025-10-12 13:48:19.000
+    321
+    2025-10-12 13:48:20.000
+    512
+    2025-10-12 13:48:21.000
+    489
+    2025-10-12 13:48:22.000
+    402
+    2025-10-12 13:48:23.000
+    346
+    2025-10-12 13:48:24.000
+    261
+    2025-10-12 13:48:25.000
+    347
+    2025-10-12 13:48:26.000
+    523
+    2025-10-12 13:48:27.000
+    618
+    2025-10-12 13:48:28.000
+    389
+    2025-10-12 13:48:29.000
+    504",0.980,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen-7B inference service deployed on H20 GPUs with 1-GPU tensor parallelism (TP=1) for logistics service and emotion analysis tasks, optimized for low-latency batch inference with FP16/INT8 quantization, PagedAttention, and FUSE-based remote model loading in a Kubernetes environment with GPU resource isolation and production-grade deployment policies."
+bc-tmp-all-na61-h20.inference-part0-8a7082d1-a-748f,bc_tmp_all,Qwen-7B-Chat-Pro-HF,50,7385,"{
+  ""_name_or_path"": ""./local_openlm/Qwen-7B-Chat-Pro-HF"",
+  ""architectures"": [
+    ""QWenLMHeadModel""
+  ],
+  ""attn_dropout_prob"": 0,
+  ""auto_map"": {
+    ""AutoConfig"": ""configuration_qwen.QWenConfig"",
+    ""AutoModelForCausalLM"": ""modeling_qwen.QWenLMHeadModel""
+  },
+  ""bf16"": true,
+  ""emb_dropout_prob"": 0,
+  ""fp16"": false,
+  ""fp32"": false,
+  ""hidden_size"": 4096,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 22016,
+  ""kv_channels"": 128,
+  ""layer_norm_epsilon"": 0.000001,
+  ""max_position_embeddings"": 32768,
+  ""model_type"": ""qwen"",
+  ""no_bias"": true,
+  ""num_attention_heads"": 32,
+  ""num_hidden_layers"": 32,
+  ""onnx_safe"": null,
+  ""rope_theta"": 1000000,
+  ""rotary_emb_base"": 1000000,
+  ""rotary_pct"": 1,
+  ""scale_attn_weights"": true,
+  ""seq_length"": 32768,
+  ""softmax_in_fp32"": false,
+  ""tie_word_embeddings"": false,
+  ""tokenizer_class"": ""QWenTokenizer"",
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.0"",
+  ""use_cache"": true,
+  ""use_cache_kernel"": false,
+  ""use_cache_quantization"": false,
+  ""use_dynamic_ntk"": false,
+  ""use_flash_attn"": false,
+  ""use_logn_attn"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-10 13:27:30.000
+    122
+    2025-10-10 13:27:31.000
+    145
+    2025-10-10 13:27:32.000
+    118
+    2025-10-10 13:27:33.000
+    115
+    2025-10-10 13:27:34.000
+    98.8
+    2025-10-10 13:27:35.000
+    138
+    2025-10-10 13:27:36.000
+    174
+    2025-10-10 13:27:37.000
+    136
+    2025-10-10 13:27:38.000
+    104
+    2025-10-10 13:27:39.000
+    113
+    2025-10-10 13:27:40.000
+    108","2025-10-10 13:27:30.000
+    647
+    2025-10-10 13:27:31.000
+    342
+    2025-10-10 13:27:32.000
+    349
+    2025-10-10 13:27:33.000
+    535
+    2025-10-10 13:27:34.000
+    503
+    2025-10-10 13:27:35.000
+    405
+    2025-10-10 13:27:36.000
+    299
+    2025-10-10 13:27:37.000
+    479
+    2025-10-10 13:27:38.000
+    241
+    2025-10-10 13:27:39.000
+    425
+    2025-10-10 13:27:40.000
+    406",0.980,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen-7B inference service deployed on H20 GPUs with 1-GPU tensor parallelism (TP=1) for logistics service and emotion analysis tasks, optimized for low-latency batch inference with FP16/INT8 quantization, PagedAttention, and FUSE-based remote model loading in a Kubernetes environment with GPU resource isolation and production-grade deployment policies."
+bc-tmp-all-na61-h20.inference-part0-a8ddac36-a-7a14,bc_tmp_all,Qwen-7B-Chat-Pro-HF,50,6861,"{
+  ""_name_or_path"": ""./local_openlm/Qwen-7B-Chat-Pro-HF"",
+  ""architectures"": [
+    ""QWenLMHeadModel""
+  ],
+  ""attn_dropout_prob"": 0,
+  ""auto_map"": {
+    ""AutoConfig"": ""configuration_qwen.QWenConfig"",
+    ""AutoModelForCausalLM"": ""modeling_qwen.QWenLMHeadModel""
+  },
+  ""bf16"": true,
+  ""emb_dropout_prob"": 0,
+  ""fp16"": false,
+  ""fp32"": false,
+  ""hidden_size"": 4096,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 22016,
+  ""kv_channels"": 128,
+  ""layer_norm_epsilon"": 0.000001,
+  ""max_position_embeddings"": 32768,
+  ""model_type"": ""qwen"",
+  ""no_bias"": true,
+  ""num_attention_heads"": 32,
+  ""num_hidden_layers"": 32,
+  ""onnx_safe"": null,
+  ""rope_theta"": 1000000,
+  ""rotary_emb_base"": 1000000,
+  ""rotary_pct"": 1,
+  ""scale_attn_weights"": true,
+  ""seq_length"": 32768,
+  ""softmax_in_fp32"": false,
+  ""tie_word_embeddings"": false,
+  ""tokenizer_class"": ""QWenTokenizer"",
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.0"",
+  ""use_cache"": true,
+  ""use_cache_kernel"": false,
+  ""use_cache_quantization"": false,
+  ""use_dynamic_ntk"": false,
+  ""use_flash_attn"": false,
+  ""use_logn_attn"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-11 19:39:34.000
+        121
+        2025-10-11 19:39:35.000
+        110
+        2025-10-11 19:39:36.000
+        154
+        2025-10-11 19:39:37.000
+        116
+        2025-10-11 19:39:38.000
+        144
+        2025-10-11 19:39:39.000
+        126
+        2025-10-11 19:39:40.000
+        112
+        2025-10-11 19:39:41.000
+        127
+        2025-10-11 19:39:42.000
+        141
+        2025-10-11 19:39:43.000
+        115
+        2025-10-11 19:39:44.000
+        102","2025-10-11 19:39:34.000
+        422
+        2025-10-11 19:39:35.000
+        365
+        2025-10-11 19:39:36.000
+        445
+        2025-10-11 19:39:37.000
+        271
+        2025-10-11 19:39:38.000
+        405
+        2025-10-11 19:39:39.000
+        365
+        2025-10-11 19:39:40.000
+        228
+        2025-10-11 19:39:41.000
+        483
+        2025-10-11 19:39:42.000
+        397
+        2025-10-11 19:39:43.000
+        403
+        2025-10-11 19:39:44.000
+        292",0.970,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen-7B inference service deployed on H20 GPUs with 1-GPU tensor parallelism (TP=1) for logistics service and emotion analysis tasks, optimized for low-latency batch inference with FP16/INT8 quantization, PagedAttention, and FUSE-based remote model loading in a Kubernetes environment with GPU resource isolation and production-grade deployment policies."
+bc-tmp-all-na61-h20.inference-part0-c97547ab-a-3710,bc_tmp_all,Qwen-7B-Chat-Pro-HF,50,302,"{
+  ""NVIDIA_H20_SXM5_96GB"": {""mem_bandwidth"": 4022 * (1024**3), ""FP16"": 148e12, ""INT8"": 296e12, ""memsize"": 96 * (1024**3), ""onchip_buffer"": 0, ""interconnect_bandwidth"": 900 * (1024**3)},
+  ""gpu_type"": ""H20"",
+  ""f_peak"": 148.0,  #""FP16的值""
+  ""memory_bandwidth"": 4022.0,
+  ""memory_size"": 96.0,
+  ""n_gpu"": 1,
+  ""tensor_parallelism"": 1
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-12 14:11:24.000
+    4
+    2025-10-12 14:11:25.000
+    6
+    2025-10-12 14:11:26.000
+    7
+    2025-10-12 14:11:27.000
+    4
+    2025-10-12 14:11:28.000
+    7
+    2025-10-12 14:11:29.000
+    2
+    2025-10-12 14:11:30.000
+    8
+    2025-10-12 14:11:31.000
+    6
+    2025-10-12 14:11:32.000
+    5
+    2025-10-12 14:11:33.000
+    5
+    2025-10-12 14:11:34.000
+    6","2025-10-12 14:11:24.000
+    310
+    2025-10-12 14:11:25.000
+    497
+    2025-10-12 14:11:26.000
+    369
+    2025-10-12 14:11:27.000
+    399
+    2025-10-12 14:11:28.000
+    504
+    2025-10-12 14:11:29.000
+    319
+    2025-10-12 14:11:30.000
+    328
+    2025-10-12 14:11:31.000
+    653
+    2025-10-12 14:11:32.000
+    236
+    2025-10-12 14:11:33.000
+    365
+    2025-10-12 14:11:34.000
+    538",0.980,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen-7B inference service deployed on H20 GPUs with 1-GPU tensor parallelism (TP=1) for logistics service and emotion analysis tasks, optimized for low-latency batch inference with FP16/INT8 quantization, PagedAttention, and FUSE-based remote model loading in a Kubernetes environment with GPU resource isolation and production-grade deployment policies."
+bc-tmp-all-na61-h20.inference-part0-fa17aa40-b-89eb,pod_name = bc-tmp-all-na61-h20.inference-part0-fa17aa40-b-89eb,Qwen-7B-Chat-Pro-HF,50,313,"{
+  ""_name_or_path"": ""./local_openlm/Qwen-7B-Chat-Pro-HF"",
+  ""architectures"": [
+    ""QWenLMHeadModel""
+  ],
+  ""attn_dropout_prob"": 0,
+  ""auto_map"": {
+    ""AutoConfig"": ""configuration_qwen.QWenConfig"",
+    ""AutoModelForCausalLM"": ""modeling_qwen.QWenLMHeadModel""
+  },
+  ""bf16"": true,
+  ""emb_dropout_prob"": 0,
+  ""fp16"": false,
+  ""fp32"": false,
+  ""hidden_size"": 4096,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 22016,
+  ""kv_channels"": 128,
+  ""layer_norm_epsilon"": 0.000001,
+  ""max_position_embeddings"": 32768,
+  ""model_type"": ""qwen"",
+  ""no_bias"": true,
+  ""num_attention_heads"": 32,
+  ""num_hidden_layers"": 32,
+  ""onnx_safe"": null,
+  ""rope_theta"": 1000000,
+  ""rotary_emb_base"": 1000000,
+  ""rotary_pct"": 1,
+  ""scale_attn_weights"": true,
+  ""seq_length"": 32768,
+  ""softmax_in_fp32"": false,
+  ""tie_word_embeddings"": false,
+  ""tokenizer_class"": ""QWenTokenizer"",
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.0"",
+  ""use_cache"": true,
+  ""use_cache_kernel"": false,
+  ""use_cache_quantization"": false,
+  ""use_dynamic_ntk"": false,
+  ""use_flash_attn"": false,
+  ""use_logn_attn"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-12 11:33:31.000
+    2
+    2025-10-12 11:33:32.000
+    6
+    2025-10-12 11:33:33.000
+    5
+    2025-10-12 11:33:34.000
+    6
+    2025-10-12 11:33:35.000
+    7
+    2025-10-12 11:33:36.000
+    8
+    2025-10-12 11:33:37.000
+    7
+    2025-10-12 11:33:38.000
+    3
+    2025-10-12 11:33:39.000
+    3
+    2025-10-12 11:33:40.000
+    2
+    2025-10-12 11:33:41.000
+    4","2025-10-12 11:33:31.000
+    278
+    2025-10-12 11:33:32.000
+    346
+    2025-10-12 11:33:33.000
+    333
+    2025-10-12 11:33:34.000
+    390
+    2025-10-12 11:33:35.000
+    330
+    2025-10-12 11:33:36.000
+    469
+    2025-10-12 11:33:37.000
+    432
+    2025-10-12 11:33:38.000
+    402
+    2025-10-12 11:33:39.000
+    321
+    2025-10-12 11:33:40.000
+    269
+    2025-10-12 11:33:41.000
+    247",0.98,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen-7B inference service deployed on H20 GPUs with 1-GPU tensor parallelism (TP=1) for logistics service and emotion analysis tasks, optimized for low-latency batch inference with FP16/INT8 quantization, PagedAttention, and FUSE-based remote model loading in a Kubernetes environment with GPU resource isolation and production-grade deployment policies."
+diwen-aigq-noncot-bts1-ea119-custom accelerator.inference-part0-20b2f1de-a-74c1,diwen_AIGQ_nonCOT_bts1,Qwen3-30B-A3B,25,239,"{
+  ""architectures"": [
+    ""Qwen3MoeForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""decoder_sparse_step"": 1,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 6144,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 48,
+  ""mlp_only_layers"": [],
+  ""model_type"": ""qwen3_moe"",
+  ""moe_intermediate_size"": 768,
+  ""norm_topk_prob"": true,
+  ""num_attention_heads"": 32,
+  ""num_experts"": 128,
+  ""num_experts_per_tok"": 8,
+  ""num_hidden_layers"": 48,
+  ""num_key_value_heads"": 4,
+  ""output_router_logits"": false,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""router_aux_loss_coef"": 0.001,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.1"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",custom accelerator,118.0,2765.0,96.0,1,"1 
+","2025-10-12 18:21:50.000
+  9
+  2025-10-12 18:21:51.000
+  4
+  2025-10-12 18:21:52.000
+  2
+  2025-10-12 18:21:53.000
+  13
+  2025-10-12 18:21:54.000
+  2
+  2025-10-12 18:21:55.000
+  11
+  2025-10-12 18:21:56.000
+  10
+  2025-10-12 18:21:57.000
+  11
+  2025-10-12 18:21:58.000
+  6
+  2025-10-12 18:21:59.000
+  4
+  2025-10-12 18:22:00.000
+  9","2025-10-12 18:21:50.000
+  152
+  2025-10-12 18:21:51.000
+  97.4
+  2025-10-12 18:21:52.000
+  195
+  2025-10-12 18:21:53.000
+  172
+  2025-10-12 18:21:54.000
+  220
+  2025-10-12 18:21:55.000
+  313
+  2025-10-12 18:21:56.000
+  76.8
+  2025-10-12 18:21:57.000
+  98.2
+  2025-10-12 18:21:58.000
+  277
+  2025-10-12 18:21:59.000
+  142
+  2025-10-12 18:22:00.000
+  204",1.0,0.94,MagaEngine (Ant Group) / Custom FT-based,"A Qwen-3 MoE 3B model specialized for non-COT (Chain-of-Thought) query understanding in main search scenarios, deployed on custom accelerator hardware with MagaEngine acceleration for real-time inference in e-commerce search relevance tasks."
+diwen-aigq-noncot-bts1-na175-custom accelerator.inference-part0-ad7867f8-a-bc79,diwen_AIGQ_nonCOT_bts1,Qwen3-30B-A3B,25,248,"{
+  ""architectures"": [
+    ""Qwen3MoeForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""decoder_sparse_step"": 1,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 6144,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 48,
+  ""mlp_only_layers"": [],
+  ""model_type"": ""qwen3_moe"",
+  ""moe_intermediate_size"": 768,
+  ""norm_topk_prob"": true,
+  ""num_attention_heads"": 32,
+  ""num_experts"": 128,
+  ""num_experts_per_tok"": 8,
+  ""num_hidden_layers"": 48,
+  ""num_key_value_heads"": 4,
+  ""output_router_logits"": false,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""router_aux_loss_coef"": 0.001,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.1"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",custom accelerator,118.0,2765.0,96.0,1,"1
+","2025-10-12 13:05:40.000
+    7
+    2025-10-12 13:05:41.000
+    10
+    2025-10-12 13:05:42.000
+    5
+    2025-10-12 13:05:43.000
+    6
+    2025-10-12 13:05:44.000
+    13
+    2025-10-12 13:05:45.000
+    3
+    2025-10-12 13:05:46.000
+    12
+    2025-10-12 13:05:47.000
+    7
+    2025-10-12 13:05:48.000
+    14
+    2025-10-12 13:05:49.000
+    4
+    2025-10-12 13:05:50.000
+    3","2025-10-12 13:05:40.000
+    108
+    2025-10-12 13:05:41.000
+    204
+    2025-10-12 13:05:42.000
+    226
+    2025-10-12 13:05:43.000
+    231
+    2025-10-12 13:05:44.000
+    93.4
+    2025-10-12 13:05:45.000
+    520
+    2025-10-12 13:05:46.000
+    186
+    2025-10-12 13:05:47.000
+    154
+    2025-10-12 13:05:48.000
+    159
+    2025-10-12 13:05:49.000
+    203
+    2025-10-12 13:05:50.000
+    656",1,1,MagaEngine (Ant Group) / Custom FT-based,"A 3B Qwen-3 Mixture-of-Experts (MoE) model, fine-tuned via SFT for the 'Diwen' project, generates non-Chain-of-Thought queries for main search recommendation, running on a single custom accelerator GPU with MagaEngine for real-time inference."
+diwen-aigq-noncot-bts2-na175-custom accelerator.inference-part0-e2e22aab-b-09b9,diwen_AIGQ_nonCOT_bts2,Qwen3-30B-A3B,25,222,"{
+  ""architectures"": [
+    ""Qwen3MoeForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""decoder_sparse_step"": 1,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 6144,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 48,
+  ""mlp_only_layers"": [],
+  ""model_type"": ""qwen3_moe"",
+  ""moe_intermediate_size"": 768,
+  ""norm_topk_prob"": true,
+  ""num_attention_heads"": 32,
+  ""num_experts"": 128,
+  ""num_experts_per_tok"": 8,
+  ""num_hidden_layers"": 48,
+  ""num_key_value_heads"": 4,
+  ""output_router_logits"": false,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""router_aux_loss_coef"": 0.001,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.1"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",custom accelerator,118.0,2765.0,96.0,1,"1
+","2025-10-12 12:55:10.000
+    2
+    2025-10-12 12:55:11.000
+    5
+    2025-10-12 12:55:12.000
+    17
+    2025-10-12 12:55:13.000
+    9
+    2025-10-12 12:55:14.000
+    5
+    2025-10-12 12:55:15.000
+    16
+    2025-10-12 12:55:16.000
+    10
+    2025-10-12 12:55:17.000
+    17
+    2025-10-12 12:55:18.000
+    9
+    2025-10-12 12:55:19.000
+    5
+    2025-10-12 12:55:20.000
+    10","2025-10-12 12:55:10.000
+    229
+    2025-10-12 12:55:11.000
+    500
+    2025-10-12 12:55:12.000
+    296
+    2025-10-12 12:55:13.000
+    155
+    2025-10-12 12:55:14.000
+    643
+    2025-10-12 12:55:15.000
+    277
+    2025-10-12 12:55:16.000
+    197
+    2025-10-12 12:55:17.000
+    210
+    2025-10-12 12:55:18.000
+    151
+    2025-10-12 12:55:19.000
+    254
+    2025-10-12 12:55:20.000
+    335",1,1,MagaEngine (Ant Group) / Custom FT-based,"A 3B-parameter Qwen-3-MoE LLM specialized for non-COT text generation in AIGQ scenarios, running on custom accelerator hardware with FP16 precision and INT8 quantization, optimized for high-throughput real-time inference using MagaEngine with paged TRT FMHA and RDMA-enabled cache, deployed for query-focused recommendation tasks."
+diwen-aigq-noncot-bts3-na175-custom accelerator.inference-part0-08b62458-a-4234,diwen_AIGQ_nonCOT_bts3,Qwen3-30B-A3B,25,357,"{
+  ""architectures"": [
+    ""Qwen3MoeForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""decoder_sparse_step"": 1,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 6144,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 48,
+  ""mlp_only_layers"": [],
+  ""model_type"": ""qwen3_moe"",
+  ""moe_intermediate_size"": 768,
+  ""norm_topk_prob"": true,
+  ""num_attention_heads"": 32,
+  ""num_experts"": 128,
+  ""num_experts_per_tok"": 8,
+  ""num_hidden_layers"": 48,
+  ""num_key_value_heads"": 4,
+  ""output_router_logits"": false,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""router_aux_loss_coef"": 0.001,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.1"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",custom accelerator,118.0,2765.0,96.0,1,"1 
+","2025-10-12 22:31:53.000
+  17
+  2025-10-12 22:31:54.000
+  17
+  2025-10-12 22:31:55.000
+  11
+  2025-10-12 22:31:56.000
+  6
+  2025-10-12 22:31:57.000
+  10
+  2025-10-12 22:31:58.000
+  7
+  2025-10-12 22:31:59.000
+  5
+  2025-10-12 22:32:00.000
+  15
+  2025-10-12 22:32:01.000
+  9
+  2025-10-12 22:32:02.000
+  13
+  2025-10-12 22:32:03.000
+  8","2025-10-12 22:31:53.000
+  262
+  2025-10-12 22:31:54.000
+  647
+  2025-10-12 22:31:55.000
+  704
+  2025-10-12 22:31:56.000
+  554
+  2025-10-12 22:31:57.000
+  408
+  2025-10-12 22:31:58.000
+  479
+  2025-10-12 22:31:59.000
+  805
+  2025-10-12 22:32:00.000
+  627
+  2025-10-12 22:32:01.000
+  402
+  2025-10-12 22:32:02.000
+  417
+  2025-10-12 22:32:03.000
+  1.64 K",0.98,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen3-MoE 3B model specialized for non-COT (Chain-of-Thought) query understanding in main search scenarios, running on a single custom accelerator chip with FP16/bf16 precision, optimized for high-concurrency inference up to 256 requests, using SFT-finetuned checkpoints loaded from DFS to generate fast and accurate query representations without reasoning steps."
+diwen-llmrec-qwen3-30-a3b-na175-custom accelerator.inference-part0-b107f84f-b-2d82,diwen_llmrec_qwen3_30_a3b,Qwen3-30B-A3B,25,233,"{
+  ""custom accelerator"": {""mem_bandwidth"": 2765 * (1024**3), ""FP16"": 118e12, ""INT8"": 236e12, ""memsize"": 96 * (1024**3), ""onchip_buffer"": 0,  ""interconnect_bandwidth"": 700 * (1024**3)},
+  ""gpu_type"": ""custom accelerator"",
+  ""f_peak"": 118.0,  #""FP16的值""
+  ""memory_bandwidth"": 2765.0,
+  ""memory_size"": 96.0,
+  ""n_gpu"": 1,
+  ""tensor_parallelism"": 1
+}",custom accelerator,118.0,2765.0,96.0,1,"1
+","2025-10-13 13:28:16.000
+    12
+    2025-10-13 13:28:17.000
+    7
+    2025-10-13 13:28:18.000
+    7
+    2025-10-13 13:28:19.000
+    12
+    2025-10-13 13:28:20.000
+    6
+    2025-10-13 13:28:21.000
+    9
+    2025-10-13 13:28:22.000
+    5
+    2025-10-13 13:28:23.000
+    13
+    2025-10-13 13:28:24.000
+    2
+    2025-10-13 13:28:25.000
+    6
+    2025-10-13 13:28:26.000
+    8","2025-10-13 13:28:16.000
+    162
+    2025-10-13 13:28:17.000
+    228
+    2025-10-13 13:28:18.000
+    161
+    2025-10-13 13:28:19.000
+    146
+    2025-10-13 13:28:20.000
+    111
+    2025-10-13 13:28:21.000
+    271
+    2025-10-13 13:28:22.000
+    91.3
+    2025-10-13 13:28:23.000
+    89.5
+    2025-10-13 13:28:24.000
+    174
+    2025-10-13 13:28:25.000
+    138
+    2025-10-13 13:28:26.000
+    180",1.000,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen3-14B model specialized for item-grained reasoning in e-commerce 'guess you like' scenarios. It performs fine-grained product recommendation justifications with natural language explanations, utilizing a single H20 GPU and MagaEngine for optimized real-time inference with 14B parameter scale."
+diwen-llmrec-qwen3-30-a3b-ea119-custom accelerator.inference-part0-2a17f7c4-a-a0d7,diwen_llmrec_qwen3_30_a3b,Qwen3-30B-A3B,25,267,"{
+  ""architectures"": [
+    ""Qwen3MoeForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""decoder_sparse_step"": 1,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 6144,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 48,
+  ""mlp_only_layers"": [],
+  ""model_type"": ""qwen3_moe"",
+  ""moe_intermediate_size"": 768,
+  ""norm_topk_prob"": true,
+  ""num_attention_heads"": 32,
+  ""num_experts"": 128,
+  ""num_experts_per_tok"": 8,
+  ""num_hidden_layers"": 48,
+  ""num_key_value_heads"": 4,
+  ""output_router_logits"": false,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""router_aux_loss_coef"": 0.001,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.1"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",custom accelerator,118.0,2765.0,96.0,1,"1
+","2025-10-12 10:50:05.000
+    14
+    2025-10-12 10:50:06.000
+    9
+    2025-10-12 10:50:07.000
+    19
+    2025-10-12 10:50:08.000
+    3
+    2025-10-12 10:50:09.000
+    7
+    2025-10-12 10:50:10.000
+    9
+    2025-10-12 10:50:11.000
+    16
+    2025-10-12 10:50:12.000
+    26
+    2025-10-12 10:50:13.000
+    10
+    2025-10-12 10:50:14.000
+    6
+    2025-10-12 10:50:15.000
+    4","2025-10-12 10:50:05.000
+    303
+    2025-10-12 10:50:06.000
+    390
+    2025-10-12 10:50:07.000
+    254
+    2025-10-12 10:50:08.000
+    804
+    2025-10-12 10:50:09.000
+    323
+    2025-10-12 10:50:10.000
+    347
+    2025-10-12 10:50:11.000
+    169
+    2025-10-12 10:50:12.000
+    142
+    2025-10-12 10:50:13.000
+    212
+    2025-10-12 10:50:14.000
+    239
+    2025-10-12 10:50:15.000
+    198",0.98,1,MagaEngine (Ant Group) / Custom FT-based,"A 3B Qwen-3 Mixture-of-Experts (MoE) model, fine-tuned with SFT for the 'Diwen' project. It specializes in generating query recommendations for main search scenarios, running on a single custom accelerator GPU with MagaEngine for high-performance, real-time inference."
+diwen-llmrec-qwen3-30-a3b-ea119-custom accelerator.inference-part0-b3966368-a-8771,diwen_llmrec_qwen3_30_a3b,Qwen3-30B-A3B,25,237,"{
+  ""architectures"": [
+    ""Qwen3MoeForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""decoder_sparse_step"": 1,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 6144,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 48,
+  ""mlp_only_layers"": [],
+  ""model_type"": ""qwen3_moe"",
+  ""moe_intermediate_size"": 768,
+  ""norm_topk_prob"": true,
+  ""num_attention_heads"": 32,
+  ""num_experts"": 128,
+  ""num_experts_per_tok"": 8,
+  ""num_hidden_layers"": 48,
+  ""num_key_value_heads"": 4,
+  ""output_router_logits"": false,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""router_aux_loss_coef"": 0.001,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.1"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",custom accelerator,118.0,2765.0,96.0,1,"1
+","2025-10-11 14:44:58.000
+    7
+    2025-10-11 14:44:59.000
+    6
+    2025-10-11 14:45:00.000
+    5
+    2025-10-11 14:45:01.000
+    1
+    2025-10-11 14:45:02.000
+    7
+    2025-10-11 14:45:03.000
+    4
+    2025-10-11 14:45:04.000
+    9
+    2025-10-11 14:45:05.000
+    19
+    2025-10-11 14:45:06.000
+    16
+    2025-10-11 14:45:07.000
+    5
+    2025-10-11 14:45:08.000
+    8","2025-10-11 14:44:58.000
+    91.9
+    2025-10-11 14:44:59.000
+    149
+    2025-10-11 14:45:00.000
+    156
+    2025-10-11 14:45:01.000
+    829
+    2025-10-11 14:45:02.000
+    234
+    2025-10-11 14:45:03.000
+    367
+    2025-10-11 14:45:04.000
+    223
+    2025-10-11 14:45:05.000
+    125
+    2025-10-11 14:45:06.000
+    155
+    2025-10-11 14:45:07.000
+    70.4
+    2025-10-11 14:45:08.000
+    96.8",1,1,MagaEngine (Ant Group) / Custom FT-based,"A 3B Qwen-3 Mixture-of-Experts (MoE) model, fine-tuned with SFT for the 'Diwen' project. It specializes in generating query recommendations for main search scenarios, running on a single custom accelerator GPU with MagaEngine for high-performance, real-time inference."
+hotline-qwq-na61-h20-2tp.ference-part0-8165a0df-b-5783,hotline_qwq,QwQ-32B,8,16,"{
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0.0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 27648,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 40,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 1e-05,
+  ""rope_theta"": 1000000.0,
+  ""sliding_window"": 32768,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.1"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 152064
+}",H20,148.0,4022.0,96.0,2,"2
+","2025-10-11 14:08:31.000
+    0
+    2025-10-11 14:08:32.000
+    0
+    2025-10-11 14:08:33.000
+    0
+    2025-10-11 14:08:34.000
+    16
+    2025-10-11 14:08:35.000
+    8
+    2025-10-11 14:08:36.000
+    16
+    2025-10-11 14:08:37.000
+    4
+    2025-10-11 14:08:38.000
+    14
+    2025-10-11 14:08:39.000
+    0
+    2025-10-11 14:08:40.000
+    5
+    2025-10-11 14:08:41.000
+    1","2025-10-11 14:08:32.000
+    5.15 K
+    2025-10-11 14:08:34.000
+    250
+    2025-10-11 14:08:35.000
+    5.50
+    2025-10-11 14:08:36.000
+    7.33
+    2025-10-11 14:08:37.000
+    4.73
+    2025-10-11 14:08:38.000
+    5.77
+    2025-10-11 14:08:39.000
+    2
+    2025-10-11 14:08:40.000
+    2.56
+    2025-10-11 14:08:41.000
+    1.59",0.965,2,MagaEngine (Ant Group) / Custom FT-based,"A Qwen_2 32B model, optimized with weight-only quantization, serving as a customer service assistant for the 'Alime Hotline' project. It handles extremely long contexts (up to 80k tokens) and runs with 2-way Tensor Parallelism across two H20 GPUs, using MagaEngine for real-time conversational AI inference."
+hotline-qwq-na61-h20-2tp.ference-part0-ed094f94-b-5672,hotline_qwq,QwQ-32B,8,246,"{
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0.0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 27648,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 40,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 1e-05,
+  ""rope_theta"": 1000000.0,
+  ""sliding_window"": 32768,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.1"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 152064
+}",H20,148.0,4022.0,96.0,2,"2
+","2025-10-12 12:17:36.000
+    42
+    2025-10-12 12:17:37.000
+    30
+    2025-10-12 12:17:38.000
+    42
+    2025-10-12 12:17:39.000
+    25
+    2025-10-12 12:17:40.000
+    10
+    2025-10-12 12:17:41.000
+    8
+    2025-10-12 12:17:42.000
+    8
+    2025-10-12 12:17:43.000
+    7
+    2025-10-12 12:17:44.000
+    2
+    2025-10-12 12:17:45.000
+    1
+    2025-10-12 12:17:46.000
+    18","2025-10-12 12:17:36.000
+    11.1
+    2025-10-12 12:17:37.000
+    12.8
+    2025-10-12 12:17:38.000
+    11.1
+    2025-10-12 12:17:39.000
+    8.66
+    2025-10-12 12:17:40.000
+    5.53
+    2025-10-12 12:17:41.000
+    5.14
+    2025-10-12 12:17:42.000
+    4.63
+    2025-10-12 12:17:43.000
+    3.54
+    2025-10-12 12:17:44.000
+    62.2
+    2025-10-12 12:17:45.000
+    3.02
+    2025-10-12 12:17:46.000
+    6.67",0.96,2,MagaEngine (Ant Group) / Custom FT-based,"A Qwen-2 32B model, optimized with weight-only quantization, serving as a customer service assistant for the 'Alime Hotline' project. It handles extremely long contexts (up to 80k tokens) and runs with 2-way Tensor Parallelism across two H20 GPUs, using MagaEngine for real-time conversational AI inference."
+icbu-aa-qwen2-7b-ea119-custom accelerator.inference-part0-24badc99-a-b54f,icbu_aa_qwen2_7b,qwen2.5-7B,2,36,"{
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 3584,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 18944,
+  ""max_position_embeddings"": 32768,
+  ""max_window_layers"": 28,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 28,
+  ""num_hidden_layers"": 28,
+  ""num_key_value_heads"": 4,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": 131072,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.1"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 152064
+}",custom accelerator,118.0,2765.0,96.0,1,"1 
+","2025-10-12 18:55:11.000
+  14
+  2025-10-12 18:55:12.000
+  5
+  2025-10-12 18:55:13.000
+  4
+  2025-10-12 18:55:14.000
+  13
+  2025-10-12 18:55:15.000
+  2
+  2025-10-12 18:55:16.000
+  4
+  2025-10-12 18:55:17.000
+  5
+  2025-10-12 18:55:18.000
+  11
+  2025-10-12 18:55:19.000
+  7
+  2025-10-12 18:55:20.000
+  4
+  2025-10-12 18:55:21.000
+  2","2025-10-12 18:55:11.000
+  132
+  2025-10-12 18:55:12.000
+  80.5
+  2025-10-12 18:55:13.000
+  42.1
+  2025-10-12 18:55:14.000
+  141
+  2025-10-12 18:55:15.000
+  28.0
+  2025-10-12 18:55:16.000
+  69.8
+  2025-10-12 18:55:17.000
+  35.2
+  2025-10-12 18:55:18.000
+  170
+  2025-10-12 18:55:19.000
+  22.8
+  2025-10-12 18:55:20.000
+  45.0
+  2025-10-12 18:55:21.000
+  75.3",0.58,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen2-7B model specialized for AI assistant tasks in the ICBU (International China Business Unit) domain, deployed on custom accelerator hardware with MagaEngine acceleration for efficient real-time inference in international e-commerce customer service scenarios."
+lanshi-qwen3-new-item-reason-model-ea119-custom accelerator.inference-part0-7602934d-a-4492,lanshi-qwen3-new-item-reason-model,qwen3-14b,4,64,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0.0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 17408,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 40,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 40,
+  ""num_hidden_layers"": 40,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 1e-06,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",custom accelerator,118.0,2765.0,96.0,1,"1
+","2025-10-11 18:53:04.000
+    18
+    2025-10-11 18:53:05.000
+    21
+    2025-10-11 18:53:06.000
+    0
+    2025-10-11 18:53:07.000
+    24
+    2025-10-11 18:53:08.000
+    0
+    2025-10-11 18:53:09.000
+    0
+    2025-10-11 18:53:10.000
+    22
+    2025-10-11 18:53:11.000
+    0
+    2025-10-11 18:53:12.000
+    23
+    2025-10-11 18:53:13.000
+    0
+    2025-10-11 18:53:14.000
+    0","2025-10-11 18:53:04.000
+    9.53 K
+    2025-10-11 18:53:05.000
+    6.66 K
+    2025-10-11 18:53:07.000
+    9.08 K
+    2025-10-11 18:53:10.000
+    10.6 K
+    2025-10-11 18:53:12.000
+    12.1 K",1,1,MagaEngine (Ant Group) / Custom FT-based,"An SFT fine-tuned Qwen3 14B model for the 'Lanshi' project, designed to generate persuasive reasons for new item recommendations in e-commerce 'guess you like' scenarios. It runs on a single custom accelerator GPU with MagaEngine for efficient real-time inference."
+lanshi-qwen3-new-item-reason-model-ea119-custom accelerator.inference-part0-af9dd2ad-a-83ce,lanshi-qwen3-new-item-reason-model,qwen3-14B,4,58,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0.0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 17408,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 40,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 40,
+  ""num_hidden_layers"": 40,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 1e-06,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",custom accelerator,118.0,2765.0,96.0,1,"1
+","2025-10-11 18:14:12.000
+    0
+    2025-10-11 18:14:13.000
+    15
+    2025-10-11 18:14:14.000
+    0
+    2025-10-11 18:14:15.000
+    15
+    2025-10-11 18:14:16.000
+    0
+    2025-10-11 18:14:17.000
+    21
+    2025-10-11 18:14:18.000
+    0
+    2025-10-11 18:14:19.000
+    14
+    2025-10-11 18:14:20.000
+    0
+    2025-10-11 18:14:21.000
+    17
+    2025-10-11 18:14:22.000
+    0","2025-10-11 18:14:13.000
+    7.14 K
+    2025-10-11 18:14:15.000
+    10.9 K
+    2025-10-11 18:14:17.000
+    7.61 K
+    2025-10-11 18:14:19.000
+    7.61 K
+    2025-10-11 18:14:21.000
+    10.7 K",1,1,MagaEngine (Ant Group) / Custom FT-based,"An SFT fine-tuned Qwen3 14B model for the 'Lanshi' project, designed to generate persuasive reasons for new item recommendations in e-commerce 'guess you like' scenarios. It runs on a single custom accelerator GPU with MagaEngine for efficient real-time inference."
+mkt-qwen3-30b-a3b-back-ea119-custom accelerator.inference-part0-46b2ae20-a-fca4,mkt-Qwen3-30B-A3B-back,qwen3-30B-A3B,25,51,"{
+  ""architectures"": [
+    ""Qwen3MoeForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""decoder_sparse_step"": 1,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 6144,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 48,
+  ""mlp_only_layers"": [],
+  ""model_type"": ""qwen3_moe"",
+  ""moe_intermediate_size"": 768,
+  ""norm_topk_prob"": true,
+  ""num_attention_heads"": 32,
+  ""num_experts"": 128,
+  ""num_experts_per_tok"": 8,
+  ""num_hidden_layers"": 48,
+  ""num_key_value_heads"": 4,
+  ""output_router_logits"": false,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""router_aux_loss_coef"": 0.001,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.0"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",custom accelerator,118.0,2765.0,96.0,1,"1 
+","2025-10-12 16:43:24.000
+  2
+  2025-10-12 16:43:25.000
+  2
+  2025-10-12 16:43:26.000
+  2
+  2025-10-12 16:43:27.000
+  4
+  2025-10-12 16:43:28.000
+  0
+  2025-10-12 16:43:29.000
+  1
+  2025-10-12 16:43:30.000
+  1
+  2025-10-12 16:43:31.000
+  3
+  2025-10-12 16:43:32.000
+  3
+  2025-10-12 16:43:33.000
+  2
+  2025-10-12 16:43:34.000
+  1","2025-10-12 16:43:24.000
+  127
+  2025-10-12 16:43:25.000
+  49.1
+  2025-10-12 16:43:26.000
+  164
+  2025-10-12 16:43:27.000
+  94.7
+  2025-10-12 16:43:29.000
+  48.9
+  2025-10-12 16:43:30.000
+  107
+  2025-10-12 16:43:31.000
+  192
+  2025-10-12 16:43:32.000
+  40.7
+  2025-10-12 16:43:33.000
+  139
+  2025-10-12 16:43:34.000
+  372",0.94,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen3-30B MoE model specialized for marketing scenarios, running on custom accelerator hardware with MagaEngine acceleration, delivering real-time inference for large-scale language understanding and content generation tasks."
+mkt-qwen3-30b-a3b-feeds-na175-custom accelerator.inference-part0-3cc70f0e-a-d735,mkt-Qwen3-30B-A3B-feeds,qwen3-30B-A3B,8,22,"{
+  ""architectures"": [
+    ""Qwen3MoeForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""decoder_sparse_step"": 1,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 6144,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 48,
+  ""mlp_only_layers"": [],
+  ""model_type"": ""qwen3_moe"",
+  ""moe_intermediate_size"": 768,
+  ""norm_topk_prob"": true,
+  ""num_attention_heads"": 32,
+  ""num_experts"": 128,
+  ""num_experts_per_tok"": 8,
+  ""num_hidden_layers"": 48,
+  ""num_key_value_heads"": 4,
+  ""output_router_logits"": false,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""router_aux_loss_coef"": 0.001,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.0"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",custom accelerator,118.0,2765.0,96.0,1,"1 
+","2025-10-12 23:50:06.000
+  2
+  2025-10-12 23:50:07.000
+  0
+  2025-10-12 23:50:08.000
+  1
+  2025-10-12 23:50:09.000
+  0
+  2025-10-12 23:50:10.000
+  0
+  2025-10-12 23:50:11.000
+  0
+  2025-10-12 23:50:12.000
+  2
+  2025-10-12 23:50:13.000
+  0
+  2025-10-12 23:50:14.000
+  2
+  2025-10-12 23:50:15.000
+  0
+  2025-10-12 23:50:16.000
+  0","22025-10-12 23:50:06.000
+  1.94
+  2025-10-12 23:50:08.000
+  102
+  2025-10-12 23:50:11.000
+  2.59 K
+  2025-10-12 23:50:12.000
+  65.7
+  2025-10-12 23:50:13.000
+  104
+  2025-10-12 23:50:14.000
+  103
+  2025-10-12 23:50:16.000
+  3.45 K",0.75,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen3-30B MoE model specialized for marketing content generation in e-commerce feeds, deployed on a custom accelerator GPU with FP16 precision and optimized for long-context understanding up to 8192 tokens, enabling high-quality, context-aware product description and promotional text generation with efficient RDMA-accelerated inference."
+omega-llm-92920-1682403-qwenv3-cn-h800-spot.inference-part0-7fdbfcb4-a-c2cd,omega_llm_92920_1682403_QwenV3,qwen3-4B,32,330,"{
+  ""NVIDIA_H800"": {""mem_bandwidth"": 3350 * (1024**3), ""FP16"": 989e12, ""INT8"": 1979e12, ""memsize"": 80 * (1024**3), ""onchip_buffer"": 0, ""interconnect_bandwidth"": 400 * (1024**3)},
+  ""gpu_type"": ""H800"",
+  ""f_peak"": 989.0,  #""FP16的值""
+  ""memory_bandwidth"": 3350.0,
+  ""memory_size"": 80.0,
+  ""n_gpu"": 1,
+  ""tensor_parallelism"": 1
+}",H800,989.0,3350.0,80.0,1,"1
+","2025-10-10 16:10:40.000
+    6
+    2025-10-10 16:10:41.000
+    8
+    2025-10-10 16:10:42.000
+    6
+    2025-10-10 16:10:43.000
+    11
+    2025-10-10 16:10:44.000
+    10
+    2025-10-10 16:10:45.000
+    7
+    2025-10-10 16:10:46.000
+    9
+    2025-10-10 16:10:47.000
+    7
+    2025-10-10 16:10:48.000
+    9
+    2025-10-10 16:10:49.000
+    8
+    2025-10-10 16:10:50.000
+    6","2025-10-10 16:10:40.000
+    118
+    2025-10-10 16:10:41.000
+    140
+    2025-10-10 16:10:42.000
+    125
+    2025-10-10 16:10:43.000
+    172
+    2025-10-10 16:10:44.000
+    137
+    2025-10-10 16:10:45.000
+    134
+    2025-10-10 16:10:46.000
+    143
+    2025-10-10 16:10:47.000
+    113
+    2025-10-10 16:10:48.000
+    160
+    2025-10-10 16:10:49.000
+    140",0.490,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen3-3B model optimized for item-grained reasoning in e-commerce recommendation scenarios, executing batch inference tasks on a single H800 GPU with MagaEngine acceleration. It generates fine-grained product justification explanations using natural language processing, supporting 3B parameter scale with FP16 precision."
+online-dxm-dm-wait-clarify-na61-l20.inference-part0-fa225ff2-b-ede8,online_dxm_dm_wait_clarify,qwen2.5-7B,2,27,"{
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 3584,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 18944,
+  ""max_position_embeddings"": 32768,
+  ""max_window_layers"": 28,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 28,
+  ""num_hidden_layers"": 28,
+  ""num_key_value_heads"": 4,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.45.2"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 152064
+}",L20,119.5,864.0,48.0,1,"1
+","2025-10-09 10:33:44.000
+    6.99
+    2025-10-09 10:33:45.000
+    2.99
+    2025-10-09 10:33:46.000
+    7.99
+    2025-10-09 10:33:47.000
+    2.00
+    2025-10-09 10:33:48.000
+    5.99
+    2025-10-09 10:33:49.000
+    4.99
+    2025-10-09 10:33:50.000
+    4.99
+    2025-10-09 10:33:51.000
+    6.99
+    2025-10-09 10:33:52.000
+    2.00
+    2025-10-09 10:33:53.000
+    5.99
+    2025-10-09 10:33:54.000
+    2.99",15.5,0.259,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen-2 7B model specialized for real-time dialogue state tracking and clarification in e-commerce customer service (wait-clarify scenario), running on a single L20 GPU with MagaEngine to analyze user intent and determine if additional information is needed before responding."
+page-indicator-search-query-analysis-online-na61-h20-2tp.ference-part0-9d62c496-b-a6fe,page_indicator_search_query_analysis_online,Qwen3-4B,2,44,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2560,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 9728,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 36,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 32,
+  ""num_hidden_layers"": 36,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.3"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,2,"2
+","2025-10-09 18:35:54.000
+    11
+    2025-10-09 18:35:55.000
+    5
+    2025-10-09 18:35:56.000
+    7
+    2025-10-09 18:35:57.000
+    15
+    2025-10-09 18:35:58.000
+    25
+    2025-10-09 18:35:59.000
+    10
+    2025-10-09 18:36:00.000
+    22
+    2025-10-09 18:36:01.000
+    12
+    2025-10-09 18:36:02.000
+    13
+    2025-10-09 18:36:03.000
+    13
+    2025-10-09 18:36:04.000
+    20
+    2025-10-09 18:36:05.000
+    18","2025-10-09 18:35:54.000
+    211
+    2025-10-09 18:35:55.000
+    101
+    2025-10-09 18:35:56.000
+    250
+    2025-10-09 18:35:57.000
+    125
+    2025-10-09 18:35:58.000
+    137
+    2025-10-09 18:35:59.000
+    124
+    2025-10-09 18:36:00.000
+    141
+    2025-10-09 18:36:01.000
+    134
+    2025-10-09 18:36:02.000
+    138
+    2025-10-09 18:36:03.000
+    127
+    2025-10-09 18:36:04.000
+    147
+    2025-10-09 18:36:05.000
+    147",0.890,2,MagaEngine (Ant Group) / Custom FT-based,"A Qwen-3 4B model specialized for page indicator-based search query analysis in e-commerce, running on dual H20 GPUs with tensor parallelism (TP=2) and MagaEngine to understand user intent from search queries and generate structured analysis for improved product discovery."
+presale-scene-predict-7b-v3-na61-l20.inference-part0-049c824a-a-2d05,presale_scene_predict_7b_v3,qwen2.5-7B-instruct,7,32,"{
+  ""_name_or_path"": ""./local_aop_pytorch_hub_qwen2_5v_7b_instruct"",
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 3584,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 18944,
+  ""max_position_embeddings"": 32768,
+  ""max_window_layers"": 28,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 28,
+  ""num_hidden_layers"": 28,
+  ""num_key_value_heads"": 4,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.45.0"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 152064
+}",L20,119.5,864.0,48.0,1,"1
+","2025-10-09 19:21:58.000
+    4
+    2025-10-09 19:21:59.000
+    3
+    2025-10-09 19:22:00.000
+    3
+    2025-10-09 19:22:01.000
+    4
+    2025-10-09 19:22:02.000
+    1
+    2025-10-09 19:22:03.000
+    3
+    2025-10-09 19:22:04.000
+    1
+    2025-10-09 19:22:05.000
+    4
+    2025-10-09 19:22:06.000
+    2
+    2025-10-09 19:22:07.000
+    4
+    2025-10-09 19:22:08.000
+    3","2025-10-09 19:21:58.000
+    63.2
+    2025-10-09 19:21:59.000
+    28.7
+    2025-10-09 19:22:00.000
+    23.9
+    2025-10-09 19:22:01.000
+    33.4
+    2025-10-09 19:22:02.000
+    53.5
+    2025-10-09 19:22:03.000
+    55
+    2025-10-09 19:22:04.000
+    15.3
+    2025-10-09 19:22:05.000
+    23.5
+    2025-10-09 19:22:06.000
+    29.1
+    2025-10-09 19:22:07.000
+    21
+    2025-10-09 19:22:08.000
+    41.1",0.272,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen-2.5 7B model specialized for pre-sales scene prediction in e-commerce customer service, running on a single L20 GPU with MagaEngine to classify user inquiries and determine the appropriate agent type (pre-sales, after-sales, logistics, or other) based on conversation context."
+queryrec-session2bigmodel-tbstars-1-5b-na61-custom accelerator.inference-part0-9c884ccf-b-7caa,queryrec_session2bigmodel_tbstars_1_5B,tbstars2_0-moe-15A1_5,7,15,"{
+  ""architectures"": [
+    ""MixTBStarsForCausalLM""
+  ],
+  ""attention_bias"": true,
+  ""attention_dropout"": 0,
+  ""auto_map"": {
+    ""AutoConfig"": ""configuration_mixtbstars.MixTBStarsConfig"",
+    ""AutoModel"": ""modeling_mixtbstars.MixTBStarsForCausalLM"",
+    ""AutoModelForCausalLM"": ""modeling_mixtbstars.MixTBStarsForCausalLM""
+  },
+  ""bos_token_id"": 5,
+  ""eos_token_id"": 6,
+  ""expert_dropout"": 0,
+  ""first_k_dense_layers"": 0,
+  ""hidden_act"": ""silu"",
+  ""hidden_dropout"": 0,
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 1560,
+  ""max_position_embeddings"": 8192,
+  ""model_type"": ""mixtbstars"",
+  ""num_attention_heads"": 16,
+  ""num_experts_per_tok"": 8,
+  ""num_hidden_layers"": 16,
+  ""num_key_value_heads"": 16,
+  ""num_routed_experts"": 96,
+  ""num_shared_experts"": 0,
+  ""output_router_logits"": true,
+  ""pad_token_id"": 0,
+  ""pretraining_tp"": 1,
+  ""rms_norm_eps"": 0.00001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 10000,
+  ""router_aux_loss_coef"": 0,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.1"",
+  ""use_cache"": false,
+  ""vocab_size"": 128000
+}",custom accelerator,118.0,2765.0,96.0,1,"1
+","2025-10-11 14:20:44.000
+        1.99
+        2025-10-11 14:20:45.000
+        2.99
+        2025-10-11 14:20:46.000
+        0
+        2025-10-11 14:20:47.000
+        0
+        2025-10-11 14:20:48.000
+        0.999
+        2025-10-11 14:20:49.000
+        3.00
+        2025-10-11 14:20:50.000
+        1.99
+        2025-10-11 14:20:51.000
+        3.96
+        2025-10-11 14:20:52.000
+        2.96
+        2025-10-11 14:20:53.000
+        2.00
+        2025-10-11 14:20:54.000
+        2.99","2025-10-11 14:20:44.000
+        65.2
+        2025-10-11 14:20:45.000
+        110
+        2025-10-11 14:20:46.000
+        53.7
+        2025-10-11 14:20:47.000
+        112
+        2025-10-11 14:20:48.000
+        65.0
+        2025-10-11 14:20:49.000
+        50.4
+        2025-10-11 14:20:50.000
+        60.3
+        2025-10-11 14:20:51.000
+        97.3
+        2025-10-11 14:20:52.000
+        141
+        2025-10-11 14:20:53.000
+        65.0
+        2025-10-11 14:20:54.000
+        86.5",0.990,1,MagaEngine (Ant Group) / Custom FT-based,"This is a LLM service for session-to-big-model query recommendation, deployed on custom accelerator accelerator with real-time inference capabilities, designed for enterprise-level content analysis and dynamic business scenario optimization."
+queryrec-session2bigmodel-tbstars-1-5b-v2-na175-custom accelerator.inference-part0-5bd41479-a-181e,queryrec_session2bigmodel_tbstars_1_5B_v2,tbstars2_0-moe-15A1_5,7,69,"{
+  ""architectures"": [
+    ""MixTBStarsForCausalLM""
+  ],
+  ""attention_bias"": true,
+  ""attention_dropout"": 0,
+  ""auto_map"": {
+    ""AutoConfig"": ""configuration_mixtbstars.MixTBStarsConfig"",
+    ""AutoModel"": ""modeling_mixtbstars.MixTBStarsForCausalLM"",
+    ""AutoModelForCausalLM"": ""modeling_mixtbstars.MixTBStarsForCausalLM""
+  },
+  ""bos_token_id"": 5,
+  ""eos_token_id"": 6,
+  ""expert_dropout"": 0,
+  ""first_k_dense_layers"": 0,
+  ""hidden_act"": ""silu"",
+  ""hidden_dropout"": 0,
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 1560,
+  ""max_position_embeddings"": 8192,
+  ""model_type"": ""mixtbstars"",
+  ""num_attention_heads"": 16,
+  ""num_experts_per_tok"": 8,
+  ""num_hidden_layers"": 16,
+  ""num_key_value_heads"": 16,
+  ""num_routed_experts"": 96,
+  ""num_shared_experts"": 0,
+  ""output_router_logits"": true,
+  ""pad_token_id"": 0,
+  ""pretraining_tp"": 1,
+  ""rms_norm_eps"": 0.00001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 10000,
+  ""router_aux_loss_coef"": 0,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.1"",
+  ""use_cache"": false,
+  ""vocab_size"": 128000
+}",custom accelerator,118.0,2765.0,96.0,1,"1 
+","2025-10-12 23:06:50.000
+  6
+  2025-10-12 23:06:51.000
+  12
+  2025-10-12 23:06:52.000
+  6
+  2025-10-12 23:06:53.000
+  4
+  2025-10-12 23:06:54.000
+  7
+  2025-10-12 23:06:55.000
+  8
+  2025-10-12 23:06:56.000
+  1
+  2025-10-12 23:06:57.000
+  4
+  2025-10-12 23:06:58.000
+  2
+  2025-10-12 23:06:59.000
+  8
+  2025-10-12 23:07:00.000
+  7","2025-10-12 23:06:50.000
+  72.1
+  2025-10-12 23:06:51.000
+  55.2
+  2025-10-12 23:06:52.000
+  99.9
+  2025-10-12 23:06:53.000
+  58.8
+  2025-10-12 23:06:54.000
+  99.1
+  2025-10-12 23:06:55.000
+  50.0
+  2025-10-12 23:06:56.000
+  151
+  2025-10-12 23:06:57.000
+  162
+  2025-10-12 23:06:58.000
+  456
+  2025-10-12 23:06:59.000
+  263
+  2025-10-12 23:07:00.000
+  285",0.98,1,MagaEngine (Ant Group) / Custom FT-based,"A 1.5B-parameter MixTStars model specialized for query recommendation in large-scale e-commerce sessions, running on a single custom accelerator GPU with INT8/FP16 mixed precision, optimized for high-throughput, low-latency inference with support for long sequence lengths up to 4096 tokens and efficient RDMA-accelerated model loading from OSS storage."
+queryrec-session2bigmodel-tbstars-nothink-na61-custom accelerator.ference-part0-2aeaffc7-a-c52c,queryrec_session2bigmodel_tbstars_nothink,tbstars2_0-moe-15A1_5,13,199,"{
+  ""custom accelerator"": {""mem_bandwidth"": 2765 * (1024**3), ""FP16"": 118e12, ""INT8"": 236e12, ""memsize"": 96 * (1024**3), ""onchip_buffer"": 0,  ""interconnect_bandwidth"": 700 * (1024**3)},
+  ""gpu_type"": ""custom accelerator"",
+  ""f_peak"": 118.0,  #""FP16的值""
+  ""memory_bandwidth"": 2765.0,
+  ""memory_size"": 96.0,
+  ""n_gpu"": 1,
+  ""tensor_parallelism"": 1
+}",custom accelerator,118.0,2765.0,96.0,1,"1
+","2025-10-13 14:06:50.000
+    9
+    2025-10-13 14:06:51.000
+    18
+    2025-10-13 14:06:52.000
+    22
+    2025-10-13 14:06:53.000
+    9
+    2025-10-13 14:06:54.000
+    14
+    2025-10-13 14:06:55.000
+    6
+    2025-10-13 14:06:56.000
+    6
+    2025-10-13 14:06:57.000
+    6
+    2025-10-13 14:06:58.000
+    7
+    2025-10-13 14:06:59.000
+    16
+    2025-10-13 14:07:00.000
+    7","2025-10-13 14:06:50.000
+    347
+    2025-10-13 14:06:51.000
+    88.4
+    2025-10-13 14:06:52.000
+    186
+    2025-10-13 14:06:53.000
+    109
+    2025-10-13 14:06:54.000
+    166
+    2025-10-13 14:06:55.000
+    108
+    2025-10-13 14:06:56.000
+    410
+    2025-10-13 14:06:57.000
+    199
+    2025-10-13 14:06:58.000
+    223
+    2025-10-13 14:06:59.000
+    323
+    2025-10-13 14:07:00.000
+    496",0.880,1,MagaEngine (Ant Group) / Custom FT-based,"A MixtBStars 43B-parameter model optimized for query-to-large-model recommendation sessions in e-commerce scenarios. It executes no-thought reasoning for real-time session-based recommendations using supervised fine-tuning (SFT), deployed on custom accelerator accelerators with RDMA support for high-throughput inference."
+queryrec-session2bigmodel-tbstars-rl-na175-custom accelerator-2tp.inference-part0-5a3b28c5-b-17ba,queryrec_session2bigmodel_tbstars_rl,tbstars2_0-moe-42A3_5-instruct,5,46,"{
+  ""_name_or_path"": ""/data/cpfs_0/lian/base_models/tbstars_model/008_a3.5_stage5/"",
+  ""architectures"": [
+    ""MixTBStarsForCausalLM""
+  ],
+  ""attention_bias"": true,
+  ""attention_dropout"": 0.0,
+  ""auto_map"": {
+    ""AutoConfig"": ""configuration_mixtbstars.MixTBStarsConfig"",
+    ""AutoModelForCausalLM"": ""modeling_mixtbstars.MixTBStarsForCausalLM""
+  },
+  ""bos_token_id"": 5,
+  ""eos_token_id"": 6,
+  ""expert_dropout"": 0,
+  ""first_k_dense_layers"": 0,
+  ""hidden_act"": ""silu"",
+  ""hidden_dropout"": 0.0,
+  ""hidden_size"": 2560,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 1664,
+  ""max_position_embeddings"": 8192,
+  ""model_type"": ""mixtbstars"",
+  ""num_attention_heads"": 20,
+  ""num_experts_per_tok"": 6,
+  ""num_hidden_layers"": 28,
+  ""num_key_value_heads"": 20,
+  ""num_routed_experts"": 112,
+  ""num_shared_experts"": 2,
+  ""output_router_logits"": true,
+  ""pad_token_id"": 0,
+  ""pretraining_tp"": 1,
+  ""rms_norm_eps"": 1e-06,
+  ""rope_scaling"": null,
+  ""rope_theta"": 10000.0,
+  ""router_aux_loss_coef"": 0.001,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""float32"",
+  ""transformers_version"": ""4.42.4"",
+  ""use_cache"": true,
+  ""vocab_size"": 128000
+}",custom accelerator,419.4,1382.0,48.0,2,"2 
+","2025-10-13 14:03:25.000
+  11
+  2025-10-13 14:03:26.000
+  8
+  2025-10-13 14:03:27.000
+  10
+  2025-10-13 14:03:28.000
+  9
+  2025-10-13 14:03:29.000
+  12
+  2025-10-13 14:03:30.000
+  5
+  2025-10-13 14:03:31.000
+  5
+  2025-10-13 14:03:32.000
+  3
+  2025-10-13 14:03:33.000
+  4
+  2025-10-13 14:03:34.000
+  11
+  2025-10-13 14:03:35.000
+  8","22025-10-13 14:03:25.000
+  118
+  2025-10-13 14:03:26.000
+  120
+  2025-10-13 14:03:27.000
+  133
+  2025-10-13 14:03:28.000
+  77.0
+  2025-10-13 14:03:29.000
+  36.5
+  2025-10-13 14:03:30.000
+  26.6
+  2025-10-13 14:03:31.000
+  44.8
+  2025-10-13 14:03:32.000
+  94.4
+  2025-10-13 14:03:33.000
+  90.0
+  2025-10-13 14:03:34.000
+  59.5
+  2025-10-13 14:03:35.000
+  41.4",0.895,2,MagaEngine (Ant Group) / Custom FT-based,"A 43B-parameter MixTStars model specialized for query recommendation in large-scale e-commerce sessions with reinforcement learning (RL) optimization, running on dual custom accelerator GPUs with tensor parallelism (TP=2), INT8/FP16 mixed precision, and RDMA-accelerated inference, supporting long sequence lengths up to 4096 tokens for high-accuracy, context-aware query suggestions."
+qwen2-5-3b-instruct-na61-a10.inference-part0-0ef50278-a-6551,Qwen2.5_3B-Instruct,qwen3-8B,2,10,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 4096,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 12288,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 36,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 32,
+  ""num_hidden_layers"": 36,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.0"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",A10,125.0,600.0,24.0,1,"1
+","2025-10-09 13:10:07.000
+    5
+    2025-10-09 13:10:08.000
+    1
+    2025-10-09 13:10:09.000
+    4
+    2025-10-09 13:10:10.000
+    4
+    2025-10-09 13:10:11.000
+    2
+    2025-10-09 13:10:12.000
+    4
+    2025-10-09 13:10:13.000
+    2
+    2025-10-09 13:10:14.000
+    3
+    2025-10-09 13:10:15.000
+    3
+    2025-10-09 13:10:16.000
+    4
+    2025-10-09 13:10:17.000
+    4","2025-10-09 13:10:07.000
+    129
+    2025-10-09 13:10:08.000
+    79
+    2025-10-09 13:10:09.000
+    81.9
+    2025-10-09 13:10:10.000
+    128
+    2025-10-09 13:10:11.000
+    30.1
+    2025-10-09 13:10:12.000
+    117
+    2025-10-09 13:10:13.000
+    131
+    2025-10-09 13:10:14.000
+    64.1
+    2025-10-09 13:10:15.000
+    145
+    2025-10-09 13:10:16.000
+    55.0
+    2025-10-09 13:10:17.000
+    111",0.983,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen-2.5 3B model specialized for instruction-following tasks in e-commerce scenarios, running on a single A10 GPU with MagaEngine to generate accurate and context-aware responses for customer service and product recommendation applications."
+qwen2-ast-sft-modelv2-kto-na61-a800.inference-part0-1f6ff837-a-f0dd,qwen2_ast_sft_modelv2_kto,qwen2-7B,18,20,"{
+  ""_name_or_path"": ""local_model_path_from_pangu"",
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 2,
+  ""end_token_id"": 2,
+  ""eos_token_id"": 2,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 4096,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 13440,
+  ""max_position_embeddings"": 65536,
+  ""max_window_layers"": 28,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 32,
+  ""num_hidden_layers"": 32,
+  ""num_key_value_heads"": 4,
+  ""rms_norm_eps"": 0.00001,
+  ""rope_theta"": 1000000,
+  ""rotary_emb_base"": 1000000,
+  ""seq_length"": 65536,
+  ""sliding_window"": 65536,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.38.1"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 92304
+}",A800,312.0,2039.0,80.0,1,"1
+","2025-10-10 16:11:36.000
+  0.999
+  2025-10-10 16:11:37.000
+  0.999
+  2025-10-10 16:11:38.000
+  2.00
+  2025-10-10 16:11:39.000
+  0
+  2025-10-10 16:11:40.000
+  0.998
+  2025-10-10 16:11:41.000
+  0
+  2025-10-10 16:11:42.000
+  2.00
+  2025-10-10 16:11:43.000
+  0.999
+  2025-10-10 16:11:44.000
+  0.999
+  2025-10-10 16:11:45.000
+  0
+  2025-10-10 16:11:46.000
+  0.999","2025-10-10 16:11:40
+    463",0.510 ,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen2-7B model service deployed for inference on NVIDIA A800 GPUs with 4 CPU cores, 30GiB memory, and FP16 precision, utilizing vLLM with 1-GPU tensor parallelism in a Kubernetes environment with FUSE-based remote model loading for enterprise-level language tasks like text generation and dialogue systems."
+qwen2p5-3b-servicetrace-front-v250630-na61-l20.inference-part0-558a345e-b-1561,qwen2p5_3b_serviceTrace_front_v250630,qwen2.5-3B-instruct,13,22.5,"{
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 11008,
+  ""max_position_embeddings"": 32768,
+  ""max_window_layers"": 70,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 16,
+  ""num_hidden_layers"": 36,
+  ""num_key_value_heads"": 2,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": 32768,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.1"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",L20,119.5,864.0,48.0,1,"1
+","2025-10-10 12:57:03.000
+    0.999
+    2025-10-10 12:57:04.000
+    2.00
+    2025-10-10 12:57:05.000
+    0.999
+    2025-10-10 12:57:06.000
+    0.999
+    2025-10-10 12:57:07.000
+    2.00
+    2025-10-10 12:57:08.000
+    2.00
+    2025-10-10 12:57:09.000
+    2.00
+    2025-10-10 12:57:10.000
+    0
+    2025-10-10 12:57:11.000
+    2.00
+    2025-10-10 12:57:12.000
+    0
+    2025-10-10 12:57:13.000
+    4.00","2025-10-10 12:57:03.000
+    31.4
+    2025-10-10 12:57:04.000
+    27.5
+    2025-10-10 12:57:05.000
+    41.1
+    2025-10-10 12:57:07.000
+    142
+    2025-10-10 12:57:08.000
+    1.17
+    2025-10-10 12:57:09.000
+    45.6
+    2025-10-10 12:57:10.000
+    1
+    2025-10-10 12:57:11.000
+    44.5
+    2025-10-10 12:57:12.000
+    1
+    2025-10-10 12:57:13.000
+    90.3",0.550,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen2.5-3B inference service deployed on L20 GPUs with 1-GPU tensor parallelism (TP=1) for service trace and recommendation tasks, optimized for low-latency batch inference with FP16/INT8 quantization, PagedAttention, and FUSE-based remote model loading in a Kubernetes environment with GPU resource isolation and backup pod redundancy."
+qwen2p5-3b-servicetrace-front-v250630-na61-l20.inference-part0-6c11fea3-b-136d,qwen2p5_3b_serviceTrace_front_v250630,qwen2.5-3B-instruct,13,26,"{
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 11008,
+  ""max_position_embeddings"": 32768,
+  ""max_window_layers"": 70,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 16,
+  ""num_hidden_layers"": 36,
+  ""num_key_value_heads"": 2,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": 32768,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.1"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",L20,119.5,864.0,48.0,1,"1
+","2025-10-12 11:14:32.000
+        0.999
+        2025-10-12 11:14:33.000
+        2.00
+        2025-10-12 11:14:34.000
+        0.999
+        2025-10-12 11:14:35.000
+        2.00
+        2025-10-12 11:14:36.000
+        0.999
+        2025-10-12 11:14:37.000
+        0.998
+        2025-10-12 11:14:38.000
+        0.999
+        2025-10-12 11:14:39.000
+        0
+        2025-10-12 11:14:40.000
+        2.00
+        2025-10-12 11:14:41.000
+        0
+        2025-10-12 11:14:42.000
+        0","2025-10-12 11:14:32.000
+        79.1
+        2025-10-12 11:14:33.000
+        127
+        2025-10-12 11:14:34.000
+        40.9
+        2025-10-12 11:14:35.000
+        147
+        2025-10-12 11:14:36.000
+        46.0
+        2025-10-12 11:14:37.000
+        1
+        2025-10-12 11:14:38.000
+        93.5
+        2025-10-12 11:14:39.000
+        422
+        2025-10-12 11:14:40.000
+        1.86",0.450,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen2.5-3B inference service deployed on L20 GPUs with 1-GPU tensor parallelism (TP=1) for service trace and recommendation tasks, optimized for low-latency batch inference with FP16/INT8 quantization, PagedAttention, and FUSE-based remote model loading in a Kubernetes environment with GPU resource isolation and backup pod redundancy."
+qwen2p5-3b-servicetrace-front-v250630-na61-l20.inference-part0-75061cb7-b-dc9b,qwen2p5_3b_serviceTrace_front_v250630,qwen2.5-3B-instruct,13,25,"{
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 11008,
+  ""max_position_embeddings"": 32768,
+  ""max_window_layers"": 70,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 16,
+  ""num_hidden_layers"": 36,
+  ""num_key_value_heads"": 2,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": 32768,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.1"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",L20,119.5,864.0,48.0,1,"1
+","2025-10-09 19:04:26.000
+    0
+    2025-10-09 19:04:27.000
+    2
+    2025-10-09 19:04:28.000
+    0
+    2025-10-09 19:04:29.000
+    6
+    2025-10-09 19:04:30.000
+    4
+    2025-10-09 19:04:31.000
+    1
+    2025-10-09 19:04:32.000
+    3
+    2025-10-09 19:04:33.000
+    1
+    2025-10-09 19:04:34.000
+    1
+    2025-10-09 19:04:35.000
+    5
+    2025-10-09 19:04:36.000
+    1","2025-10-09 19:04:27.000
+    115
+    2025-10-09 19:04:28.000
+    101
+    2025-10-09 19:04:29.000
+    169
+    2025-10-09 19:04:30.000
+    78.8
+    2025-10-09 19:04:31.000
+    26.8
+    2025-10-09 19:04:32.000
+    23.8
+    2025-10-09 19:04:33.000
+    38.1
+    2025-10-09 19:04:34.000
+    53.7
+    2025-10-09 19:04:35.000
+    67.7
+    2025-10-09 19:04:36.000
+    54.2",0.535,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen-2.5 3B model specialized for service trace analysis in customer support scenarios, running on a single L20 GPU with MagaEngine to analyze user interaction traces and generate structured insights for improving service quality."
+qwen2p5-3b-servicetrace-front-v250630-na61-l20.inference-part0-75061cb7-b-dc9b,qwen2p5_3b_serviceTrace_front_v250630,qwen2.5-3B-instruct,13,29,"{
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 11008,
+  ""max_position_embeddings"": 32768,
+  ""max_window_layers"": 70,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 16,
+  ""num_hidden_layers"": 36,
+  ""num_key_value_heads"": 2,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": 32768,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.1"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",L20,119.0,864.0,48.0,1,"1
+","2025-10-11 19:46:13.000
+    1
+    2025-10-11 19:46:14.000
+    1
+    2025-10-11 19:46:15.000
+    3
+    2025-10-11 19:46:16.000
+    0
+    2025-10-11 19:46:17.000
+    3
+    2025-10-11 19:46:18.000
+    2
+    2025-10-11 19:46:19.000
+    0
+    2025-10-11 19:46:20.000
+    3
+    2025-10-11 19:46:21.000
+    1
+    2025-10-11 19:46:22.000
+    2
+    2025-10-11 19:46:23.000
+    1","2025-10-11 19:46:13.000
+    68.3
+    2025-10-11 19:46:14.000
+    64.2
+    2025-10-11 19:46:15.000
+    21
+    2025-10-11 19:46:17.000
+    115
+    2025-10-11 19:46:18.000
+    59.1
+    2025-10-11 19:46:19.000
+    203
+    2025-10-11 19:46:20.000
+    21.0
+    2025-10-11 19:46:21.000
+    125
+    2025-10-11 19:46:22.000
+    52.6
+    2025-10-11 19:46:23.000
+    1",0.7,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen-2.5 3B model, fine-tuned with SFT and a LoRA adapter for analyzing user service traces in a front-end AlimeLLM application. It runs on a single L20 GPU, leveraging MagaEngine for real-time inference."
+qwen3-14b-yizhang-test-ea119-custom accelerator.inference-part0-29ea89e8-a-a9ef,qwen3_14b_yizhang_test,Qwen3-14B,32,86,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 25600,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 64,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",custom accelerator,118.0,2765.0,96.0,1,"1
+","2025-10-12 10:34:13.000
+    2
+    2025-10-12 10:34:14.000
+    4
+    2025-10-12 10:34:15.000
+    3
+    2025-10-12 10:34:16.000
+    1
+    2025-10-12 10:34:17.000
+    5
+    2025-10-12 10:34:18.000
+    2
+    2025-10-12 10:34:19.000
+    2
+    2025-10-12 10:34:20.000
+    6
+    2025-10-12 10:34:21.000
+    2
+    2025-10-12 10:34:22.000
+    3
+    2025-10-12 10:34:23.000
+    1","2025-10-12 10:34:13.000
+    8.17
+    2025-10-12 10:34:14.000
+    10.7
+    2025-10-12 10:34:15.000
+    5.92
+    2025-10-12 10:34:16.000
+    14.4
+    2025-10-12 10:34:17.000
+    7.18
+    2025-10-12 10:34:18.000
+    11.2
+    2025-10-12 10:34:19.000
+    7.44
+    2025-10-12 10:34:20.000
+    27.4
+    2025-10-12 10:34:21.000
+    7.05
+    2025-10-12 10:34:22.000
+    8.80
+    2025-10-12 10:34:23.000
+    4.29",0.72,1,MagaEngine (Ant Group) / Custom FT-based,"An SFT fine-tuned Qwen3-14B model for the 'Yizhang' test project, specialized in generating imitation-based recommendation reasons for 'guess you like' e-commerce scenarios. It runs on a single custom accelerator GPU, leveraging MagaEngine for efficient real-time inference."
+qwen3-14b-yizhang-test-ea119-custom accelerator.inference-part0-3be38692-a-32fe,qwen3_14b_yizhang_test,Qwen3-14B,32,86,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 25600,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 64,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",custom accelerator,118.0,2765.0,96.0,1,"1
+","2025-10-11 15:20:35.000
+    4
+    2025-10-11 15:20:36.000
+    3
+    2025-10-11 15:20:37.000
+    3
+    2025-10-11 15:20:38.000
+    2
+    2025-10-11 15:20:39.000
+    2
+    2025-10-11 15:20:40.000
+    1
+    2025-10-11 15:20:41.000
+    1
+    2025-10-11 15:20:42.000
+    5
+    2025-10-11 15:20:43.000
+    2
+    2025-10-11 15:20:44.000
+    1
+    2025-10-11 15:20:45.000
+    5","2025-10-11 15:20:35.000
+    7.74
+    2025-10-11 15:20:36.000
+    18.4
+    2025-10-11 15:20:37.000
+    13.4
+    2025-10-11 15:20:38.000
+    4.17
+    2025-10-11 15:20:39.000
+    5
+    2025-10-11 15:20:40.000
+    6.09
+    2025-10-11 15:20:41.000
+    16.2
+    2025-10-11 15:20:42.000
+    13.5
+    2025-10-11 15:20:43.000
+    5.62
+    2025-10-11 15:20:44.000
+    28.4
+    2025-10-11 15:20:45.000
+    6.65",0.96,1,MagaEngine (Ant Group) / Custom FT-based,"An SFT fine-tuned Qwen3-14B model for the 'Yizhang' test project, specialized in generating imitation-based recommendation reasons for 'guess you like' e-commerce scenarios. It runs on a single custom accelerator GPU, leveraging MagaEngine for efficient real-time inference."
+qwen3-32b-for-omega-na175-h20-2tp-gspot.inference-part0-c89f5475-a-f8ec,Qwen3-32B_for_omega,qwen3-32b,50,380,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 25600,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 64,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.0"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,2,"2
+","2025-10-10 17:00:07.000
+    0
+    2025-10-10 17:00:08.000
+    0
+    2025-10-10 17:00:09.000
+    0
+    2025-10-10 17:00:10.000
+    1
+    2025-10-10 17:00:11.000
+    3
+    2025-10-10 17:00:12.000
+    0
+    2025-10-10 17:00:13.000
+    2
+    2025-10-10 17:00:14.000
+    1
+    2025-10-10 17:00:15.000
+    1
+    2025-10-10 17:00:16.000
+    0
+    2025-10-10 17:00:17.000
+    0","2025-10-10 17:00:08.000
+    3.73 K
+    2025-10-10 17:00:09.000
+    125
+    2025-10-10 17:00:10.000
+    123
+    2025-10-10 17:00:11.000
+    116
+    2025-10-10 17:00:12.000
+    3.19 K
+    2025-10-10 17:00:13.000
+    241
+    2025-10-10 17:00:14.000
+    342
+    2025-10-10 17:00:15.000
+    199
+    2025-10-10 17:00:16.000
+    540
+    2025-10-10 17:00:17.000
+    1.34 K",0.990,2,MagaEngine (Ant Group) / Custom FT-based,"A Qwen3-32B model optimized for batch inference in Omega_Batch e-commerce recommendation scenarios. It performs large-scale item-grained reasoning with 30B parameter scale using dual H20 GPUs via MagaEngine, supporting FP16/bf16 precision and tensor parallelism (TP_SIZE=2) for high-throughput inference."
+qwen3-32b-for-omega-na61-h20-2tp-spot.inference-part0-a9ca7487-a-acf8,Qwen3-32B_for_omega,Qwen3-32B,50,144,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 25600,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 64,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.0"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,2,"2
+","2025-10-12 11:42:36.000
+        0.999
+        2025-10-12 11:42:37.000
+        0.999
+        2025-10-12 11:42:38.000
+        0
+        2025-10-12 11:42:39.000
+        2.00
+        2025-10-12 11:42:40.000
+        0.999
+        2025-10-12 11:42:41.000
+        0
+        2025-10-12 11:42:42.000
+        0.999
+        2025-10-12 11:42:43.000
+        0.998
+        2025-10-12 11:42:44.000
+        0
+        2025-10-12 11:42:45.000
+        0
+        2025-10-12 11:42:46.000
+        0","2025-10-12 11:42:36.000
+        115
+        2025-10-12 11:42:37.000
+        87.1
+        2025-10-12 11:42:38.000
+        63.1
+        2025-10-12 11:42:39.000
+        128
+        2025-10-12 11:42:40.000
+        88.0
+        2025-10-12 11:42:41.000
+        63
+        2025-10-12 11:42:42.000
+        90.9
+        2025-10-12 11:42:43.000
+        84.5
+        2025-10-12 11:42:44.000
+        64
+        2025-10-12 11:42:45.000
+        64
+        2025-10-12 11:42:46.000
+        64",0.990,2,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen3-32B inference service deployed on H20 GPUs with 2-Tensor Parallelism (TP=2) for long-context LLM tasks, optimized for enterprise document fusion (e.g., PDFUSION) and high-throughput batch inference. It leverages FP16/INT8 quantization, PagedAttention, and FUSE-based remote model loading in a Kubernetes environment with GPU resource isolation and spot instance optimization."
+qwen3-32b-for-omega-na61-h20-2tp-spot.inference-part0-bc9a835b-a-6726,Qwen3-32B_for_omega,Qwen3-32B,50,325,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 25600,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 64,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.0"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,2,"2
+","2025-10-09 21:44:07.000
+    0
+    2025-10-09 21:44:08.000
+    3.00
+    2025-10-09 21:44:09.000
+    0.999
+    2025-10-09 21:44:10.000
+    0.999
+    2025-10-09 21:44:11.000
+    2.00
+    2025-10-09 21:44:12.000
+    0.998
+    2025-10-09 21:44:13.000
+    1.99
+    2025-10-09 21:44:14.000
+    0
+    2025-10-09 21:44:15.000
+    3.00
+    2025-10-09 21:44:16.000
+    0
+    2025-10-09 21:44:17.000
+    0.999","2025-10-09 21:44:07.000
+    1.04 K
+    2025-10-09 21:44:08.000
+    107
+    2025-10-09 21:44:09.000
+    2.34 K
+    2025-10-09 21:44:10.000
+    131
+    2025-10-09 21:44:11.000
+    281
+    2025-10-09 21:44:12.000
+    449
+    2025-10-09 21:44:13.000
+    110
+    2025-10-09 21:44:14.000
+    996
+    2025-10-09 21:44:15.000
+    265
+    2025-10-09 21:44:16.000
+    167
+    2025-10-09 21:44:17.000
+    127",0.985,2,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen3-32B inference service deployed on H20 GPUs with 2-Tensor Parallelism (TP=2) for long-context LLM tasks, optimized for enterprise document fusion (e.g., PDFUSION) and high-throughput batch inference. It leverages FP16/INT8 quantization, PagedAttention, and FUSE-based remote model loading in a Kubernetes environment with GPU resource isolation and spot instance optimization."
+qwen3-item-grained-reason-v32-ea119-custom accelerator.inference-part0-4df159da-a-5df8,qwen3-item-grained-reason-v32,qwen3-32B,50,252,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 25600,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 64,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",custom accelerator,118.0,2765.0,96.0,1,"1 
+","2025-10-12 18:02:13.000
+    11
+    2025-10-12 18:02:14.000
+    0
+    2025-10-12 18:02:15.000
+    0
+    2025-10-12 18:02:16.000
+    8
+    2025-10-12 18:02:17.000
+    0
+    2025-10-12 18:02:18.000
+    10
+    2025-10-12 18:02:19.000
+    0
+    2025-10-12 18:02:20.000
+    0
+    2025-10-12 18:02:21.000
+    9
+    2025-10-12 18:02:22.000
+    0
+    2025-10-12 18:02:23.000
+    12","2025-10-12 18:02:13.000
+    3.00 K
+    2025-10-12 18:02:16.000
+    5.97 K
+    2025-10-12 18:02:18.000
+    4.58 K
+    2025-10-12 18:02:21.000
+    4.74 K
+    2025-10-12 18:02:23.000
+    4.86 K",1.0,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen3-14B model specialized for generating explainable recommendations in e-commerce 'guess you like' scenarios using fine-grained item reasoning, deployed on custom accelerator hardware with MagaEngine acceleration for efficient real-time inference."
+qwen3-item-grained-reason-v32-ea119-custom accelerator.inference-part0-5fb11240-a-6c48,qwen3-item-grained-reason-v32,qwen3-32B,47,284,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 25600,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 64,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",custom accelerator,118.0,2765.0,96.0,1,"1
+","2025-10-10 19:04:15.000
+    11
+    2025-10-10 19:04:16.000
+    10
+    2025-10-10 19:04:17.000
+    17
+    2025-10-10 19:04:18.000
+    12
+    2025-10-10 19:04:19.000
+    13
+    2025-10-10 19:04:20.000
+    17
+    2025-10-10 19:04:21.000
+    13
+    2025-10-10 19:04:22.000
+    11
+    2025-10-10 19:04:23.000
+    17
+    2025-10-10 19:04:24.000
+    11
+    2025-10-10 19:04:25.000
+    17","2025-10-10 19:08:58.000
+    6.19 K
+    2025-10-10 19:08:59.000
+    1.55 K
+    2025-10-10 19:09:01.000
+    3.95 K
+    2025-10-10 19:09:04.000
+    5.59 K
+    2025-10-10 19:09:06.000
+    4.17 K",1.000,1,MagaEngine (Ant Group) / Custom FT-based,"An SFT-fine-tuned Qwen_3 14B model specialized for generating fine-grained, explainable recommendations for e-commerce 'guess you like' scenarios. It produces natural language justifications by reasoning over item-level data, running on a single custom accelerator GPU with MagaEngine for efficient real-time inference."
+qwen3-item-grained-reason-v32-na61-a100.inference-part0-03fd868f-a-5305,qwen3-item-grained-reason-v32,qwen3-32B,33,139,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0.0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 25600,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 64,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 1e-06,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",A100,312.0,2039.0,80.0,1,"1
+","2025-10-09 14:36:31.000
+    5
+    2025-10-09 14:36:32.000
+    4
+    2025-10-09 14:36:33.000
+    4
+    2025-10-09 14:36:34.000
+    4
+    2025-10-09 14:36:35.000
+    2
+    2025-10-09 14:36:36.000
+    4
+    2025-10-09 14:36:37.000
+    4
+    2025-10-09 14:36:38.000
+    3
+    2025-10-09 14:36:39.000
+    3
+    2025-10-09 14:36:40.000
+    5
+    2025-10-09 14:36:41.000
+    2","2025-10-09 14:36:31.000
+    186
+    2025-10-09 14:36:32.000
+    114
+    2025-10-09 14:36:33.000
+    149
+    2025-10-09 14:36:34.000
+    169
+    2025-10-09 14:36:35.000
+    164
+    2025-10-09 14:36:36.000
+    294
+    2025-10-09 14:36:37.000
+    77.9
+    2025-10-09 14:36:38.000
+    270
+    2025-10-09 14:36:39.000
+    281
+    2025-10-09 14:36:40.000
+    181
+    2025-10-09 14:36:41.000
+    258",0.970,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen-3 14B model specialized for fine-grained item reasoning in e-commerce 'guess you like' recommendation scenarios, running on a single A100 GPU with MagaEngine to generate detailed natural language justifications based on user and product data for personalized suggestions."
+qwen3-item-grained-reason-v32-na61-a100.inference-part0-a65ed475-a-8f88,qwen3-item-grained-reason-v32,qwen3-32B,20,85,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0.0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 25600,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 64,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 1e-06,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",A100,312.0,2039.0,80.0,1,"1 
+","2025-10-12 21:16:25.000
+  3
+  2025-10-12 21:16:26.000
+  3
+  2025-10-12 21:16:27.000
+  5
+  2025-10-12 21:16:28.000
+  4
+  2025-10-12 21:16:29.000
+  3
+  2025-10-12 21:16:30.000
+  4
+  2025-10-12 21:16:31.000
+  4
+  2025-10-12 21:16:32.000
+  4
+  2025-10-12 21:16:33.000
+  4
+  2025-10-12 21:16:34.000
+  5
+  2025-10-12 21:16:35.000
+  5","2025-10-12 21:16:25.000
+  238
+  2025-10-12 21:16:26.000
+  143
+  2025-10-12 21:16:27.000
+  201
+  2025-10-12 21:16:28.000
+  197
+  2025-10-12 21:16:29.000
+  363
+  2025-10-12 21:16:30.000
+  204
+  2025-10-12 21:16:31.000
+  204
+  2025-10-12 21:16:32.000
+  168
+  2025-10-12 21:16:33.000
+  213
+  2025-10-12 21:16:34.000
+  205
+  2025-10-12 21:16:35.000
+  205",0.98,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen3-14B model specialized for generating explainable recommendations in e-commerce 'guess you like' scenarios. It uses fine-grained item reasoning to produce natural language justifications based on user and product data, running on a single A100 GPU with MagaEngine for efficient real-time inference."
+qwen3-item-grained-reason-v32-na61-a100.inference-part0-fa075f75-a-3814,qwen3-item-grained-reason-v32,qwen3-32B,22,90,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0.0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 25600,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 64,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 1e-06,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",A100,312.0,2039.0,80.0,1,"1
+","2025-10-11 19:18:07.000
+    5
+    2025-10-11 19:18:08.000
+    4
+    2025-10-11 19:18:09.000
+    4
+    2025-10-11 19:18:10.000
+    3
+    2025-10-11 19:18:11.000
+    5
+    2025-10-11 19:18:12.000
+    4
+    2025-10-11 19:18:13.000
+    5
+    2025-10-11 19:18:14.000
+    5
+    2025-10-11 19:18:15.000
+    3
+    2025-10-11 19:18:16.000
+    4
+    2025-10-11 19:18:17.000
+    3","2025-10-11 19:18:07.000
+    209
+    2025-10-11 19:18:08.000
+    295
+    2025-10-11 19:18:09.000
+    140
+    2025-10-11 19:18:10.000
+    222
+    2025-10-11 19:18:11.000
+    289
+    2025-10-11 19:18:12.000
+    221
+    2025-10-11 19:18:13.000
+    131
+    2025-10-11 19:18:14.000
+    154
+    2025-10-11 19:18:15.000
+    229
+    2025-10-11 19:18:16.000
+    170
+    2025-10-11 19:18:17.000
+    202",0.97,1,MagaEngine (Ant Group) / Custom FT-based,"An SFT fine-tuned Qwen-3 14B model specialized for generating fine-grained, explainable recommendations for e-commerce 'guess you like' scenarios. It produces natural language justifications by reasoning over item-level data, running on a single A100-SXM4-80GB GPU with MagaEngine for efficient real-time inference."
+qwen3-item-grained-reason-v32-na61-h20.inference-part0-55d391c2-a-dcac,qwen3-item-grained-reason-v32,qwen3-32B,40,724,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0.0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 25600,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 64,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 1e-06,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-06 11:05:04.000
+    0
+    2025-10-06 11:05:05.000
+    10
+    2025-10-06 11:05:06.000
+    0
+    2025-10-06 11:05:07.000
+    0
+    2025-10-06 11:05:08.000
+    12
+    2025-10-06 11:05:09.000
+    0
+    2025-10-06 11:05:10.000
+    0
+    2025-10-06 11:05:11.000
+    8
+    2025-10-06 11:05:12.000
+    0
+    2025-10-06 11:05:13.000
+    8
+    2025-10-06 11:05:14.000
+    0
+    2025-10-06 11:05:15.000
+    13
+    2025-10-06 11:05:16.000
+    0
+    2025-10-06 11:05:17.000
+    0","2025-10-06 11:05:05.000
+    5.59 K
+    2025-10-06 11:05:08.000
+    5.08 K
+    2025-10-06 11:05:11.000
+    6.54 K
+    2025-10-06 11:05:13.000
+    4.12 K
+    2025-10-06 11:05:15.000
+    3.97 K",0.992,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen3-14B model specialized for generating explainable recommendations in e-commerce 'guess you like' scenarios. It uses fine-grained item reasoning to produce natural language justifications based on user and product data, running on a single H20 GPU with MagaEngine for efficient real-time inference."
+qwen3-item-grained-reason-v32-na61-h20.inference-part0-9d8668c6-a-8722,qwen3-item-grained-reason-v32,qwen3-32B,40,234,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0.0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 25600,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 64,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 1e-06,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1 
+","2025-10-12 13:48:44.000
+  0
+  2025-10-12 13:48:45.000
+  13
+  2025-10-12 13:48:46.000
+  0
+  2025-10-12 13:48:47.000
+  13
+  2025-10-12 13:48:48.000
+  0
+  2025-10-12 13:48:49.000
+  0
+  2025-10-12 13:48:50.000
+  6
+  2025-10-12 13:48:51.000
+  0
+  2025-10-12 13:48:52.000
+  0
+  2025-10-12 13:48:53.000
+  12
+  2025-10-12 13:48:54.000
+  0","2025-10-12 13:48:45.000
+  5.69 K
+  2025-10-12 13:48:47.000
+  5.17 K
+  2025-10-12 13:48:50.000
+  6.11 K
+  2025-10-12 13:48:53.000
+  5.39 K",0.993,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen3-14B model specialized for generating explainable recommendations in e-commerce 'guess you like' scenarios using fine-grained item reasoning, deployed for real-time inference on a single H20 GPU with MagaEngine acceleration."
+qwen3-item-grained-reason-v32-na61-h20.inference-part0-e23faf32-b-aee2,qwen3-item-grained-reason-v32_na61_H20,qwen3-32B,40,183,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0.0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 25600,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 64,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 1e-06,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1 
+","2025-10-09 23:28:46.000
+    4.99
+    2025-10-09 23:28:47.000
+    2.00
+    2025-10-09 23:28:48.000
+    3.00
+    2025-10-09 23:28:49.000
+    2.00
+    2025-10-09 23:28:50.000
+    3.99
+    2025-10-09 23:28:51.000
+    3.00
+    2025-10-09 23:28:52.000
+    3.00
+    2025-10-09 23:28:53.000
+    2.00
+    2025-10-09 23:28:54.000
+    4.00
+    2025-10-09 23:28:55.000
+    0.999
+    2025-10-09 23:28:56.000
+    4.99","2025-10-09 23:28:46.000
+    5.55 K
+    2025-10-09 23:28:49.000
+    5.84 K
+    2025-10-09 23:28:51.000
+    3.88 K
+    2025-10-09 23:28:54.000
+    6.03 K",0.992,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen3-14B inference service deployed on H20 GPUs with 1-GPU tensor parallelism (TP=1) for item-level reasoning and recommendation tasks, optimized for low-latency batch inference with FP16/INT8 quantization, PagedAttention, and FUSE-based remote model loading in a Kubernetes environment with GPU resource isolation and backup pod redundancy."
+qwen3-item-grained-reason-v32-na61-h20.inference-part0-ed7253de-b-4c11,qwen3-item-grained-reason-v32,qwen3-32B,40,209,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0.0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 25600,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 64,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 1e-06,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-11 13:05:38.000
+    0
+    2025-10-11 13:05:39.000
+    16
+    2025-10-11 13:05:40.000
+    0
+    2025-10-11 13:05:41.000
+    0
+    2025-10-11 13:05:42.000
+    12
+    2025-10-11 13:05:43.000
+    0
+    2025-10-11 13:05:44.000
+    0
+    2025-10-11 13:05:45.000
+    10
+    2025-10-11 13:05:46.000
+    0
+    2025-10-11 13:05:47.000
+    0
+    2025-10-11 13:05:48.000
+    16","2025-10-11 13:05:39.000
+    5.39 K
+    2025-10-11 13:05:42.000
+    6.16 K
+    2025-10-11 13:05:45.000
+    6.29 K
+    2025-10-11 13:05:48.000
+    6.24 K",1,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen3-14B model specialized for generating explainable recommendations in e-commerce 'guess you like' scenarios. It uses fine-grained item reasoning to produce natural language justifications based on user and product data, running on a single H20 GPU with MagaEngine for efficient real-time inference."
+qwen3-item-grained-reason-v32-na61-h20.inference-part0-f6bce89c-a-cd77,qwen3-item-grained-reason-v32,qwen3-32B,40,165,"{
+  ""NVIDIA_H20_SXM5_96GB"": {""mem_bandwidth"": 4022 * (1024**3), ""FP16"": 148e12, ""INT8"": 296e12, ""memsize"": 96 * (1024**3), ""onchip_buffer"": 0, ""interconnect_bandwidth"": 900 * (1024**3)},
+  ""gpu_type"": ""H20"",
+  ""f_peak"": 148.0,  #""FP16的值""
+  ""memory_bandwidth"": 4022.0,
+  ""memory_size"": 96.0,
+  ""n_gpu"": 1,
+  ""tensor_parallelism"": 1
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-10 15:27:40.000
+    0
+    2025-10-10 15:27:41.000
+    9
+    2025-10-10 15:27:42.000
+    0
+    2025-10-10 15:27:43.000
+    0
+    2025-10-10 15:27:44.000
+    9
+    2025-10-10 15:27:45.000
+    0
+    2025-10-10 15:27:46.000
+    11
+    2025-10-10 15:27:47.000
+    0
+    2025-10-10 15:27:48.000
+    0
+    2025-10-10 15:27:49.000
+    11
+    2025-10-10 15:27:50.000
+    0","2025-10-10 15:27:41.000
+    5.63 K
+    2025-10-10 15:27:44.000
+    6.97 K
+    2025-10-10 15:27:46.000
+    4.44 K
+    2025-10-10 15:27:49.000
+    5.60 K",1.000,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen3-14B model specialized for item-grained reasoning in e-commerce 'guess you like' scenarios. It performs fine-grained product recommendation justifications with natural language explanations, utilizing a single H20 GPU and MagaEngine for optimized real-time inference with 14B parameter scale."
+qwen3-test2-na175-custom accelerator-2tp.inference-part0-a11ed737-a-4c1a,qwen3_test2,qwen3-30B-A3B,15,18,"{
+  ""architectures"": [
+    ""Qwen3MoeForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""decoder_sparse_step"": 1,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 6144,
+  ""max_position_embeddings"": 262144,
+  ""max_window_layers"": 48,
+  ""mlp_only_layers"": [],
+  ""model_type"": ""qwen3_moe"",
+  ""moe_intermediate_size"": 768,
+  ""norm_topk_prob"": true,
+  ""num_attention_heads"": 32,
+  ""num_experts"": 128,
+  ""num_experts_per_tok"": 8,
+  ""num_hidden_layers"": 48,
+  ""num_key_value_heads"": 4,
+  ""output_router_logits"": false,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 10000000,
+  ""router_aux_loss_coef"": 0.001,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.0"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",custom accelerator,118.0,1382.0,48.0,2,"2
+","2025-10-12 22:44:05.000
+  2
+  2025-10-12 22:44:06.000
+  0
+  2025-10-12 22:44:07.000
+  1
+  2025-10-12 22:44:08.000
+  2
+  2025-10-12 22:44:09.000
+  2
+  2025-10-12 22:44:10.000
+  0
+  2025-10-12 22:44:11.000
+  3
+  2025-10-12 22:44:12.000
+  2
+  2025-10-12 22:44:13.000
+  0
+  2025-10-12 22:44:14.000
+  1
+  2025-10-12 22:44:15.000
+  0","2025-10-12 22:44:05.000
+  65
+  2025-10-12 22:44:07.000
+  102
+  2025-10-12 22:44:08.000
+  91.2
+  2025-10-12 22:44:09.000
+  1.69
+  2025-10-12 22:44:11.000
+  148
+  2025-10-12 22:44:12.000
+  27.2
+  2025-10-12 22:44:14.000
+  57.1
+  2025-10-12 22:44:15.000
+  369",0.66,2,MagaEngine (Ant Group) / Custom FT-based,"A 30B-parameter Qwen-3-MoE LLM specialized for high-performance text generation, running on dual custom accelerator GPUs with 2TP parallelism and FP16 precision, optimized for real-time inference using MagaEngine with paged TRT FMHA, RDMA-enabled cache, and LoRA fine-tuning, deployed for AI-driven content creation in live scenarios."
+qwq-32b-for-omega-gspot-na61-custom accelerator-2tp-spot.inference-part0-fdc3b0e6-a-4b31,QwQ-32B_for_Omega_Gspot,QwQ-32B,50,43,"{
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0.0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 5120,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 27648,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 64,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 40,
+  ""num_hidden_layers"": 64,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 1e-05,
+  ""rope_theta"": 1000000.0,
+  ""sliding_window"": 32768,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.43.1"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 152064
+}",custom accelerator,118.0,2765.0,96.0,2,"2
+","2025-10-11 18:50:12.000
+        0
+        2025-10-11 18:50:13.000
+        0
+        2025-10-11 18:50:14.000
+        0
+        2025-10-11 18:50:15.000
+        0
+        2025-10-11 18:50:16.000
+        0
+        2025-10-11 18:50:17.000
+        0
+        2025-10-11 18:50:18.000
+        0
+        2025-10-11 18:50:19.000
+        0
+        2025-10-11 18:50:20.000
+        0.999
+        2025-10-11 18:50:21.000
+        0
+        2025-10-11 18:50:22.000
+        0","2025-10-11 18:50:12.000
+        45
+        2025-10-11 18:50:13.000
+        45
+        2025-10-11 18:50:14.000
+        45
+        2025-10-11 18:50:15.000
+        45
+        2025-10-11 18:50:16.000
+        45
+        2025-10-11 18:50:17.000
+        45
+        2025-10-11 18:50:18.000
+        45
+        2025-10-11 18:50:19.000
+        45
+        2025-10-11 18:50:20.000
+        44.3
+        2025-10-11 18:50:21.000
+        44
+        2025-10-11 18:50:22.000
+        44",0.990,2,MagaEngine (Ant Group) / Custom FT-based,"A 32B-parameter QwQ-32B model specialized for large-scale batch inference on custom accelerator hardware with 2TP parallelism, running FP16 precision, optimized for long sequence processing up to 62K tokens using MagaEngine and paged TRT FMHA, deployed in a spot instance cluster for cost-efficient offline reasoning tasks."
+recommend-intent-qwen3-4b-na61-h20.inference-part0-111907aa-a-bd11,recommend_intent-qwen3_4b,qwen3-4B,4,49.9,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2560,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 9728,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 36,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 32,
+  ""num_hidden_layers"": 36,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-12 12:15:54.000
+        5.99
+        2025-10-12 12:15:55.000
+        5.99
+        2025-10-12 12:15:56.000
+        7.99
+        2025-10-12 12:15:57.000
+        13.0
+        2025-10-12 12:15:58.000
+        9.99
+        2025-10-12 12:15:59.000
+        5.00
+        2025-10-12 12:16:00.000
+        7.99
+        2025-10-12 12:16:01.000
+        8.99
+        2025-10-12 12:16:02.000
+        11.0
+        2025-10-12 12:16:03.000
+        4.99
+        2025-10-12 12:16:04.000
+        11.0","2025-10-12 12:15:54.000
+        355
+        2025-10-12 12:15:55.000
+        280
+        2025-10-12 12:15:56.000
+        253
+        2025-10-12 12:15:57.000
+        411
+        2025-10-12 12:15:58.000
+        258
+        2025-10-12 12:15:59.000
+        375
+        2025-10-12 12:16:00.000
+        305
+        2025-10-12 12:16:01.000
+        337
+        2025-10-12 12:16:02.000
+        287
+        2025-10-12 12:16:03.000
+        294
+        2025-10-12 12:16:04.000
+        365",0.380,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen3-3B large language model service for enterprise intent recommendation, deployed on H20 GPU with real-time inference capabilities, designed for dynamic business content analysis and sensitive information detection in customer interaction scenarios."
+recommend-intent-qwen3-4b-na61-h20.inference-part0-928ea825-a-9825,recommend_intent-qwen3_4b,qwen3-4B,4,62,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2560,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 9728,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 36,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 32,
+  ""num_hidden_layers"": 36,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-09 12:01:27.000
+    7
+    2025-10-09 12:01:28.000
+    1
+    2025-10-09 12:01:29.000
+    21
+    2025-10-09 12:01:30.000
+    5
+    2025-10-09 12:01:31.000
+    11
+    2025-10-09 12:01:32.000
+    7
+    2025-10-09 12:01:33.000
+    11
+    2025-10-09 12:01:34.000
+    11
+    2025-10-09 12:01:35.000
+    8
+    2025-10-09 12:01:36.000
+    7
+    2025-10-09 12:01:37.000
+    13","2025-10-09 12:01:27.000
+    266
+    2025-10-09 12:01:28.000
+    2.08 K
+    2025-10-09 12:01:29.000
+    449
+    2025-10-09 12:01:30.000
+    291
+    2025-10-09 12:01:31.000
+    378
+    2025-10-09 12:01:32.000
+    294
+    2025-10-09 12:01:33.000
+    327
+    2025-10-09 12:01:34.000
+    338
+    2025-10-09 12:01:35.000
+    322
+    2025-10-09 12:01:36.000
+    353
+    2025-10-09 12:01:37.000
+    426",0.406,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen-3 4B model specialized for intent recognition in product recommendation scenarios, running on a single H20 GPU with MagaEngine to analyze user input and identify recommendation intents for personalized suggestions."
+recommend-intent-qwen3-4b-na61-h20.inference-part0-c9985554-a-0bd4,recommend_intent-qwen3_4b,qwen3-4B,4,41.9,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2560,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 9728,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 36,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 32,
+  ""num_hidden_layers"": 36,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",H20,148.0,4022.0,96.0,1,"1
+","2025-10-12 12:15:54.000
+        9.99
+        2025-10-12 12:15:55.000
+        12.0
+        2025-10-12 12:15:56.000
+        11.0
+        2025-10-12 12:15:57.000
+        6.99
+        2025-10-12 12:15:58.000
+        13.0
+        2025-10-12 12:15:59.000
+        8.99
+        2025-10-12 12:16:00.000
+        5.99
+        2025-10-12 12:16:01.000
+        3.00
+        2025-10-12 12:16:02.000
+        3.00
+        2025-10-12 12:16:03.000
+        7.99
+        2025-10-12 12:16:04.000
+        16.0","2025-10-12 12:15:54.000
+        378
+        2025-10-12 12:15:55.000
+        479
+        2025-10-12 12:15:56.000
+        324
+        2025-10-12 12:15:57.000
+        363
+        2025-10-12 12:15:58.000
+        353
+        2025-10-12 12:15:59.000
+        435
+        2025-10-12 12:16:00.000
+        241
+        2025-10-12 12:16:01.000
+        305
+        2025-10-12 12:16:02.000
+        257
+        2025-10-12 12:16:03.000
+        291
+        2025-10-12 12:16:04.000
+        400",0.370,1,MagaEngine (Ant Group) / Custom FT-based,"This is a Qwen3-3B large language model service for enterprise intent recommendation, deployed on H20 GPU with real-time inference capabilities, designed for dynamic business content analysis and sensitive information detection in customer interaction scenarios."
+safe-guard-ea119-custom accelerator-2tp.inference-part0-3f258c38-b-9029,safe_guard,qwen3-0.6B,2,24,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0.0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 1024,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 3072,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 28,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 16,
+  ""num_hidden_layers"": 28,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 1e-06,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.0"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",custom accelerator,118.0,2765.0,96.0,2,"2 
+","2025-10-12 21:58:12.000
+  12
+  2025-10-12 21:58:13.000
+  4
+  2025-10-12 21:58:14.000
+  6
+  2025-10-12 21:58:15.000
+  8
+  2025-10-12 21:58:16.000
+  6
+  2025-10-12 21:58:17.000
+  5
+  2025-10-12 21:58:18.000
+  11
+  2025-10-12 21:58:19.000
+  3
+  2025-10-12 21:58:20.000
+  10
+  2025-10-12 21:58:21.000
+  5
+  2025-10-12 21:58:22.000
+  5","2025-10-12 21:58:12.000
+  42.5
+  2025-10-12 21:58:13.000
+  40.4
+  2025-10-12 21:58:14.000
+  37.4
+  2025-10-12 21:58:15.000
+  114
+  2025-10-12 21:58:16.000
+  53.6
+  2025-10-12 21:58:17.000
+  37.1
+  2025-10-12 21:58:18.000
+  41.1
+  2025-10-12 21:58:19.000
+  182
+  2025-10-12 21:58:20.000
+  49.4
+  2025-10-12 21:58:21.000
+  34.1
+  2025-10-12 21:58:22.000
+  61.6",0.56,2,MagaEngine (Ant Group) / Custom FT-based,"A Qwen3-1B model specialized for real-time safety guarding in AI assistant scenarios, running on dual custom accelerator chips with tensor parallelism (TP=2), performing low-latency inference to detect unsafe content such as counterfeit goods, political sensitivity, and prohibited behaviors, using SFT-finetuned checkpoints loaded from OSS."
+semantic-id-qwen2-5-0-5b-fast-na175-custom accelerator.inference-part0-e357aaf6-a-3260,Semantic-ID-Qwen2_5-0_5B-fast,qwen2.5-0.5B,50,2170,"{
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 896,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 4864,
+  ""max_position_embeddings"": 32768,
+  ""max_window_layers"": 21,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 14,
+  ""num_hidden_layers"": 24,
+  ""num_key_value_heads"": 2,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": 32768,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""float32"",
+  ""transformers_version"": ""4.50.3"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 217216
+}",custom accelerator,118.0,2765.0,96.0,1,"1 
+","2025-10-12 22:16:20
+  16.2","2025-10-12 22:16:20
+  2.40 K",0.72,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen2-0.5B model specialized for fast semantic ID generation in e-commerce item understanding, running on a single custom accelerator chip with bf16 precision, optimized for high-throughput inference up to 512 concurrent requests, using SFT-finetuned checkpoints loaded from DFS for real-time product semantic representation."
+sku-spec-na175-custom accelerator.inference-part0-25585740-a-3422,sku_spec,tbstars-008-3B-base,5,33,"{
+  ""architectures"": [
+    ""TBStarsForCausalLM""
+  ],
+  ""attention_bias"": true,
+  ""attention_dropout"": 0,
+  ""auto_map"": {
+    ""AutoConfig"": ""configuration_tbstars.TBStarsConfig"",
+    ""AutoModel"": ""modeling_tbstars.TBStarsForCausalLM"",
+    ""AutoModelForCausalLM"": ""modeling_tbstars.TBStarsForCausalLM""
+  },
+  ""bos_token_id"": 1,
+  ""eos_token_id"": 2,
+  ""hidden_act"": ""silu"",
+  ""hidden_dropout"": 0,
+  ""hidden_size"": 3072,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 8192,
+  ""max_position_embeddings"": 8192,
+  ""model_type"": ""tbstars"",
+  ""num_attention_heads"": 24,
+  ""num_hidden_layers"": 24,
+  ""num_key_value_heads"": 24,
+  ""pad_token_id"": 0,
+  ""pretraining_tp"": 1,
+  ""rms_norm_eps"": 0.00001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 10000,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": false,
+  ""vocab_size"": 128000
+}",custom accelerator,118.0,1382.0,48.0,1,"1 
+","2025-10-12 23:21:12.000
+  5
+  2025-10-12 23:21:13.000
+  2
+  2025-10-12 23:21:14.000
+  0
+  2025-10-12 23:21:15.000
+  4
+  2025-10-12 23:21:16.000
+  8
+  2025-10-12 23:21:17.000
+  4
+  2025-10-12 23:21:18.000
+  3
+  2025-10-12 23:21:19.000
+  2
+  2025-10-12 23:21:20.000
+  0
+  2025-10-12 23:21:21.000
+  2
+  2025-10-12 23:21:22.000
+  0","2025-10-12 23:21:12.000
+  12.6
+  2025-10-12 23:21:13.000
+  12.9
+  2025-10-12 23:21:14.000
+  13.7
+  2025-10-12 23:21:15.000
+  13.0
+  2025-10-12 23:21:16.000
+  21.8
+  2025-10-12 23:21:17.000
+  20.9
+  2025-10-12 23:21:18.000
+  21.6
+  2025-10-12 23:21:19.000
+  10.7
+  2025-10-12 23:21:21.000
+  12.4",0.347,1,MagaEngine (Ant Group) / Custom FT-based,"A 3B-parameter TbStars model specialized for SKU specification generation in e-commerce product listings, running on a single custom accelerator GPU with FP16 precision and INT8 quantization support, optimized for long-context understanding up to 8192 tokens, enabling accurate and detailed attribute extraction and natural language description generation for product items."
+taolive-comment-intent-qwen2-14b-sft-na61-custom accelerator.inference-part0-68f3dc20-a-ac50,taolive_comment_intent_qwen2_14b_sft,qwen2-14B,11,199,"{
+  ""custom accelerator"": {""mem_bandwidth"": 1382 * (1024**3), ""FP16"": 419.4e12, ""INT8"": 838.8e12, ""memsize"": 48 * (1024**3), ""onchip_buffer"": 0, ""interconnect_bandwidth"": 400 * (1024**3)},
+  ""gpu_type"": ""custom accelerator"",
+  ""f_peak"": 419.0,  #""FP16的值""
+  ""memory_bandwidth"": 21382.0,
+  ""memory_size"": 48.0,
+  ""n_gpu"": 1,
+  ""tensor_parallelism"": 1
+}",custom accelerator,419.0,21382.0,48.0,1,"1
+","2025-10-13 15:03:04.000
+    8.99
+    2025-10-13 15:03:05.000
+    4.99
+    2025-10-13 15:03:06.000
+    9.98
+    2025-10-13 15:03:07.000
+    2.00
+    2025-10-13 15:03:08.000
+    4.99
+    2025-10-13 15:03:09.000
+    7.98
+    2025-10-13 15:03:10.000
+    7.99
+    2025-10-13 15:03:11.000
+    12.0
+    2025-10-13 15:03:12.000
+    2.00
+    2025-10-13 15:03:13.000
+    7.99
+    2025-10-13 15:03:14.000
+    7.99","2025-10-13 15:03:10
+    122",0.880,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen2-14B model specialized for comment intent analysis in live streaming scenarios. It performs natural language processing on user comments to identify sentiment and intent, running on a single custom accelerator GPU with MagaEngine for efficient real-time inference."
+tbstars-gul-tag2cmd-v5-ea119-custom accelerator.inference-part0-38a8fef2-a-afa9,tbstars_gul_tag2cmd_v5,tbstars-008-3B-base,32,14900,"{
+  ""architectures"": [
+    ""TBStarsForCausalLM""
+  ],
+  ""attention_bias"": true,
+  ""attention_dropout"": 0,
+  ""auto_map"": {
+    ""AutoConfig"": ""configuration_tbstars.TBStarsConfig"",
+    ""AutoModel"": ""modeling_tbstars.TBStarsForCausalLM"",
+    ""AutoModelForCausalLM"": ""modeling_tbstars.TBStarsForCausalLM""
+  },
+  ""bos_token_id"": 1,
+  ""eos_token_id"": 2,
+  ""hidden_act"": ""silu"",
+  ""hidden_dropout"": 0,
+  ""hidden_size"": 3072,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 8192,
+  ""max_position_embeddings"": 8192,
+  ""model_type"": ""tbstars"",
+  ""num_attention_heads"": 24,
+  ""num_hidden_layers"": 24,
+  ""num_key_value_heads"": 24,
+  ""pad_token_id"": 0,
+  ""pretraining_tp"": 1,
+  ""rms_norm_eps"": 0.00001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 10000,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": false,
+  ""vocab_size"": 128000
+}",custom accelerator,118.0,2765.0,96.0,1,"1 
+","2025-10-12 17:00:12.000
+  259
+  2025-10-12 17:00:13.000
+  124
+  2025-10-12 17:00:14.000
+  307
+  2025-10-12 17:00:15.000
+  34
+  2025-10-12 17:00:16.000
+  34
+  2025-10-12 17:00:17.000
+  58
+  2025-10-12 17:00:18.000
+  204
+  2025-10-12 17:00:19.000
+  340
+  2025-10-12 17:00:20.000
+  84
+  2025-10-12 17:00:21.000
+  123
+  2025-10-12 17:00:22.000
+  490","2025-10-12 17:00:12.000
+  46.1
+  2025-10-12 17:00:13.000
+  11.6
+  2025-10-12 17:00:14.000
+  55.1
+  2025-10-12 17:00:15.000
+  5.96
+  2025-10-12 17:00:16.000
+  6.55
+  2025-10-12 17:00:17.000
+  10.1
+  2025-10-12 17:00:18.000
+  41.3
+  2025-10-12 17:00:19.000
+  59.8
+  2025-10-12 17:00:20.000
+  13.6
+  2025-10-12 17:00:21.000
+  27.6
+  2025-10-12 17:00:22.000
+  170",0.78,1,MagaEngine (Ant Group) / Custom FT-based,"A Tbstars-3B model specialized for generating command sequences from user tags in e-commerce 'guess you like' scenarios, running on custom accelerator hardware with MagaEngine acceleration for efficient real-time inference."
+text2sid-inference-ea119-custom accelerator.part0-7780d6b4-a-ee02,text2sid_inference,qwen2-0.5B,50,505,"{
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 896,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 4864,
+  ""max_position_embeddings"": 32768,
+  ""max_window_layers"": 21,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 14,
+  ""num_hidden_layers"": 24,
+  ""num_key_value_heads"": 2,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": 32768,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""float32"",
+  ""transformers_version"": ""4.50.3"",
+  ""use_cache"": true,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 217216
+}",custom accelerator,118.0,2765.0,96.0,1,"1 
+","2025-10-12 17:40:40.000
+  8.60
+  2025-10-12 17:40:50.000
+  8.10","2025-10-12 17:40:40.000
+  5.88 K
+  2025-10-12 17:40:50.000
+  3.38 K",0.86,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen-2 based model specialized for converting user text queries into item IDs (text2sid) in e-commerce 'guess you like' scenarios, deployed on custom accelerator hardware with MagaEngine acceleration for high-throughput, low-latency inference."
+tgc-serv-agent-v2-new-na61-custom accelerator.inference-part0-68e55a8b-a-f0cb,whale_prod_tgc_serv_agent_v2_new,tbstars-7B-base,12,62.5,"{
+  ""_name_or_path"": ""model^^tbstars_product/version=tbstars_7b_base/ckpt_id=v1_1"",
+  ""add_qkv_bias"": true,
+  ""architectures"": [
+    ""TbstarsForCausalLM""
+  ],
+  ""attention_dropout"": 0.1,
+  ""attn_type"": null,
+  ""auto_map"": {
+    ""AutoConfig"": ""configuration_tbstars.TbstarsConfig"",
+    ""AutoModel"": ""modeling_tbstars.TbstarsForCausalLM"",
+    ""AutoModelForCausalLM"": ""modeling_tbstars.TbstarsForCausalLM"",
+    ""AutoModelForSequenceClassification"": ""modeling_tbstars.TbstarsForCausalLM""
+  },
+  ""bos_token_id"": 1,
+  ""eos_token_id"": 2,
+  ""ffn_multiple_of"": 256,
+  ""hidden_dropout"": 0.1,
+  ""hidden_size"": 4096,
+  ""initializer_range"": 0.02,
+  ""kv_groups"": 0,
+  ""layer_norm_epsilon"": 1e-05,
+  ""max_position_embeddings"": 4096,
+  ""model_type"": ""tbstars"",
+  ""num_hidden_layers"": 32,
+  ""num_attention_heads"": 32,
+  ""pad_token_id"": 0,
+  ""pos_embedding_type"": ""rotary"",
+  ""rope_theta"": 10000.0,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.36.2"",
+  ""use_cache"": true,
+  ""vocab_size"": 64000
+}",custom accelerator,419.4,1382.0,48.0,1,"1
+","2025-10-10 16:42:01.000
+        32.9
+        2025-10-10 16:42:02.000
+        31.9
+        2025-10-10 16:42:03.000
+        57.9
+        2025-10-10 16:42:04.000
+        52.9
+        2025-10-10 16:42:05.000
+        40.1
+        2025-10-10 16:42:06.000
+        62.5
+        2025-10-10 16:42:07.000
+        53.9
+        2025-10-10 16:42:08.000
+        35.9
+        2025-10-10 16:42:09.000
+        40.9
+        2025-10-10 16:42:10.000
+        52.9
+        2025-10-10 16:42:11.000
+        37.9","2025-10-10 16:42:10
+        66.3",0.542,1,MagaEngine (Ant Group) / Custom FT-based,"This is a TGC-Serv-Agent-V2 7B model service deployed for document fusion (PDFUSION) and enterprise-level inference on custom accelerator accelerators, utilizing FP16 precision with INT8 quantization, 4 CPU cores, 30GiB memory, and PagedAttention optimization in a Kubernetes environment with FUSE-based remote model loading from OSS for tasks like knowledge base QA and text generation."
+tgc-serv-agent-v2-new-na61-custom accelerator.inference-part0-88ad43e3-a-2f88,whale_prod_tgc_serv_agent_v2_new,tbstars-7B-base,12,62.9,"{
+  ""_name_or_path"": ""model^^tbstars_product/version=tbstars_7b_base/ckpt_id=v1_1"",
+  ""add_qkv_bias"": true,
+  ""architectures"": [
+    ""TbstarsForCausalLM""
+  ],
+  ""attention_dropout"": 0.1,
+  ""attn_type"": null,
+  ""auto_map"": {
+    ""AutoConfig"": ""configuration_tbstars.TbstarsConfig"",
+    ""AutoModel"": ""modeling_tbstars.TbstarsForCausalLM"",
+    ""AutoModelForCausalLM"": ""modeling_tbstars.TbstarsForCausalLM"",
+    ""AutoModelForSequenceClassification"": ""modeling_tbstars.TbstarsForCausalLM""
+  },
+  ""bos_token_id"": 1,
+  ""eos_token_id"": 2,
+  ""ffn_multiple_of"": 256,
+  ""hidden_dropout"": 0.1,
+  ""hidden_size"": 4096,
+  ""initializer_range"": 0.02,
+  ""kv_groups"": 0,
+  ""layer_norm_epsilon"": 1e-05,
+  ""max_position_embeddings"": 4096,
+  ""model_type"": ""tbstars"",
+  ""num_hidden_layers"": 32,
+  ""num_attention_heads"": 32,
+  ""pad_token_id"": 0,
+  ""pos_embedding_type"": ""rotary"",
+  ""rope_theta"": 10000.0,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.36.2"",
+  ""use_cache"": true,
+  ""vocab_size"": 64000
+}",custom accelerator,419.4,1382.0,48.0,1,"1
+","2025-10-12 16:06:41.000
+        5.99
+        2025-10-12 16:06:42.000
+        0.998
+        2025-10-12 16:06:43.000
+        3.99
+        2025-10-12 16:06:44.000
+        3.00
+        2025-10-12 16:06:45.000
+        5.99
+        2025-10-12 16:06:46.000
+        4.99
+        2025-10-12 16:06:47.000
+        3.99
+        2025-10-12 16:06:48.000
+        3.00
+        2025-10-12 16:06:49.000
+        3.00
+        2025-10-12 16:06:50.000
+        4.99
+        2025-10-12 16:06:51.000
+        4.00","2025-10-12 16:06:50
+        60.3",0.720,1,MagaEngine (Ant Group) / Custom FT-based,"This is a TGC-Serv-Agent-V2 7B model service deployed for document fusion (PDFUSION) and enterprise-level inference on custom accelerator accelerators, utilizing FP16 precision with INT8 quantization, 4 CPU cores, 30GiB memory, and PagedAttention optimization in a Kubernetes environment with FUSE-based remote model loading from OSS for tasks like knowledge base QA and text generation."
+tgc-serv-agent-v2-new-na61-custom accelerator.inference-part0-68e55a8b-a-f0cb,whale_prod_tgc_serv_agent_v2_new,tbstars-7B-base,12,55.9,"{
+  ""_name_or_path"": ""model^^tbstars_product/version=tbstars_7b_base/ckpt_id=v1_1"",
+  ""add_qkv_bias"": true,
+  ""architectures"": [
+    ""TbstarsForCausalLM""
+  ],
+  ""attention_dropout"": 0.1,
+  ""attn_type"": null,
+  ""auto_map"": {
+    ""AutoConfig"": ""configuration_tbstars.TbstarsConfig"",
+    ""AutoModel"": ""modeling_tbstars.TbstarsForCausalLM"",
+    ""AutoModelForCausalLM"": ""modeling_tbstars.TbstarsForCausalLM"",
+    ""AutoModelForSequenceClassification"": ""modeling_tbstars.TbstarsForCausalLM""
+  },
+  ""bos_token_id"": 1,
+  ""eos_token_id"": 2,
+  ""ffn_multiple_of"": 256,
+  ""hidden_dropout"": 0.1,
+  ""hidden_size"": 4096,
+  ""initializer_range"": 0.02,
+  ""kv_groups"": 0,
+  ""layer_norm_epsilon"": 1e-05,
+  ""max_position_embeddings"": 4096,
+  ""model_type"": ""tbstars"",
+  ""num_hidden_layers"": 32,
+  ""num_attention_heads"": 32,
+  ""pad_token_id"": 0,
+  ""pos_embedding_type"": ""rotary"",
+  ""rope_theta"": 10000.0,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.36.2"",
+  ""use_cache"": true,
+  ""vocab_size"": 64000
+}",custom accelerator,419.4,1382.0,48.0,1,"1
+","2025-10-12 13:24:02.000
+      4.00
+      2025-10-12 13:24:03.000
+      7.98
+      2025-10-12 13:24:04.000
+      0.999
+      2025-10-12 13:24:05.000
+      3.99
+      2025-10-12 13:24:06.000
+      4.99
+      2025-10-12 13:24:07.000
+      2.99
+      2025-10-12 13:24:08.000
+      2.99
+      2025-10-12 13:24:09.000
+      2.99
+      2025-10-12 13:24:10.000
+      5.99
+      2025-10-12 13:24:11.000
+      3.00
+      2025-10-12 13:24:12.000
+      2.00","2025-10-12 13:24:10
+        62.0",0.720,1,MagaEngine (Ant Group) / Custom FT-based,"This is a TGC-Serv-Agent-V2 7B model service deployed for document fusion (PDFUSION) and enterprise-level inference on custom accelerator accelerators, utilizing FP16 precision with INT8 quantization, 4 CPU cores, 30GiB memory, and PagedAttention optimization in a Kubernetes environment with FUSE-based remote model loading from OSS for tasks like knowledge base QA and text generation."
+yumeng-qwen-7b-sft-v1-ea119-custom accelerator-2tp.inference-part0-082554e1-a-8167,yumeng_qwen_7b_sft_v1,qwen2.5-7B,16,219,"{
+  ""_name_or_path"": ""/root/.cache/openlm/hub/8390e1e78e809f11dd3593a112b3abea/"",
+  ""architectures"": [
+    ""Qwen2ForCausalLM""
+  ],
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 3584,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 18944,
+  ""max_position_embeddings"": 32768,
+  ""max_window_layers"": 28,
+  ""model_type"": ""qwen2"",
+  ""num_attention_heads"": 28,
+  ""num_hidden_layers"": 28,
+  ""num_key_value_heads"": 4,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": false,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.48.2"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 152064
+}",custom accelerator,118.0,2765.0,96.0,2,"2
+","2025-10-11 15:30:35.000
+    10
+    2025-10-11 15:30:36.000
+    14
+    2025-10-11 15:30:37.000
+    16
+    2025-10-11 15:30:38.000
+    8
+    2025-10-11 15:30:39.000
+    14
+    2025-10-11 15:30:40.000
+    15
+    2025-10-11 15:30:41.000
+    11
+    2025-10-11 15:30:42.000
+    11
+    2025-10-11 15:30:43.000
+    10
+    2025-10-11 15:30:44.000
+    12
+    2025-10-11 15:30:45.000
+    8","2025-10-11 15:30:35.000
+    35.2
+    2025-10-11 15:30:36.000
+    59.4
+    2025-10-11 15:30:37.000
+    79.0
+    2025-10-11 15:30:38.000
+    32.8
+    2025-10-11 15:30:39.000
+    43.4
+    2025-10-11 15:30:40.000
+    54.2
+    2025-10-11 15:30:41.000
+    43.7
+    2025-10-11 15:30:42.000
+    38.5
+    2025-10-11 15:30:43.000
+    41.7
+    2025-10-11 15:30:44.000
+    44.9
+    2025-10-11 15:30:45.000
+    31.7",0.97,2,MagaEngine (Ant Group) / Custom FT-based,"An SFT fine-tuned Qwen-2 7B model for the 'Yumeng' project, specialized in processing and analyzing user feedback (wpm_feedback). It is deployed with 2-way Tensor Parallelism on two custom accelerator GPUs, utilizing MagaEngine for efficient inference."
+zzy-relativity-qwen3-1-7b-na61-a100.inference-part0-7e163f9b-b-1813,zzy_relativity_qwen3_1_7b,qwen3-1.7B,22,442,"{
+  ""architectures"": [
+    ""Qwen3ForCausalLM""
+  ],
+  ""attention_bias"": false,
+  ""attention_dropout"": 0,
+  ""bos_token_id"": 151643,
+  ""eos_token_id"": 151645,
+  ""head_dim"": 128,
+  ""hidden_act"": ""silu"",
+  ""hidden_size"": 2048,
+  ""initializer_range"": 0.02,
+  ""intermediate_size"": 6144,
+  ""max_position_embeddings"": 40960,
+  ""max_window_layers"": 28,
+  ""model_type"": ""qwen3"",
+  ""num_attention_heads"": 16,
+  ""num_hidden_layers"": 28,
+  ""num_key_value_heads"": 8,
+  ""rms_norm_eps"": 0.000001,
+  ""rope_scaling"": null,
+  ""rope_theta"": 1000000,
+  ""sliding_window"": null,
+  ""tie_word_embeddings"": true,
+  ""torch_dtype"": ""bfloat16"",
+  ""transformers_version"": ""4.51.2"",
+  ""use_cache"": false,
+  ""use_sliding_window"": false,
+  ""vocab_size"": 151936
+}",A100,312.0,2039.0,80.0,1,"1
+","2025-10-13 15:34:57.000
+    11
+    2025-10-13 15:34:58.000
+    0
+    2025-10-13 15:34:59.000
+    3
+    2025-10-13 15:35:00.000
+    7
+    2025-10-13 15:35:01.000
+    3
+    2025-10-13 15:35:02.000
+    7
+    2025-10-13 15:35:03.000
+    0
+    2025-10-13 15:35:04.000
+    1
+    2025-10-13 15:35:05.000
+    1
+    2025-10-13 15:35:06.000
+    3
+    2025-10-13 15:35:07.000
+    6","2025-10-13 15:34:57.000
+    184
+    2025-10-13 15:34:59.000
+    209
+    2025-10-13 15:35:00.000
+    184
+    2025-10-13 15:35:01.000
+    178
+    2025-10-13 15:35:02.000
+    176
+    2025-10-13 15:35:04.000
+    174
+    2025-10-13 15:35:05.000
+    175
+    2025-10-13 15:35:06.000
+    176
+    2025-10-13 15:35:07.000
+    177",0.300,1,MagaEngine (Ant Group) / Custom FT-based,"A Qwen3-1B model specialized for generating explainable recommendations in e-commerce 'guess you like' scenarios. It uses fine-grained item reasoning to produce natural language justifications based on user and product data, running on a single A100-SXM4-80GB GPU with MagaEngine for efficient real-time inference."
